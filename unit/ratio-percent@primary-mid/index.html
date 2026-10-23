@@ -1,0 +1,80 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>倍的初步认识 — Math Atlas</title><meta name="description" content="比与百分数 · 小学中 · 理解"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <nav class="pt-8 text-[11.5px] text-[var(--color-ink-faint)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <span class="mx-1.5">/</span> <a href="/branch/number-algebra/" class="hover:text-[var(--color-ink)]">比与百分数</a> <span class="mx-1.5">/</span> <span>小学中</span> </nav> <article class="grid gap-10 pt-4 pb-10 lg:grid-cols-[minmax(0,1fr)_228px]"> <div class="min-w-0"> <header> <div class="flex flex-wrap items-center gap-2 text-[11px]"> <span class="rounded px-1.5 py-0.5" style="background:#dcfce7;color:#166534"> 完整 </span> <span class="text-[var(--color-ink-faint)]">小学中 · 理解</span> </div> <h1 class="serif mt-3 text-[30px] leading-tight font-semibold tracking-tight">倍的初步认识</h1> <p class="mt-2 text-[12.5px] text-[var(--color-ink-soft)]">
+所属概念：<a href="/branch/number-algebra/" class="underline decoration-[var(--color-rule)] underline-offset-2 hover:decoration-current">比与百分数</a> <span class="text-[var(--color-ink-faint)]"> · 倍 / 份</span> </p> </header> <div class="prose-atlas mt-8"><h2>1 「倍」这个词，把孩子绕晕了一半</h2>
+<p>二年级上册有一道经典题：</p>
+<blockquote>
+<p>有 3 只小兔，小猴的只数是小兔的 4 倍。小猴有多少只？</p>
+</blockquote>
+<p>孩子答 7——因为「4 倍」听起来像「4 多」，$3+4=7$。这个错误几乎每个班都有，原因不在算错，而在**「倍」是小学数学里第一次出现的「相对量」<strong>：3 只就是 3 只，「4 倍」却不是一个数量，它描述的是</strong>两个量之间的关系**。</p>
+<h2>2 「倍」其实是「几份」</h2>
+<p>把「倍」翻译成一句不绕的话：</p>
+<p><strong>A 是 B 的 4 倍，意思是：把 B 当作 1 份，A 有 4 份那么多。</strong></p>
+<p>小猴是 4 倍，就是把 3 只看成 1 份，小猴有 4 份，$3 \times 4 = 12$ 只。</p>
+<p>这个翻译有一个直接的后果：<strong>「倍」后面必须跟着「谁」</strong>。</p>
+<p>「小猴是小兔的 4 倍」和「小兔是小猴的 4 倍」是两个完全相反的说法。少了「的谁」，这句话不成立。</p>
+<p>这也是「倍」与「多」的分水岭：</p>
+<table>
+<thead>
+<tr>
+<th>说法</th>
+<th>运算</th>
+<th>例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>比 B 多 4</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>+</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">B + 4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">4</span></span></span></span></td>
+<td>3 + 4 = 7</td>
+</tr>
+<tr>
+<td>是 B 的 4 倍</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>×</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">B \times 4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">4</span></span></span></span></td>
+<td>3 × 4 = 12</td>
+</tr>
+</tbody></table>
+<h2>3 「倍」为什么不能超过 1</h2>
+<p>三年级刚学倍，题目里的倍数都是 2、3、4 这样的整数。孩子于是形成误解：<strong>倍数总是比 1 大</strong>。</p>
+<p>半年后遇到这道题就崩了：</p>
+<blockquote>
+<p>小明有 8 颗糖，小红有 2 颗。小明是小红的几倍？</p>
+</blockquote>
+<p>答案是 4，没问题。但反过来问：<strong>小红是小明的几倍？</strong></p>
+<p>答案是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{4}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.1901em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">4</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>。孩子会写「4 倍」，因为在他的经验里，「几倍」总是个大数。</p>
+<p>再往后还有更反直觉的：<strong>「今年收入是去年的 0.8 倍」</strong>，意思其实是下降了 20%。</p>
+<p>为什么直觉会错？因为孩子在生活里听到「倍」，总是跟「变多」「变大」联系在一起——「翻倍」「加倍」。<strong>「倍」这个词的语感，天然偏向增加。</strong></p>
+<p>但在数学里，「倍」只是一次除法算出来的比值，它可以是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{4}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.1901em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">4</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>，可以是 0.8，也可以小于 1。语感靠不住，只有「谁是谁的几份」这个结构靠得住。</p>
+<blockquote>
+<p>这个坑在六年级变成百分数还会再踩：<strong>「降低了 20%」和「是原来的 80%」是同一件事，写法不同。</strong></p>
+</blockquote>
+<h2>4 与前后学段的螺旋关系</h2>
+<p><strong>依赖链</strong>：小学中「倍的初步认识」→ 小学高「比与百分数」→ 初中「比例与百分比应用」→ 高中「指数函数」。</p>
+<pre><code>小学中  倍的初步认识：3 的 4 倍是 12        ← 本页
+   ↓ 把「几倍」写成比，倍变成一个比值
+小学高  比与百分数：3:4、75%、比值
+   ↓ 比从一个数扩展到「两个变量之间的关系」
+小学高  正比例与反比例
+   ↓ 增长率固定时，比值重复相乘
+初中    增长率、百分比变化、连乘
+   ↓ 增长率变成连续的，每一刻都在变
+高中    指数函数：y = a^x
+</code></pre>
+<p>整条链只有一个主角：<strong>一个量相对于另一个量的比例</strong>。小学叫「倍」，六年级叫「百分数」，初中叫「增长率」，高中叫「底数」——名字一直在换，问的是同一个问题。</p>
+<h2>5 教材里怎么放</h2>
+<p>人教版把「倍的认识」放在<strong>二年级上册</strong>，紧跟在表内乘法之后。</p>
+<p>这个位置不是随便选的。倍的概念要用乘法解释——「4 倍」就是「4 个这样的 1 份」，而学生刚刚把「几个几」练熟。<strong>先有乘法，才能把「倍」说清楚。</strong></p>
+<p>教材用「摆一摆」引入：先摆 2 根小棒，再摆 3 个 2 根，让学生自己发现「第二排有 3 个第一排那么多」。</p>
+<p>整册书里，教材<strong>刻意不出现「倍数是分数」的情形</strong>。<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{4}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.1901em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">4</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span> 倍要等到六年级学分数除法之后。</p>
+<blockquote>
+<p>这个延迟是必要的：二年级的学生还没有分数这个工具，
+强行讲「0.5 倍」只会让他把「倍」和「一半」看成两件不相干的事。</p>
+</blockquote>
+<h2>6 自测</h2>
+<ul>
+<li>红花有 5 朵，黄花是红花的 3 倍。黄花几朵？用「几份」的说法解释你的算式。</li>
+<li>哥哥 12 岁，弟弟 3 岁。哥哥是弟弟的几倍？弟弟是哥哥的几倍？</li>
+<li>有人说「今年的产量是去年的 1.2 倍」，这表示增加还是减少？增加了多少？</li>
+<li>「他的力气是我的两倍」和「他的力气比我大一倍」，这两句话意思一样吗？</li>
+</ul>
+</div>   </div> <aside class="lg:border-l lg:border-[var(--color-rule)] lg:pl-6"> <section> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">螺旋</h2> <p class="mt-1 text-[11px] text-[var(--color-ink-faint)]">同一概念的其他学段</p> <ol class="mt-3 space-y-1">  <li class="flex items-center gap-2 rounded bg-[var(--color-ink)] px-2 py-1.5 text-[11.5px] text-white"> <span class="tnum w-3 text-white/40">3</span> <span>倍的初步认识</span> </li> <li> <a href="/unit/ratio-percent@primary-high/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 4 </span> <span>比与百分数</span> </a> </li><li> <a href="/unit/ratio-percent@middle/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 5 </span> <span>比例与百分比应用</span> </a> </li>  </ol> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">前置</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/multiplication-division@primary-mid/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 乘法的意义与除法初步 </a> </li> </ul> </section>  </aside> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>

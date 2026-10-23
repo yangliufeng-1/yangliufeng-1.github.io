@@ -1,0 +1,121 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>相似中的比例线段 — Math Atlas</title><meta name="description" content="比例与比例关系 · 初中 · 应用"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <nav class="pt-8 text-[11.5px] text-[var(--color-ink-faint)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <span class="mx-1.5">/</span> <a href="/branch/number-algebra/" class="hover:text-[var(--color-ink)]">比例与比例关系</a> <span class="mx-1.5">/</span> <span>初中</span> </nav> <article class="grid gap-10 pt-4 pb-10 lg:grid-cols-[minmax(0,1fr)_228px]"> <div class="min-w-0"> <header> <div class="flex flex-wrap items-center gap-2 text-[11px]"> <span class="rounded px-1.5 py-0.5" style="background:#dcfce7;color:#166534"> 完整 </span> <span class="text-[var(--color-ink-faint)]">初中 · 应用</span> </div> <h1 class="serif mt-3 text-[30px] leading-tight font-semibold tracking-tight">相似中的比例线段</h1> <p class="mt-2 text-[12.5px] text-[var(--color-ink-soft)]">
+所属概念：<a href="/branch/number-algebra/" class="underline decoration-[var(--color-rule)] underline-offset-2 hover:decoration-current">比例与比例关系</a> <span class="text-[var(--color-ink-faint)]"> · 成比例线段 / 比例</span> </p> </header> <div class="prose-atlas mt-8"><h2>1 一张地图，如何量出一座山的距离</h2>
+<p>地图上两点的距离是 3 厘米，比例尺 1:50000。实际距离是多少？</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>×</mo><mn>50000</mn><mo>=</mo><mn>150000</mn></mrow><annotation encoding="application/x-tex">3 \times 50000 = 150000</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">50000</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">150000</span></span></span></span> 厘米 = 1.5 千米。</p>
+<p>这道题里没有任何「几何」，只是一次乘法。但它是相似三角形的全部内核：<strong>形状一样的东西，对应线段成固定的比。</strong></p>
+<p>九年级下册的「相似」单元，把这些生活中的比例尺变成了一条公理化的理论。</p>
+<h2>2 从「成比例线段」到「相似三角形」</h2>
+<table>
+<thead>
+<tr>
+<th>概念</th>
+<th>定义</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>成比例线段</strong></td>
+<td>四条线段 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo separator="true">,</mo><mi>c</mi><mo separator="true">,</mo><mi>d</mi></mrow><annotation encoding="application/x-tex">a,b,c,d</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">b</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">c</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">d</span></span></span></span> 满足 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>=</mo><mfrac><mi>c</mi><mi>d</mi></mfrac></mrow><annotation encoding="application/x-tex">\frac{a}{b} = \frac{c}{d}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.0404em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.6954em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">b</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">a</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.0404em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.6954em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">d</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">c</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></td>
+<td>判断、计算</td>
+</tr>
+<tr>
+<td><strong>相似三角形</strong></td>
+<td>三个角对应相等（或三边成比例）</td>
+<td>求未知长度</td>
+</tr>
+<tr>
+<td><strong>相似比</strong></td>
+<td>对应边的比值 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span></span></span></span></td>
+<td>面积比是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>k</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">k^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></td>
+</tr>
+</tbody></table>
+<p>关键的一步是：<strong>相似三角形的对应边成比例，这个比例叫相似比。</strong></p>
+<p>有了它，测高就不需要爬上去。一根 1 米的杆子立在地上，影长 1.5 米；同一时刻，树的影长 9 米。树高 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi></mrow><annotation encoding="application/x-tex">h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span></span></span></span> 满足 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>h</mi><mn>1</mn></mfrac><mo>=</mo><mfrac><mn>9</mn><mn>1.5</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{h}{1} = \frac{9}{1.5}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.2251em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8801em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">h</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.1901em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1.5</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">9</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>，得 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">h = 6</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">6</span></span></span></span> 米。</p>
+<h2>3 「相似比为 2，面积也变成 2 倍」</h2>
+<p>这是本单元最普遍的错误，而且它会一直错到高中。</p>
+<p>两个相似三角形，相似比 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">k=2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span>。周长比是 2，面积比是 <strong>4</strong>。</p>
+<p>为什么？因为面积是「长 × 宽」，两个方向都放大了 2 倍，$2 \times 2 = 4$。</p>
+<p>一般地，相似比为 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span></span></span></span> 的两个图形：</p>
+<table>
+<thead>
+<tr>
+<th>量</th>
+<th>比</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>对应线段、周长</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span></span></span></span></td>
+</tr>
+<tr>
+<td>面积</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>k</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">k^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></td>
+</tr>
+<tr>
+<td>体积（立体图形）</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>k</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">k^3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span></td>
+</tr>
+</tbody></table>
+<p>这条规律不只是数学题，它是现实世界里很多「反直觉」的来源：</p>
+<blockquote>
+<p>一张 A4 纸放大到 A3，边长变 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mn>2</mn></msqrt></mrow><annotation encoding="application/x-tex">\sqrt{2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.04em;vertical-align:-0.1328em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9072em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord">2</span></span></span><span style="top:-2.8672em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg xmlns="http://www.w3.org/2000/svg" width="400em" height="1.08em" viewBox="0 0 400000 1080" preserveAspectRatio="xMinYMin slice"><path d="M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1328em;"><span></span></span></span></span></span></span></span></span> 倍，面积变 2 倍。
+所以 A3 可以精确地装下两张 A4——这不是巧合，是纸张规格的设计依据。</p>
+</blockquote>
+<p>错误直觉的根源在于：学生把「相似」理解成「整体放大一点点」，而没有意识到<strong>每个方向都在放大</strong>。</p>
+<h2>4 与前后学段的螺旋关系</h2>
+<p><strong>依赖链</strong>：小学高「正比例与反比例」→ 本单元「相似中的比例线段」→ 高中「三角函数的边角关系」。</p>
+<pre><code>小学高  正比例、比例尺、按比分配
+   ↓ 比例从「两个数」变成「图形中对应线段」
+小学高  图形的放大与缩小
+   ↓ 给出严格定义，写出对应边的比
+初中    成比例线段、相似三角形、相似比          ← 本页
+   ↓ 相似比与角度挂钩，边长比变成角的正弦余弦
+高中    锐角三角函数、正弦定理
+   ↓ 角度推广到任意角，比值变成周期函数
+高中    任意角与三角函数
+</code></pre>
+<p>这条链做了一件很漂亮的事：<strong>把「边长之比」逐步转化成「角度的函数」</strong>。</p>
+<p>在相似三角形里，直角三角形的边长之比只取决于角的大小——这一步就是三角函数的诞生。</p>
+<h2>5 教材里怎么放</h2>
+<p>人教版把「相似」放在<strong>九年级下册第二十七章</strong>，位置在各册之末。</p>
+<p>编排顺序是：图形的相似 → 相似三角形的判定 → 相似三角形的性质 → 位似。</p>
+<p>**判定在前，性质在后。**这个顺序很关键：先学会怎么认出「这两个三角形相似」，才谈得上用相似去算。</p>
+<p>教材还有一个重要的编排选择：在讲相似三角形之前，先讲「<strong>平行线分线段成比例</strong>」。</p>
+<p>这条基本事实是后面所有判定的基础，教材把它放在最前面当作公理使用。</p>
+<blockquote>
+<p>教材把相似放在九年级下册而不是八年级，是因为它需要
+「比例」「成比例线段」这些工具，也需要学生有足够的几何证明经验。</p>
+</blockquote>
+<h2>6 自测</h2>
+<ul>
+<li>两个相似三角形的相似比是 3，它们的周长比和面积比分别是多少？</li>
+<li>一根 2 米的杆子影长 3 米，同一时刻旗杆影长 12 米。旗杆多高？</li>
+<li>地图比例尺 1:200000，图上距离 4 厘米，实际距离多少千米？</li>
+<li>为什么一张纸对折后，形状和原来相似？这和 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mn>2</mn></msqrt></mrow><annotation encoding="application/x-tex">\sqrt{2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.04em;vertical-align:-0.1328em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9072em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord">2</span></span></span><span style="top:-2.8672em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg xmlns="http://www.w3.org/2000/svg" width="400em" height="1.08em" viewBox="0 0 400000 1080" preserveAspectRatio="xMinYMin slice"><path d="M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1328em;"><span></span></span></span></span></span></span></span></span> 有关吗？</li>
+</ul>
+</div>   </div> <aside class="lg:border-l lg:border-[var(--color-rule)] lg:pl-6"> <section> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">螺旋</h2> <p class="mt-1 text-[11px] text-[var(--color-ink-faint)]">同一概念的其他学段</p> <ol class="mt-3 space-y-1"> <li> <a href="/unit/proportion@primary-high/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 4 </span> <span>正比例与反比例</span> </a> </li> <li class="flex items-center gap-2 rounded bg-[var(--color-ink)] px-2 py-1.5 text-[11.5px] text-white"> <span class="tnum w-3 text-white/40">5</span> <span>相似中的比例线段</span> </li>   </ol> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">前置</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/proportion@primary-high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 正比例与反比例 </a> </li><li> <a href="/unit/ratio-percent@middle/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 比例与百分比应用 </a> </li> </ul> </section>  </aside> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>极限的直观理解 — Math Atlas</title><meta name="description" content="极限 · 高中 · 理解"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <nav class="pt-8 text-[11.5px] text-[var(--color-ink-faint)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <span class="mx-1.5">/</span> <a href="/branch/calculus/" class="hover:text-[var(--color-ink)]">极限</a> <span class="mx-1.5">/</span> <span>高中</span> </nav> <article class="grid gap-10 pt-4 pb-10 lg:grid-cols-[minmax(0,1fr)_228px]"> <div class="min-w-0"> <header> <div class="flex flex-wrap items-center gap-2 text-[11px]"> <span class="rounded px-1.5 py-0.5" style="background:#dcfce7;color:#166534"> 完整 </span> <span class="text-[var(--color-ink-faint)]">高中 · 理解</span> </div> <h1 class="serif mt-3 text-[30px] leading-tight font-semibold tracking-tight">极限的直观理解</h1> <p class="mt-2 text-[12.5px] text-[var(--color-ink-soft)]">
+所属概念：<a href="/branch/calculus/" class="underline decoration-[var(--color-rule)] underline-offset-2 hover:decoration-current">极限</a> <span class="text-[var(--color-ink-faint)]"> · 无限趋近 / 极限存在</span> </p> </header> <div class="prose-atlas mt-8"><h2>1 导数之前必须先有一个东西</h2>
+<p>高中教材用「割线趋近切线」讲导数，中间跳过了一步：
+<strong>凭什么可以取极限？</strong> 如果割线斜率忽左忽右、不趋于任何固定的数呢？</p>
+<p>极限就是回答这个问题的工具。它不谈「到达」，只谈「越来越接近」。</p>
+<blockquote>
+<p>极限的定义里从没有「等于」这个词。<code>x → 2</code> 说的是 x 无限接近 2，但不必等于 2。</p>
+</blockquote>
+<h2>2 一个必须自己想明白的例子</h2>
+<pre><code>f(x) = x² − 4
+       ───────
+        x − 2
+</code></pre>
+<p><code>x = 2</code> 时分子分母都是 0，函数在这里没有定义。但问「x 接近 2 时，f(x) 接近什么」是有意义的：</p>
+<table>
+<thead>
+<tr>
+<th>x</th>
+<th>f(x)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1.9</td>
+<td>3.9</td>
+</tr>
+<tr>
+<td>1.99</td>
+<td>3.99</td>
+</tr>
+<tr>
+<td>1.999</td>
+<td>3.999</td>
+</tr>
+<tr>
+<td>2.001</td>
+<td>4.001</td>
+</tr>
+<tr>
+<td>2.01</td>
+<td>4.01</td>
+</tr>
+</tbody></table>
+<p>答案是 4。<strong>函数在 2 处没有定义，但极限存在。</strong></p>
+<p>这个区别是高中数学最容易被混掉的一处：<code>f(2)</code> 不存在，<code>lim f(x)</code> 却可以存在。</p>
+<h2>3 为什么它能解释「割线变切线」</h2>
+<p>切线斜率 = 割线斜率的极限：</p>
+<pre><code>k割 = [f(x₀+Δx) − f(x₀)] / Δx
+k切 = lim  k割   （当 Δx → 0）
+</code></pre>
+<p>对 <code>f(x) = x²</code>：</p>
+<pre><code>[f(x₀+Δx) − f(x₀)] / Δx = (2x₀Δx + Δx²) / Δx = 2x₀ + Δx
+</code></pre>
+<p>当 Δx → 0，结果趋于 <code>2x₀</code>。<strong>这就是导数的全部来源</strong>——不是新公式，是这个极限。</p>
+<h2>4 极限不存在的两种情形（用来识别陷阱）</h2>
+<table>
+<thead>
+<tr>
+<th>情形</th>
+<th>例子</th>
+<th>现象</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>左、右趋于不同的值</td>
+<td><code>f(x) = x/|x|</code> 在 0 处</td>
+<td>左边 −1，右边 +1</td>
+</tr>
+<tr>
+<td>无界</td>
+<td><code>f(x) = 1/x²</code> 在 0 附近</td>
+<td>越靠近越大，不趋于任何实数</td>
+</tr>
+</tbody></table>
+<p>第一种情形尤其重要：<strong>分段函数在分段点处的导数是否存在，必须分别看左右极限。</strong></p>
+<h2>5 螺旋：这个词会在大学被完全重写</h2>
+<pre><code>割线斜率（初中，k 恒定）
+   ↓ 让 Δx 变小
+极限（高中，直观）              ← 本页
+   ↓ ε-δ 语言
+极限的严格定义（大学）
+   ↓
+连续、可导、可积的严格理论
+</code></pre>
+<p>高中只需要<strong>算得出、看得出</strong>；大学要求 <code>ε-N</code> / <code>ε-δ</code> 的严格定义。
+同一个词，从「越来越接近」变成「任意小的邻域内」，这不是难度增加，是<strong>语言换了</strong>。</p>
+<h2>6 对应教材</h2>
+<p>人教版 A 版选择性必修第二册第五章把极限放在导数的引入处，以「瞬时速度」作为物理入口。
+教材没有给严格定义——这是有意为之，高中阶段给严格定义只会增加符号负担而不增加理解。</p>
+<h2>7 自测</h2>
+<ul>
+<li>上表中 <code>x=1.999</code> 时 f(x)=3.999。如果要求 f(x) 与 4 的差小于 0.001，x 需要多接近 2？</li>
+<li><code>f(x) = |x|</code> 在 <code>x=0</code> 处，左极限与右极限分别是什么？它们相等吗？</li>
+<li>用极限的语言说明「函数在一点连续」是什么意思。</li>
+</ul>
+</div>  <section class="mt-8"> <h2 class="text-[13px] font-semibold tracking-[0.06em]">对应教材</h2> <ul class="mt-3 space-y-1.5 text-[12px] text-[var(--color-ink-soft)]"> <li> 人教版 A 版 · 选择性必修第二册 · §5.1 导数的概念 </li> </ul> <p class="mt-2 text-[11px] text-[var(--color-ink-faint)]">只记录指向，不托管教材原文。</p> </section> </div> <aside class="lg:border-l lg:border-[var(--color-rule)] lg:pl-6"> <section> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">螺旋</h2> <p class="mt-1 text-[11px] text-[var(--color-ink-faint)]">同一概念的其他学段</p> <ol class="mt-3 space-y-1">  <li class="flex items-center gap-2 rounded bg-[var(--color-ink)] px-2 py-1.5 text-[11.5px] text-white"> <span class="tnum w-3 text-white/40">6</span> <span>极限的直观理解</span> </li> <li> <a href="/unit/limit@university/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 7 </span> <span>极限的严格定义</span> </a> </li>  </ol> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">前置</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/function@high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 函数概念与基本初等函数 </a> </li><li> <a href="/unit/rate-of-change@high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 变化率的再认识 </a> </li> </ul> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">解锁</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/derivative@high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 导数及其应用 </a> </li><li> <a href="/unit/continuity@high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 函数在某点的连续性 </a> </li><li> <a href="/unit/sequence@university/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 数列极限 </a> </li><li> <a href="/unit/limit@university/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 极限的严格定义 </a> </li> </ul> </section> </aside> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>

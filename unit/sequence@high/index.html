@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>等差与等比数列 — Math Atlas</title><meta name="description" content="数列 · 高中 · 应用"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <nav class="pt-8 text-[11.5px] text-[var(--color-ink-faint)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <span class="mx-1.5">/</span> <a href="/branch/number-algebra/" class="hover:text-[var(--color-ink)]">数列</a> <span class="mx-1.5">/</span> <span>高中</span> </nav> <article class="grid gap-10 pt-4 pb-10 lg:grid-cols-[minmax(0,1fr)_228px]"> <div class="min-w-0"> <header> <div class="flex flex-wrap items-center gap-2 text-[11px]"> <span class="rounded px-1.5 py-0.5" style="background:#dcfce7;color:#166534"> 完整 </span> <span class="text-[var(--color-ink-faint)]">高中 · 应用</span> </div> <h1 class="serif mt-3 text-[30px] leading-tight font-semibold tracking-tight">等差与等比数列</h1> <p class="mt-2 text-[12.5px] text-[var(--color-ink-soft)]">
+所属概念：<a href="/branch/number-algebra/" class="underline decoration-[var(--color-rule)] underline-offset-2 hover:decoration-current">数列</a> <span class="text-[var(--color-ink-faint)]"> · 通项 / 求和</span> </p> </header> <div class="prose-atlas mt-8"><h2>1 数列是「函数的另一种写法」</h2>
+<p>如果只记公式，数列看起来像一堆新东西：通项、递推、求和、错位相减。
+但只要换个角度：</p>
+<blockquote>
+<p><strong>数列是定义域为正整数的函数。</strong> <code>aₙ = f(n)</code>，其中 n ∈ {1, 2, 3, ...}。</p>
+</blockquote>
+<p>一旦这么说，<code>aₙ = 2n − 1</code> 就只是一次函数（或它的离散切片），
+<code>aₙ = 2ⁿ</code> 就是指数函数。高中所有函数性质——单调性、最值——都能搬过来。</p>
+<p><strong>这是本项目螺旋模型的一个关键节点</strong>：<code>function@high</code> 的 depth 是 <code>analyze</code>，
+而 <code>sequence@high</code> 把函数理论用到离散集合上，depth 仍是 <code>apply</code>。难度没涨，但视角换了。</p>
+<h2>2 等差数列：离散的直线</h2>
+<pre><code>aₙ = a₁ + (n−1)d
+</code></pre>
+<p><code>d</code> 就是「离散的斜率」。所以任何关于等差数列的结论，几乎都能用一次函数的语言重述：</p>
+<table>
+<thead>
+<tr>
+<th>等差数列</th>
+<th>一次函数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>公差 d</td>
+<td>斜率 k</td>
+</tr>
+<tr>
+<td><code>aₙ</code> 随 n 线性增长</td>
+<td>图像是直线</td>
+</tr>
+<tr>
+<td>前 n 项和是 n 的二次式</td>
+<td>抛物线</td>
+</tr>
+</tbody></table>
+<h2>3 等比数列：离散的指数</h2>
+<pre><code>aₙ = a₁ · q^(n−1)
+</code></pre>
+<p><code>q</code> 是「离散的增长率」。这里有个重要的现实对应：
+<strong>复利、人口增长、放射性衰变，全是等比数列。</strong></p>
+<p>一个反直觉的结论：当 <code>|q| &lt; 1</code> 时，无穷等比数列的和是有限的：</p>
+<pre><code>S = a₁ / (1 − q)
+</code></pre>
+<p><code>1/2 + 1/4 + 1/8 + ... = 1</code>。无限多项加起来得到有限值——这是高中第一次真正触碰「极限」
+（虽然教材把严格的极限概念推迟到选修）。</p>
+<h2>4 求和的三种武器</h2>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>适用</th>
+<th>原理</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>公式法</td>
+<td>等差 / 等比</td>
+<td>直接套 <code>Sₙ</code></td>
+</tr>
+<tr>
+<td>错位相减</td>
+<td><code>等差 × 等比</code></td>
+<td>乘 q 后相减，消掉中间项</td>
+</tr>
+<tr>
+<td>裂项相消</td>
+<td><code>1/(n(n+1))</code> 类</td>
+<td>拆成两项差，中间全部抵消</td>
+</tr>
+</tbody></table>
+<p>三种方法的共同思想是<strong>制造相消</strong>。看懂这一点，就不需要分别记住三套套路。</p>
+<h2>5 螺旋关系</h2>
+<pre><code>找规律（小学低）发现 1,3,5,7... 每次多 2
+   ↓ 给「每次多几」一个名字
+数列初步（小学中）通项的意思                 ← sequence@primary-mid
+   ↓ ...
+等差等比（高中）公式、求和、极限雏形         ← 本页
+   ↓ 严格化
+级数（大学）收敛性、绝对收敛与条件收敛
+</code></pre>
+<p><strong>注意小学那一段</strong>：它不叫「数列」，叫「找规律」。但孩子在做的事情和高中一模一样——
+从有限项推断通项。这是本项目里跨学段最长的一条螺旋（4 段）。</p>
+<h2>6 对应教材</h2>
+<p>人教版 A 版选择性必修第二册第四章。教材先讲数列概念与递推公式，再讲等差数列、
+等比数列，最后讲数学归纳法。<strong>递推公式放在通项公式之前</strong>，这个顺序尊重了数列的两种给法。</p>
+<h2>7 自测</h2>
+<ul>
+<li>等差数列 <code>3, 7, 11, ...</code> 的第 10 项与前 10 项和分别是多少？</li>
+<li>等比数列 <code>2, 6, 18, ...</code> 的第 5 项是多少？若 <code>q = 1/2</code>，无穷和是多少？</li>
+<li>用「制造相消」的思路，求 <code>1/(1×2) + 1/(2×3) + ... + 1/(n(n+1))</code>。</li>
+<li>为什么说「数列是函数的特例」？数列的「图像」和函数图像有什么不同？</li>
+</ul>
+</div>  <section class="mt-8"> <h2 class="text-[13px] font-semibold tracking-[0.06em]">对应教材</h2> <ul class="mt-3 space-y-1.5 text-[12px] text-[var(--color-ink-soft)]"> <li> 人教版 A 版 · 选择性必修第二册 · §4 数列 </li> </ul> <p class="mt-2 text-[11px] text-[var(--color-ink-faint)]">只记录指向，不托管教材原文。</p> </section> </div> <aside class="lg:border-l lg:border-[var(--color-rule)] lg:pl-6"> <section> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">螺旋</h2> <p class="mt-1 text-[11px] text-[var(--color-ink-faint)]">同一概念的其他学段</p> <ol class="mt-3 space-y-1"> <li> <a href="/unit/sequence@primary-mid/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 3 </span> <span>数列的初步：从找规律到通项</span> </a> </li> <li class="flex items-center gap-2 rounded bg-[var(--color-ink)] px-2 py-1.5 text-[11.5px] text-white"> <span class="tnum w-3 text-white/40">6</span> <span>等差与等比数列</span> </li> <li> <a href="/unit/sequence@university/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 7 </span> <span>数列极限</span> </a> </li>  </ol> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">前置</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/function@high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 函数概念与基本初等函数 </a> </li><li> <a href="/unit/sequence@primary-mid/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 数列的初步：从找规律到通项 </a> </li> </ul> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">解锁</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/induction@high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 数学归纳法 </a> </li><li> <a href="/unit/series@university/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 数项级数与收敛 </a> </li><li> <a href="/unit/sequence@university/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 数列极限 </a> </li> </ul> </section> </aside> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>一元函数微分学 — Math Atlas</title><meta name="description" content="导数 · 大学 · 分析"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <nav class="pt-8 text-[11.5px] text-[var(--color-ink-faint)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <span class="mx-1.5">/</span> <a href="/branch/calculus/" class="hover:text-[var(--color-ink)]">导数</a> <span class="mx-1.5">/</span> <span>大学</span> </nav> <article class="grid gap-10 pt-4 pb-10 lg:grid-cols-[minmax(0,1fr)_228px]"> <div class="min-w-0"> <header> <div class="flex flex-wrap items-center gap-2 text-[11px]"> <span class="rounded px-1.5 py-0.5" style="background:#dcfce7;color:#166534"> 完整 </span> <span class="text-[var(--color-ink-faint)]">大学 · 分析</span> </div> <h1 class="serif mt-3 text-[30px] leading-tight font-semibold tracking-tight">一元函数微分学</h1> <p class="mt-2 text-[12.5px] text-[var(--color-ink-soft)]">
+所属概念：<a href="/branch/calculus/" class="underline decoration-[var(--color-rule)] underline-offset-2 hover:decoration-current">导数</a> <span class="text-[var(--color-ink-faint)]"> · 可导 / 微分中值定理</span> </p> </header> <div class="prose-atlas mt-8"><h2>1 高中的导数，大学要先证明它存在</h2>
+<p>高中你算 <code>(x²)&#39; = 2x</code>，过程是把 Δx 约掉。但有两个问题被跳过了：</p>
+<ol>
+<li><strong>约掉 Δx 合法吗？</strong> Δx → 0 意味着 Δx ≠ 0，可以约。但这一步需要极限的严格语言支撑。</li>
+<li><strong>导数一定存在吗？</strong> 高中默认它存在。大学要求先判定可导，再计算。</li>
+</ol>
+<blockquote>
+<p>这是本项目的螺旋模型最典型的一处：<strong>同一个对象被要求到什么程度</strong>，
+从 <code>apply</code>（会用）变成 <code>analyze</code>（要分析其存在性）。</p>
+</blockquote>
+<h2>2 可导与连续：一条单向的门</h2>
+<pre><code>可导  ⟹  连续          （一定成立）
+连续  ⇏  可导          （不一定）
+</code></pre>
+<p>反例是最经典的那个：<code>f(x) = |x|</code> 在 <code>x = 0</code> 处连续，但</p>
+<pre><code>左导数 = −1 ，右导数 = +1 ，二者不等 ⟹ 不可导
+</code></pre>
+<p>几何上，那一点有个<strong>尖角</strong>，放不出一条唯一的切线。</p>
+<p>更极端的例子是 Weierstrass 函数：处处连续，处处不可导。
+这说明「连续」比「光滑」弱得多——直觉上「画得出来的曲线」都光滑，
+但数学上连续函数的绝大多数都是不可导的。</p>
+<h2>3 微分：导数之外的另一个概念</h2>
+<p>高中把 <code>dy/dx</code> 当成一个整体符号。大学把它拆成两个量：</p>
+<pre><code>dy = f&#39;(x) dx
+</code></pre>
+<p><code>dx</code> 是自变量的增量，<code>dy</code> 是<strong>切线的增量</strong>（不是函数的增量）。
+函数的真实增量 <code>Δy</code> 与 <code>dy</code> 之间差一个 <code>o(dx)</code>——比一阶小得多的量。</p>
+<p>用一句话说：<strong>微分是函数增量在一点附近的线性主部。</strong>
+这就是为什么线性近似 <code>f(x₀+Δx) ≈ f(x₀) + f&#39;(x₀)Δx</code> 在高阶项可忽略时成立。</p>
+<h2>4 中值定理：把「某点」和「整个区间」连起来</h2>
+<p>三个定理层层递进：</p>
+<table>
+<thead>
+<tr>
+<th>定理</th>
+<th>假设</th>
+<th>结论</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>罗尔</td>
+<td>f 连续、可导、f(a)=f(b)</td>
+<td>存在 ξ 使 f&#39;(ξ)=0</td>
+</tr>
+<tr>
+<td>拉格朗日</td>
+<td>f 连续、可导</td>
+<td>存在 ξ 使 f&#39;(ξ) = [f(b)−f(a)]/(b−a)</td>
+</tr>
+<tr>
+<td>柯西</td>
+<td>f、g 连续可导，g&#39;≠0</td>
+<td>存在 ξ 使 f&#39;/g&#39; = [f(b)−f(a)]/[g(b)−g(a)]</td>
+</tr>
+</tbody></table>
+<p>拉格朗日的几何意义最直观：<strong>区间上「平均变化率」，一定等于某一点的「瞬时变化率」。</strong>
+开车 2 小时走 200 公里，平均时速 100，那么至少某一瞬间速度表刚好指在 100。</p>
+<p>这个结论高中只能举例说明，大学能证明——<strong>这就是「depth 从 understand 升到 analyze」的具体含义。</strong></p>
+<h2>5 螺旋的终点：微积分基本定理</h2>
+<pre><code>k 恒定（初中）→ 瞬时变化率（高中导数组）→ 严格微分学（本页）
+                                              ↓
+                            积分：把局部变化累加成整体
+</code></pre>
+<p>微积分基本定理说：求导与积分是互逆运算。它之所以深刻，是因为它把
+<strong>「累积」与「变化率」这两件看起来无关的事</strong>统一了。</p>
+<h2>6 对应教材</h2>
+<p>同济版《高等数学》上册第二、三章。教材先讲导数定义与求导法则，
+再讲微分，最后进入中值定理与应用。<strong>中值定理放在微分之后是关键</strong>——
+没有微分的线性主部概念，中值定理只是「一个存在性结论」，而不是「用切线近似函数的合法性证明」。</p>
+<h2>7 自测</h2>
+<ul>
+<li><code>f(x) = x^(1/3)</code> 在 <code>x = 0</code> 处可导吗？连续吗？</li>
+<li>用线性近似估计 <code>√(4.02)</code>，与真实值比较误差量级。</li>
+<li>说出拉格朗日中值定理的几何意义，并用一句话说明它与「平均速度」的关系。</li>
+<li>为什么「连续但不可导」的例子在高中几乎见不到？</li>
+</ul>
+</div>  <section class="mt-8"> <h2 class="text-[13px] font-semibold tracking-[0.06em]">对应教材</h2> <ul class="mt-3 space-y-1.5 text-[12px] text-[var(--color-ink-soft)]"> <li> 同济版 · 高等数学上册 · 第二章 导数与微分 </li> </ul> <p class="mt-2 text-[11px] text-[var(--color-ink-faint)]">只记录指向，不托管教材原文。</p> </section> </div> <aside class="lg:border-l lg:border-[var(--color-rule)] lg:pl-6"> <section> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">螺旋</h2> <p class="mt-1 text-[11px] text-[var(--color-ink-faint)]">同一概念的其他学段</p> <ol class="mt-3 space-y-1"> <li> <a href="/unit/derivative@high/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 6 </span> <span>导数及其应用</span> </a> </li> <li class="flex items-center gap-2 rounded bg-[var(--color-ink)] px-2 py-1.5 text-[11.5px] text-white"> <span class="tnum w-3 text-white/40">7</span> <span>一元函数微分学</span> </li>   </ol> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">前置</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/derivative@high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 导数及其应用 </a> </li> </ul> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">解锁</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/integral@university/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 定积分与不定积分 </a> </li><li> <a href="/unit/multivariable-calculus@university/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 偏导数与重积分 </a> </li> </ul> </section> </aside> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>

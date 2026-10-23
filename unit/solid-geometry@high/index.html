@@ -1,0 +1,81 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>空间几何体与位置关系 — Math Atlas</title><meta name="description" content="立体几何 · 高中 · 分析"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <nav class="pt-8 text-[11.5px] text-[var(--color-ink-faint)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <span class="mx-1.5">/</span> <a href="/branch/geometry/" class="hover:text-[var(--color-ink)]">立体几何</a> <span class="mx-1.5">/</span> <span>高中</span> </nav> <article class="grid gap-10 pt-4 pb-10 lg:grid-cols-[minmax(0,1fr)_228px]"> <div class="min-w-0"> <header> <div class="flex flex-wrap items-center gap-2 text-[11px]"> <span class="rounded px-1.5 py-0.5" style="background:#dcfce7;color:#166534"> 完整 </span> <span class="text-[var(--color-ink-faint)]">高中 · 分析</span> </div> <h1 class="serif mt-3 text-[30px] leading-tight font-semibold tracking-tight">空间几何体与位置关系</h1> <p class="mt-2 text-[12.5px] text-[var(--color-ink-soft)]">
+所属概念：<a href="/branch/geometry/" class="underline decoration-[var(--color-rule)] underline-offset-2 hover:decoration-current">立体几何</a> <span class="text-[var(--color-ink-faint)]"> · 棱柱 / 线面关系</span> </p> </header> <div class="prose-atlas mt-8"><h2>1 桌子中间的两根线</h2>
+<p>在桌面上，两条直线只有两种命运：相交，或者平行。
+可把一支笔举在半空，另一支放在桌面上，它们的延长线既不相交、也不平行。</p>
+<p><strong>这种直线叫异面直线。</strong> 它逼着几何学承认：空间比平面多了一个方向，
+「平行」与「相交」再也不能覆盖全部情况。</p>
+<h2>2 从「几条线」到「线和面」</h2>
+<p>立体几何的判定，最常用的只有三条：</p>
+<table>
+<thead>
+<tr>
+<th>要证明的</th>
+<th>条件</th>
+<th>依据的直觉</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>线面平行</td>
+<td>平面外一条直线平行于面内某条直线</td>
+<td>顺着面内的一条线「滑」出去</td>
+</tr>
+<tr>
+<td>线面垂直</td>
+<td>直线垂直于面内两条<strong>相交</strong>直线</td>
+<td>立在桌面上，至少靠两条腿站稳</td>
+</tr>
+<tr>
+<td>面面垂直</td>
+<td>一个平面过另一个平面的一条垂线</td>
+<td>竖直的墙立在水平地面上</td>
+</tr>
+</tbody></table>
+<p>三条里最容易被记错的是第二条：<strong>必须是「相交」的两条直线</strong>。</p>
+<p>证明时通常先找一条辅助线，把空间问题翻成平面问题：
+找一个三角形，剩下的用全等和平行线性质收尾。</p>
+<h2>3 与直觉的冲突：眼睛看到的不是真的</h2>
+<p><strong>反例一：画在纸上像相交，其实根本不碰。</strong></p>
+<p>画一个正方体，两条棱在图上交叉成一个点，可它们在空间里相距一条棱长。
+<strong>图形是投影，「相交」必须靠推理确认。</strong> 被遮挡的线要画虚线，
+就是在提醒你：这一笔不是它真实的位置。</p>
+<p><strong>反例二：垂直于一条直线，不等于垂直于这个平面。</strong></p>
+<p>在正方体一个面上画一条线段，只要它垂直于那条棱，就垂直于整块面吗？
+不一定。只垂直一条，这条线还能绕着它转，转到哪儿都不垂直整个面。
+<strong>要垂直于面内两条相交直线才行。</strong></p>
+<p><strong>反例三：平行的两条线，会不会「相交」？</strong></p>
+<p>球面上两条「直线」（大圆）一定相交——<strong>「平行线不相交」是欧氏几何的选择。</strong></p>
+<blockquote>
+<p>空间中的每一条判定，都要回答「它凭什么成立」，而不是「它画出来像不像」。</p>
+</blockquote>
+<h2>4 与前后学段的螺旋关系</h2>
+<p><strong>依赖链</strong>：初中「三角形的性质与全等」→ 本单元「空间几何体与位置关系」→ 高中「用向量处理立体几何」→ 大学「空间解析几何」。</p>
+<pre><code>初中    三角形全等、平行线的性质        一切证明都在一张纸上
+   ↓ 多出第三个方向，图形离开纸面
+高中    空间几何体与位置关系           ← 本页  线面平行、线面垂直
+   ↓ 把「找辅助线」换成「算坐标和法向量」
+高中    用向量处理立体几何              证明变成代数的加减乘
+   ↓ 把「法向量」抽象成方程
+大学    空间解析几何                    平面是一个一次方程，曲面是二次方程
+</code></pre>
+<p>第二个箭头是这个分支最大的技术转折：<strong>从「看图找辅助线」变成「设坐标算数」</strong>。
+综合法靠灵感，向量法靠流程——两条路都得会。</p>
+<h2>5 教材里怎么放</h2>
+<p>人教版必修第二册第八章「立体几何初步」是这一段的落点。
+顺序是：空间几何体（柱、锥、台、球）→ 点线面的位置关系 →
+平行的判定与性质 → 垂直的判定与性质。</p>
+<p><strong>每一条判定都配一个「生活中」的例子</strong>（墙角、翻开的书、转动的门），
+再给出符号语言。教材想让直觉先到位，让符号跟随其后。</p>
+<p><strong>但教材并不止步于此。</strong> 人教 A 版选择性必修第一册紧接着讲空间向量，
+把这些判定全部重做一遍——不是重复，而是换工具。</p>
+<h2>6 自测</h2>
+<ul>
+<li>两条异面直线能同时平行于同一个平面吗？画图说明。</li>
+<li>「直线垂直于平面内两条直线，就垂直于这个平面」错在哪里？举反例。</li>
+<li>正方体中，面对角线共有几条？其中与某条棱异面的有几条？</li>
+<li>用向量法证明线面平行，需要算出什么？它对应的几何含义是什么？</li>
+<li>你觉得教材为什么坚持先教综合法、再教向量法，而不是反过来？</li>
+</ul>
+</div>  <section class="mt-8"> <h2 class="text-[13px] font-semibold tracking-[0.06em]">对应教材</h2> <ul class="mt-3 space-y-1.5 text-[12px] text-[var(--color-ink-soft)]"> <li> 人教版 A 版 · 必修第二册 · §8 立体几何初步 </li> </ul> <p class="mt-2 text-[11px] text-[var(--color-ink-faint)]">只记录指向，不托管教材原文。</p> </section> </div> <aside class="lg:border-l lg:border-[var(--color-rule)] lg:pl-6"> <section> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">螺旋</h2> <p class="mt-1 text-[11px] text-[var(--color-ink-faint)]">同一概念的其他学段</p> <ol class="mt-3 space-y-1"> <li> <a href="/unit/solid-geometry@primary-high/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 4 </span> <span>长方体与圆柱</span> </a> </li> <li class="flex items-center gap-2 rounded bg-[var(--color-ink)] px-2 py-1.5 text-[11.5px] text-white"> <span class="tnum w-3 text-white/40">6</span> <span>空间几何体与位置关系</span> </li> <li> <a href="/unit/solid-geometry@university/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 7 </span> <span>空间解析几何</span> </a> </li>  </ol> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">前置</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/triangle@middle/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 三角形的性质与全等 </a> </li> </ul> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">解锁</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/volume@middle/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 柱体锥体的体积 </a> </li><li> <a href="/unit/spatial-vector@high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 用向量处理立体几何 </a> </li> </ul> </section> </aside> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>

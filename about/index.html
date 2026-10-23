@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>关于 — Math Atlas</title><meta name="description" content="这个项目是什么，以及它刻意不做什么"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <article class="prose-atlas max-w-[680px] pt-12"> <h1 class="serif text-[30px] font-semibold tracking-tight">关于 Math Atlas</h1> <h2>它是什么</h2> <p>
+一个把「数学概念如何跨学段被重建」画出来的索引站。数据模型是两个实体：
+<strong>Concept</strong>（概念身份，如「分数」）与 <strong>Unit</strong>（某概念在某学段的呈现，
+      如「分数的初步认识」）。所有前置依赖都指向 Unit，而不是 Concept——
+      因为「学有理数」依赖的是「小学学会除法」这个具体单元，不是抽象的「除法」。
+</p> <h2>它明确不做什么</h2> <ul> <li><strong>不托管教材原文。</strong>教材只以「版本 · 册次 · 章节」的引用形式出现。</li> <li><strong>不做视频、不做题库。</strong>差异化在「螺旋可见」与「参数化演示」，不在内容体量。</li> <li><strong>不做账号系统。</strong>本图谱不需要用户身份即可浏览。</li> </ul> <h2>骨架与血肉</h2> <p>
+当前 80 个概念、168 个学段单元。其中 168 个有完整长文，
+0 个有演示引用，0 个只有标题与教材章节。
+      这不是缺陷，是刻意的取舍：<strong>结构优先于内容</strong>，
+      未完成的部分在界面上是可见的（空心圆 / 「待长」标记），而不是被藏起来。
+</p> <h2>数据与校验</h2> <p>
+单一事实源是 <code>data/graph.seed.json</code>，由 <code>scripts/validate_graph.py</code>
+在构建前做三道校验：Schema 合法性、图论不变式（无环、双向边一致、id 规范）、
+      业务不变式（完整长文必须有对应文件）。
+</p> <h2>三个参考对象，各取了什么</h2> <ul> <li><strong>polytech-tree</strong>：取了「扁平 JSON + 前置关系数组 + 校验脚本」的数据形态，
+        弃了它的 3D 塔楼视觉（「高度=年代、角度=领域」与「学段×学科」不对应）。</li> <li><strong>ChinaTextbook</strong>：仅作为离线抽取章节结构的输入，不进入发布产物。</li> <li><strong>modevol</strong>：取了「长文 + 分节 + 嵌入任务块 + 右侧目录」的阅读形态。</li> </ul> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>

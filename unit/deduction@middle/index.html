@@ -1,0 +1,79 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>由已知推出未知 — Math Atlas</title><meta name="description" content="演绎 · 初中 · 理解"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <nav class="pt-8 text-[11.5px] text-[var(--color-ink-faint)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <span class="mx-1.5">/</span> <a href="/branch/math-thinking/" class="hover:text-[var(--color-ink)]">演绎</a> <span class="mx-1.5">/</span> <span>初中</span> </nav> <article class="grid gap-10 pt-4 pb-10 lg:grid-cols-[minmax(0,1fr)_228px]"> <div class="min-w-0"> <header> <div class="flex flex-wrap items-center gap-2 text-[11px]"> <span class="rounded px-1.5 py-0.5" style="background:#dcfce7;color:#166534"> 完整 </span> <span class="text-[var(--color-ink-faint)]">初中 · 理解</span> </div> <h1 class="serif mt-3 text-[30px] leading-tight font-semibold tracking-tight">由已知推出未知</h1> <p class="mt-2 text-[12.5px] text-[var(--color-ink-soft)]">
+所属概念：<a href="/branch/math-thinking/" class="underline decoration-[var(--color-rule)] underline-offset-2 hover:decoration-current">演绎</a> <span class="text-[var(--color-ink-faint)]"> · 演绎 / 推理链</span> </p> </header> <div class="prose-atlas mt-8"><h2>1 推理链：一步只走一小步</h2>
+<p>初中几何证明的第一课，往往是长长的「因为……所以……」：</p>
+<blockquote>
+<p>因为 $AB = AC$（已知），
+所以 $\angle B = \angle C$（等边对等角），
+又因为 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>D</mi></mrow><annotation encoding="application/x-tex">AD</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span></span></span></span> 是角平分线（已知），
+所以 $AD \perp BC$（三线合一）。</p>
+</blockquote>
+<p>每一行的「所以」都只走一小步，且每一步都挂着<strong>理由</strong>。这条链有几个硬规矩：</p>
+<ul>
+<li>每步依据必须是<strong>已知条件、定义、或已证的定理</strong>——不能是「看图」「感觉」。</li>
+<li>前一步的结论，变成后一步的依据。链是这样一节一节长起来的。</li>
+<li>链的起点是已知，终点是求证。中间不许凭空出现任何新东西。</li>
+</ul>
+<p>这套规矩就是<strong>由已知推出未知</strong>——它和人类日常的「推理」有本质区别，区别就在下一节。</p>
+<h2>2 演绎与归纳：方向相反的两种推理</h2>
+<p>初中生此刻身上带着两种推理习惯，值得分清：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>归纳</th>
+<th>演绎</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>方向</td>
+<td>从多个例子到一般</td>
+<td>从一般到具体</td>
+</tr>
+<tr>
+<td>结论强度</td>
+<td>可能有例外</td>
+<td>必然成立</td>
+</tr>
+<tr>
+<td>用途</td>
+<td><strong>发现</strong>结论</td>
+<td><strong>证明</strong>结论</td>
+</tr>
+</tbody></table>
+<p>关键在于两者的分工：归纳负责提出猜想，演绎负责审判定罪。做一道几何题，你先「猜」出辅助线该连哪里（靠经验和类比的归纳），然后用一条条演绎推理论证。<strong>猜想与证明的分工，就是从这道题开始建立的</strong>。</p>
+<h2>3 与直觉的冲突：一步一步都对，合起来也可能错</h2>
+<p>直觉认为：只要每一步都有理由，整条链就可靠。反例：</p>
+<blockquote>
+<p>命题：任意三角形都是等腰三角形。
+「证明」：画 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">△</mi><mi>A</mi><mi>B</mi><mi>C</mi></mrow><annotation encoding="application/x-tex">\triangle ABC</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">△</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span></span></span></span>，作 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∠</mi><mi>A</mi></mrow><annotation encoding="application/x-tex">\angle A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6922em;"></span><span class="mord">∠</span><span class="mord mathnormal">A</span></span></span></span> 的平分线与 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mi>C</mi></mrow><annotation encoding="application/x-tex">BC</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span></span></span></span> 的垂直平分线，设交于 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi></mrow><annotation encoding="application/x-tex">O</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">O</span></span></span></span>。过 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi></mrow><annotation encoding="application/x-tex">O</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">O</span></span></span></span> 作三边的垂线……利用几组全等三角形，可以「推出」$AB = AC$。
+每一步推理单看都有依据，结论却荒谬。</p>
+</blockquote>
+<p>破绽在哪？在<strong>作图与位置关系的默认假设</strong>上：交点 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi></mrow><annotation encoding="application/x-tex">O</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">O</span></span></span></span> 其实永远在三角形外部，而「证明」里悄悄用到了「$O$ 在三角形内」「垂足在线段上」这些<strong>图上看起来如此、实际不成立</strong>的位置关系。</p>
+<p>直觉为什么会错？因为每一步的「理由」是否合格，不取决于它<strong>写着什么定理</strong>，而取决于<strong>定理的前提是否真的满足</strong>。「三线合一」要求那三条线确实重合，位置不对就什么也推不出。图形证明里的错误常常不在代数运算，而在<strong>隐含的位置假设</strong>——图骗人，比算式骗人隐蔽得多。</p>
+<p>这条「假证明」在数学教育里的价值极大：它让学生第一次明白，演绎推理链条的可靠性取决于<strong>每一个隐含前提都被显式检查</strong>。「因为看图显然」这六个字，就是链条断裂的地方。</p>
+<h2>4 与后一个学段的螺旋关系</h2>
+<p><strong>依赖链</strong>：小学中年级「找规律与数列」→ 初中「由已知推出未知」→ 初中「命题与证明」→ 高中「演绎推理与证明」。</p>
+<pre><code>小学中  找规律与数列                 归纳发现：猜出结论
+   ↓ 结论需要论证，不能只靠看
+初中    由已知推出未知               ← 本页  一步一理由的推理链
+   ↓ 推理链装进命题的框架
+初中    命题与证明                   已知、求证、证明的完整格式
+   ↓ 证明对象从几何扩展到代数与函数
+高中    演绎推理与证明               综合证明能力系统化
+</code></pre>
+<p>这一级的关键变化是<strong>理由的来源被锁死</strong>：小学说理可以诉诸直观（「你看这样摆就明白了」），初中开始，只有定义、公理、定理有资格当理由。直观降级为启发，不再有证明资格。</p>
+<h2>5 教材里怎么放</h2>
+<p>人教版初中数学的演绎推理有明确的教学设计：七年级先用「说理」过渡（为什么 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mo>=</mo><mi>b</mi><mo>+</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">a+b=b+a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">a</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7778em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">b</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">a</span></span></span></span> 要论证），八年级上册「三角形」与「全等三角形」正式引入证明的格式与几何语言，八年级下册起扩展到四边形。教材特意在引入证明前安排了一章讲「为什么要证明」——用几个反直觉的例子（视觉错觉图、假命题）让学生先承认直观不可靠，再学推理。</p>
+<p>编排用意：先动摇「眼见为实」，再立「推理为据」。顺序颠倒的话，学生会觉得证明是多此一举。</p>
+<h2>6 自测</h2>
+<ul>
+<li>写出「对顶角相等」的证明，标注每一步的依据。</li>
+<li>归纳和演绎各举一个你自己解题中的例子。</li>
+<li>「任意三角形都是等腰三角形」的假证明错在哪？这说明检查证明时要额外注意什么？</li>
+<li>为什么初中教材要先讲「为什么要证明」再教证明？</li>
+<li>你觉得「每一步都写理由」是负担还是帮助？</li>
+</ul>
+</div>   </div> <aside class="lg:border-l lg:border-[var(--color-rule)] lg:pl-6"> <section> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">螺旋</h2> <p class="mt-1 text-[11px] text-[var(--color-ink-faint)]">同一概念的其他学段</p> <ol class="mt-3 space-y-1">  <li class="flex items-center gap-2 rounded bg-[var(--color-ink)] px-2 py-1.5 text-[11.5px] text-white"> <span class="tnum w-3 text-white/40">5</span> <span>由已知推出未知</span> </li> <li> <a href="/unit/deduction@high/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 6 </span> <span>演绎推理与证明</span> </a> </li>  </ol> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">前置</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/pattern@primary-low/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 找规律：重复与递增 </a> </li> </ul> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">解锁</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/counterexample@middle/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 一个反例就够 </a> </li><li> <a href="/unit/deduction@high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 演绎推理与证明 </a> </li> </ul> </section> </aside> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>

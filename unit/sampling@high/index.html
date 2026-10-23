@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>简单随机抽样与分层抽样 — Math Atlas</title><meta name="description" content="抽样方法 · 高中 · 理解"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <nav class="pt-8 text-[11.5px] text-[var(--color-ink-faint)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <span class="mx-1.5">/</span> <a href="/branch/statistics-probability/" class="hover:text-[var(--color-ink)]">抽样方法</a> <span class="mx-1.5">/</span> <span>高中</span> </nav> <article class="grid gap-10 pt-4 pb-10 lg:grid-cols-[minmax(0,1fr)_228px]"> <div class="min-w-0"> <header> <div class="flex flex-wrap items-center gap-2 text-[11px]"> <span class="rounded px-1.5 py-0.5" style="background:#dcfce7;color:#166534"> 完整 </span> <span class="text-[var(--color-ink-faint)]">高中 · 理解</span> </div> <h1 class="serif mt-3 text-[30px] leading-tight font-semibold tracking-tight">简单随机抽样与分层抽样</h1> <p class="mt-2 text-[12.5px] text-[var(--color-ink-soft)]">
+所属概念：<a href="/branch/statistics-probability/" class="underline decoration-[var(--color-rule)] underline-offset-2 hover:decoration-current">抽样方法</a> <span class="text-[var(--color-ink-faint)]"> · 随机抽样 / 分层</span> </p> </header> <div class="prose-atlas mt-8"><h2>1 从「抽到了就行」到「怎么抽有讲究」</h2>
+<p>初中已经知道：样本要公平，抽法要随机。高中把「怎么抽」做成了一门小工艺，两种基本手法：</p>
+<p><strong>简单随机抽样</strong>：总体 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.109em;">N</span></span></span></span> 个，逐个抽，每次每个个体被抽中的机会相等。抽签、随机数表（或计算机随机数）是标准工具。适合总体不大、内部均匀的场景。</p>
+<p><strong>分层抽样</strong>：总体内部有明显的层次（比如男女生比例、三个年级），先按比例把总体切成层，<strong>每层内部再随机抽</strong>。总体 1000 人中男女 6:4，抽 100 人就抽男生 60、女生 40。</p>
+<p>两种手法回答同一个问题：<strong>怎么让样本成为总体的忠实缩影</strong>。</p>
+<h2>2 为什么不嫌麻烦，非要分层</h2>
+<p>简单随机抽样在总体不均匀时可能「抽偏」——不是作弊的偏，是随机的运气偏：100 人里随机抽，可能抽到 70 个男生（真实比例 60%）。样本小的时候，这种运气偏相当常见。</p>
+<p>分层抽样的思路是：<strong>已知的结构不留给运气</strong>。既然知道男女是 6:4，就把它固定进抽样方案，随机性只留给层内。好处有两个：</p>
+<ul>
+<li>样本结构与总体结构一致，估计更稳</li>
+<li>还能<strong>分层次报告</strong>——男生的平均、女生的平均各自能算，简单随机抽样常常分不出足够的人</li>
+</ul>
+<p>代价是必须<strong>事先知道层</strong>、且能拿到每个层的名单。信息不够时，分层无从做起。</p>
+<h2>3 与直觉的冲突：「随机抽」不会偏向任何人，所以一定准</h2>
+<p>错误直觉的完整形态：<strong>抽样方法是公平的，所以样本一定像总体</strong>。用一个数字实验拆它：</p>
+<blockquote>
+<p>全体 10000 人分两派，比例 9:1。简单随机抽 20 人：抽到「少数派」不足 1 人的概率有多大？按二项分布算 $P(X=0)\approx 0.12$、$P(X=1)\approx 0.27$——<strong>约 39% 的可能，20 人里少数派最多 1 人</strong>，据此估比例会得出 5% 甚至 0%，而真值是 10%。</p>
+</blockquote>
+<p>抽样完全公平，结论却可能错得很远。原因有两层：</p>
+<ul>
+<li><strong>随机的运气</strong>：样本小时，比例天然波动。这不是方法的错，是「样本必然带噪声」——样本量与精度的关系，大学统计推断会给出公式</li>
+<li><strong>方法的边界</strong>：简单随机抽样对总体结构一无所知，结构信息全靠样本量去「买」。分层抽样等于<strong>白送</strong>了一部分结构信息，同样的样本量精度更高</li>
+</ul>
+<p>直觉为什么把「公平」听成「准」？因为「每个人机会均等」的描述给人一种「结果必然中肯」的错觉。但机会均等保证的是<strong>长期、大量抽样下的无偏</strong>——<strong>单次小样本仍然可能离谱</strong>。这与频率逼近概率是同一条规律：公平性管「平均行为」，样本量管「单次波动」。</p>
+<p>所以评估一个调查，正确的问法是两问，不是一个数：<strong>抽法公平吗（方法的质）？样本够大吗（量的底气）？</strong> 两问都过关，数字才值得信。</p>
+<h2>4 与后一个学段的螺旋关系</h2>
+<p><strong>依赖链</strong>：初中「抽样与全面调查」→ 初中「频数分布直方图」→ 本单元「简单随机抽样与分层抽样」→ 高中「两个变量的相关性」→ 大学「统计推断」。</p>
+<pre><code>初中    抽样与全面调查                  普查与抽样之分，公平性初识
+   ↓ 学会看样本「长什么样」
+初中    频数分布直方图                  样本数据的分布呈现
+   ↓ 抽法工艺化：均匀抽与按层抽
+高中    简单随机抽样与分层抽样          ← 本页  抽签/随机数与按比例分层
+   ↓ 样本用于研究两个变量的关系
+高中    两个变量的相关性                散点图与相关：抽样数据的深化利用
+   ↓ 「单次抽样有多不可靠」被量化
+大学    统计推断                        抽样分布、误差的精确刻画
+</code></pre>
+<p>本单元在链条上是「工艺」环节：初中立观念（公平），高中立工艺（抽法），大学立理论（误差几何）。三层叠起来，「用样本说话」才真正站得住。</p>
+<h2>5 教材里怎么放</h2>
+<p>人教版高中必修的统计章安排简单随机抽样（抽签法、随机数法）、分层抽样及系统抽样的介绍，配套「用样本的频率分布估计总体」「用样本的数字特征估计总体」。</p>
+<p>教材把抽样放在估计之前，用意直白：<strong>估计的合法性来自抽样的正当性</strong>——没有好样本，后面的估计全是空中楼阁。</p>
+<h2>6 自测</h2>
+<ul>
+<li>总体 500 人（甲类 200、乙类 300），抽 50 人，分层抽样各层抽几人？</li>
+<li>用随机数法从 300 人抽 10 人，写出操作步骤。</li>
+<li>简单随机抽样 20 人估比例，为什么可能错得很远而方法没有错？</li>
+<li>什么条件下值得用分层抽样而不是简单随机抽样？代价是什么？</li>
+<li>你觉得网络投票最大的抽样缺陷是什么，怎么补救？</li>
+</ul>
+</div>   </div> <aside class="lg:border-l lg:border-[var(--color-rule)] lg:pl-6"> <section> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">螺旋</h2> <p class="mt-1 text-[11px] text-[var(--color-ink-faint)]">同一概念的其他学段</p> <ol class="mt-3 space-y-1">  <li class="flex items-center gap-2 rounded bg-[var(--color-ink)] px-2 py-1.5 text-[11.5px] text-white"> <span class="tnum w-3 text-white/40">6</span> <span>简单随机抽样与分层抽样</span> </li>  <li class="px-2 py-1.5 text-[11px] text-[var(--color-ink-faint)]">
+这个概念只在此学段出现
+</li> </ol> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">前置</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/data-collection@middle/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 抽样与全面调查 </a> </li><li> <a href="/unit/data-display@middle/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 频数分布直方图 </a> </li> </ul> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">解锁</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/statistical-inference@university/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 参数估计与假设检验 </a> </li> </ul> </section> </aside> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>

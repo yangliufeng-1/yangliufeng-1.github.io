@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>一次函数 — Math Atlas</title><meta name="description" content="函数 · 初中 · 应用"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <nav class="pt-8 text-[11.5px] text-[var(--color-ink-faint)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <span class="mx-1.5">/</span> <a href="/branch/number-algebra/" class="hover:text-[var(--color-ink)]">函数</a> <span class="mx-1.5">/</span> <span>初中</span> </nav> <article class="grid gap-10 pt-4 pb-10 lg:grid-cols-[minmax(0,1fr)_228px]"> <div class="min-w-0"> <header> <div class="flex flex-wrap items-center gap-2 text-[11px]"> <span class="rounded px-1.5 py-0.5" style="background:#dcfce7;color:#166534"> 完整 </span> <span class="text-[var(--color-ink-faint)]">初中 · 应用</span> </div> <h1 class="serif mt-3 text-[30px] leading-tight font-semibold tracking-tight">一次函数</h1> <p class="mt-2 text-[12.5px] text-[var(--color-ink-soft)]">
+所属概念：<a href="/branch/number-algebra/" class="underline decoration-[var(--color-rule)] underline-offset-2 hover:decoration-current">函数</a> <span class="text-[var(--color-ink-faint)]"> · 斜率 / 截距 / 变化率</span> </p> </header> <div class="prose-atlas mt-8"><h2>1 从方程到函数：主角变了</h2>
+<p>七年级学一元一次方程 <code>2x + 1 = 7</code>，问的是「x 是多少」——<strong>未知数是一个待抓的逃犯</strong>。</p>
+<p>八年级的 <code>y = 2x + 1</code> 长得几乎一模一样，但问题变了：<strong>x 不再是逃犯，而是自变量；
+我们要看的是「x 怎么动，y 跟着怎么动」</strong>。</p>
+<blockquote>
+<p>这是整个中学数学最重要的一次视角切换：从「求解一个值」到「研究一种关系」。
+方程是函数的一个切片（把 y 固定成某个值）。</p>
+</blockquote>
+<h2>2 k 和 b 各自在管什么</h2>
+<p><code>&lt;Demo id=&quot;function-grapher&quot; preset=&quot;linear-kb&quot; /&gt;</code></p>
+<p>拖动两个滑块，把 k 和 b 分别推到两端，观察：</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>改变它，图像怎么变</th>
+<th>数学含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>b</code> 增大</td>
+<td>整条直线<strong>平移</strong>向上</td>
+<td>截距，<code>x=0</code> 时的起点</td>
+</tr>
+<tr>
+<td><code>k</code> 增大</td>
+<td>直线<strong>变陡</strong>（或翻转方向）</td>
+<td>斜率，每走一步 y 变多少</td>
+</tr>
+<tr>
+<td><code>k</code> 变负</td>
+<td>直线从上往下走</td>
+<td>增函数变减函数</td>
+</tr>
+</tbody></table>
+<p>关键观察：<strong>b 管位置，k 管方向与陡峭程度，两者互不干扰。</strong>
+这种「参数各管一件事」的正交性，是后面学二次函数 <code>a</code>、<code>b</code>、<code>c</code> 时唯一的指望——
+二次函数的三参数互相纠缠，正因为它失去了这种正交性，才那么难。</p>
+<h2>3 斜率就是「变化率」</h2>
+<p><code>k = 2</code> 不是「陡一点」，它的精确含义是：<strong>x 每增加 1，y 增加 2。</strong></p>
+<p>这个说法在物理里是速度，在经济里是边际成本，在九年级会变成「一次函数的实际应用」。
+更重要的是，<strong>它正是高中导数的雏形</strong>——导数就是「当 Δx 小到看不见时的 k」。</p>
+<pre><code>初中    k = 恒定变化率
+   ↓ 函数的一般性质
+高中    Δx 趋于 0
+   ↓ k 变成瞬时变化率
+高中    导数
+</code></pre>
+<p>这条链是「螺旋」最漂亮的一例：<strong>同一个词（变化率），在三个学段被重新定义三次，每次更精确。</strong></p>
+<h2>4 一个必须现在解决的混淆</h2>
+<p>学生常把「函数图像经过某点」和「方程的解」混为一谈。用一个具体场景压清楚：</p>
+<blockquote>
+<p>某出租车起步价 10 元，每公里 2 元。写出费用 y 与里程 x 的关系。</p>
+</blockquote>
+<ul>
+<li>问「坐 5 公里多少钱」→ 代入求值，是<strong>函数</strong>问题。</li>
+<li>问「多少钱能坐 8 公里」→ 已知 y 求 x，是<strong>方程</strong>问题。</li>
+<li>问「什么情况下两种计价方式一样贵」→ 两个函数相等，是<strong>方程组</strong>问题。</li>
+</ul>
+<p>三问用的是同一个式子，但问的是不同的事。<strong>分清「求值 / 求解 / 比较」，
+比记住公式重要得多。</strong></p>
+<h2>5 对应教材</h2>
+<p>人教版八年级下册 §19。教材以「变量与函数」开篇，先讲概念再讲一次函数，
+顺序是正确的：先有「两个变量之间存在对应关系」的意识，再研究最简单的那个关系。</p>
+<h2>6 自测</h2>
+<ul>
+<li><code>y = -3x + 2</code>，x 从 1 增到 2，y 变化了多少？</li>
+<li>若两条直线平行，它们的 k 和 b 分别有什么关系？</li>
+<li>一次函数的 k 恒定，那么高中要研究的「k 不恒定」的曲线，该怎么描述它的陡峭程度？</li>
+</ul>
+</div> <section class="mt-6"> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();</script><script>(()=>{var A=Object.defineProperty;var g=(i,o,a)=>o in i?A(i,o,{enumerable:!0,configurable:!0,writable:!0,value:a}):i[o]=a;var d=(i,o,a)=>g(i,typeof o!="symbol"?o+"":o,a);{let i={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>1/0*t},o=t=>{let[l,e]=t;return l in i?i[l](e):void 0},a=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([l,e])=>[l,o(e)]));class y extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let c=this.querySelectorAll("astro-slot"),n={},h=this.querySelectorAll("template[data-astro-template]");for(let r of h){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of c){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("name")||"default"]=r.innerHTML)}let p;try{p=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(s+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}let u;await this.hydrator(this)(this.Component,p,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),c.disconnect(),this.childrenConnectedCallback()},c=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});c.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),c=this.getAttribute("client");if(Astro[c]===void 0){window.addEventListener(`astro:${c}`,()=>this.start(),{once:!0});return}try{await Astro[c](async()=>{let n=this.getAttribute("renderer-url"),[h,{default:p}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),u=this.getAttribute("component-export")||"default";if(!u.includes("."))this.Component=h[u];else{this.Component=h;for(let f of u.split("."))this.Component=this.Component[f]}return this.hydrator=p,this.hydrate},e,this)}catch(n){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,n)}}attributeChangedCallback(){this.hydrate()}}d(y,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",y)}})();</script><astro-island uid="1uggIb" prefix="r1" component-url="/_astro/GraphDemo.BwRBbAFj.js" component-export="default" renderer-url="/_astro/client.Cbh9-_KQ.js" props="{&quot;id&quot;:[0,&quot;function-grapher&quot;],&quot;preset&quot;:[0,&quot;linear-kb&quot;],&quot;params&quot;:[0,{&quot;family&quot;:[0,&quot;linear&quot;],&quot;a&quot;:[0,2],&quot;b&quot;:[0,1],&quot;label&quot;:[0,&quot;y = kx + b —— 拖动 a 改变斜率（陡峭程度），拖动 b 改变截距（起点位置）。&quot;]}],&quot;fallbackNote&quot;:[0,&quot;组件 function-grapher 尚未实现&quot;]}" ssr client="load" opts="{&quot;name&quot;:&quot;GraphDemo&quot;,&quot;value&quot;:true}" await-children><div class="my-7 overflow-hidden rounded-lg border border-[var(--color-rule)] bg-[var(--color-paper-card)]"><div class="flex items-center justify-between border-b border-[var(--color-rule)] px-3.5 py-2"><span class="text-[11px] font-medium tracking-[0.04em] text-[var(--color-ink-soft)]">交互演示</span><code class="text-[10.5px] text-[var(--color-ink-faint)]">function-grapher<!-- --> · linear-kb</code></div><div class="p-3.5"><!--$?--><template id="r1B:0"></template><p class="py-6 text-center text-[12px] text-[var(--color-ink-faint)]">正在加载交互组件…</p><!--/$--></div></div><script>requestAnimationFrame(function(){$RT=performance.now()});</script><div hidden id="r1S:0"><div class="space-y-2" style="max-width:620px"><div class="MafsView" style="width:100%;height:340px" tabindex="-1"></div><div class="grid grid-cols-2 gap-x-4 gap-y-1"><label class="flex items-center gap-2"><span class="w-3 text-[11px] text-[var(--color-ink-faint)]">a</span><input type="range" min="-3" max="3" step="0.1" class="h-1 flex-1 accent-[#7c3aed]" value="2"/><span class="tnum w-10 text-right text-[11px]">2.0</span></label><label class="flex items-center gap-2"><span class="w-3 text-[11px] text-[var(--color-ink-faint)]">b</span><input type="range" min="-5" max="5" step="0.5" class="h-1 flex-1 accent-[#7c3aed]" value="1"/><span class="tnum w-10 text-right text-[11px]">1.0</span></label></div><p class="text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]">y = kx + b —— 拖动 a 改变斜率（陡峭程度），拖动 b 改变截距（起点位置）。</p></div></div><script>$RB=[];$RV=function(a){$RT=performance.now();for(var b=0;b<a.length;b+=2){var c=a[b],e=a[b+1];null!==e.parentNode&&e.parentNode.removeChild(e);var f=c.parentNode;if(f){var g=c.previousSibling,h=0;do{if(c&&8===c.nodeType){var d=c.data;if("/$"===d||"/&"===d)if(0===h)break;else h--;else"$"!==d&&"$?"!==d&&"$~"!==d&&"$!"!==d&&"&"!==d||h++}d=c.nextSibling;f.removeChild(c);c=d}while(c);for(;e.firstChild;)f.insertBefore(e.firstChild,c);g.data="$";g._reactRetry&&requestAnimationFrame(g._reactRetry)}}a.length=0};
+$RC=function(a,b){if(b=document.getElementById(b))(a=document.getElementById(a))?(a.previousSibling.data="$~",$RB.push(a,b),2===$RB.length&&("number"!==typeof $RT?requestAnimationFrame($RV.bind(null,$RB)):(a=performance.now(),setTimeout($RV.bind(null,$RB),2300>a&&2E3<a?2300-a:$RT+300-a)))):b.parentNode.removeChild(b)};$RC("r1B:0","r1S:0")</script><!--astro:end--></astro-island> <p class="text-[11px] leading-relaxed text-[var(--color-ink-faint)]">
+演示组件按 preset 参数复用：同一组件在不同学段以不同参数出现，这正是「螺旋」在软件上的表达。
+</p> </section> <section class="mt-8"> <h2 class="text-[13px] font-semibold tracking-[0.06em]">对应教材</h2> <ul class="mt-3 space-y-1.5 text-[12px] text-[var(--color-ink-soft)]"> <li> 人教版 · 八年级下册 · §19 一次函数 </li> </ul> <p class="mt-2 text-[11px] text-[var(--color-ink-faint)]">只记录指向，不托管教材原文。</p> </section> </div> <aside class="lg:border-l lg:border-[var(--color-rule)] lg:pl-6"> <section> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">螺旋</h2> <p class="mt-1 text-[11px] text-[var(--color-ink-faint)]">同一概念的其他学段</p> <ol class="mt-3 space-y-1">  <li class="flex items-center gap-2 rounded bg-[var(--color-ink)] px-2 py-1.5 text-[11.5px] text-white"> <span class="tnum w-3 text-white/40">5</span> <span>一次函数</span> </li> <li> <a href="/unit/function@high/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 6 </span> <span>函数概念与基本初等函数</span> </a> </li><li> <a href="/unit/function@university/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 7 </span> <span>多元函数</span> </a> </li>  </ol> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">前置</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/equation@middle/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 一元一次方程 </a> </li><li> <a href="/unit/coordinate@middle/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 平面直角坐标系 </a> </li><li> <a href="/unit/inequality@middle/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 一元一次不等式 </a> </li> </ul> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">解锁</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/function@high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 函数概念与基本初等函数 </a> </li> </ul> </section> </aside> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>

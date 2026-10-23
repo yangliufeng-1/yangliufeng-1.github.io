@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>相似三角形 — Math Atlas</title><meta name="description" content="全等与相似 · 初中 · 分析"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <nav class="pt-8 text-[11.5px] text-[var(--color-ink-faint)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <span class="mx-1.5">/</span> <a href="/branch/geometry/" class="hover:text-[var(--color-ink)]">全等与相似</a> <span class="mx-1.5">/</span> <span>初中</span> </nav> <article class="grid gap-10 pt-4 pb-10 lg:grid-cols-[minmax(0,1fr)_228px]"> <div class="min-w-0"> <header> <div class="flex flex-wrap items-center gap-2 text-[11px]"> <span class="rounded px-1.5 py-0.5" style="background:#dcfce7;color:#166534"> 完整 </span> <span class="text-[var(--color-ink-faint)]">初中 · 分析</span> </div> <h1 class="serif mt-3 text-[30px] leading-tight font-semibold tracking-tight">相似三角形</h1> <p class="mt-2 text-[12.5px] text-[var(--color-ink-soft)]">
+所属概念：<a href="/branch/geometry/" class="underline decoration-[var(--color-rule)] underline-offset-2 hover:decoration-current">全等与相似</a> <span class="text-[var(--color-ink-faint)]"> · 相似比</span> </p> </header> <div class="prose-atlas mt-8"><h2>1 同一个形状，换个大小</h2>
+<p>两张照片，一张是另一张放大两倍，形状一模一样，大小不同。
+它们不「全等」，但「相似」。</p>
+<p>全等是「完全相同」，相似只要求<strong>形状相同、大小可以不同</strong>。
+这个放宽看起来很小，却让几何从「比较」走到了「按比例计算」。</p>
+<h2>2 相似的判据</h2>
+<table>
+<thead>
+<tr>
+<th>判据</th>
+<th>条件</th>
+<th>为什么够</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>AA</td>
+<td>两个角分别相等</td>
+<td>内角和固定，第三个角自动相等</td>
+</tr>
+<tr>
+<td>SAS</td>
+<td>两边成比例，夹角相等</td>
+<td>角度定了，形状就定了</td>
+</tr>
+<tr>
+<td>SSS</td>
+<td>三边成比例</td>
+<td>形状由边长比决定</td>
+</tr>
+</tbody></table>
+<p>相似比记作 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span></span></span></span>。有了它，一切都能换：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>对应边之比</mtext><mo>=</mo><mi>k</mi><mo separator="true">,</mo><mspace width="1em"/><mfrac><msub><mtext>面积</mtext><mn>1</mn></msub><msub><mtext>面积</mtext><mn>2</mn></msub></mfrac><mo>=</mo><msup><mi>k</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\text{对应边之比} = k,\quad \frac{\text{面积}_1}{\text{面积}_2} = k^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord text"><span class="mord cjk_fallback">对应边之比</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.1963em;vertical-align:-0.836em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mpunct">,</span><span class="mspace" style="margin-right:1em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord text"><span class="mord cjk_fallback">面积</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord text"><span class="mord cjk_fallback">面积</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.836em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8641em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p><strong>面积比是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>k</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">k^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span>，不是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span></span></span></span>。</strong> 这是本单元最重要的一个式子。</p>
+<h2>3 与直觉的冲突：边长放大 2 倍，面积不是 2 倍</h2>
+<p><strong>反例一：地图上的 1 厘米。</strong></p>
+<p>一张比例尺为 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>:</mo><mn>100</mn></mrow><annotation encoding="application/x-tex">1:100</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">100</span></span></span></span> 的地图。图上量出一条边长 1 厘米，实际是 100 厘米。</p>
+<p>那么一块图上是 1 平方厘米的区域呢？实际是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>100</mn><mn>2</mn></msup><mo>=</mo><mn>10000</mn></mrow><annotation encoding="application/x-tex">100^2 = 10000</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8141em;"></span><span class="mord">10</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">10000</span></span></span></span> 平方厘米，也就是 1 平方米。</p>
+<p><strong>长度按比例放大 100 倍，面积就放大 10000 倍。</strong> 很多人在地图上估面积时会犯这个错。</p>
+<p><strong>反例二：「形状一样」不等于「大小一样」，也不等于「边一样长」。</strong></p>
+<p>一个边长为 3、4、5 的直角三角形，和一个边长 6、8、10 的直角三角形，相似但不全等。
+如果题目只给「相似」，就不能假定对应边相等。</p>
+<p><strong>反例三：相似三角形的高、中线、角平分线比，都等于相似比。</strong></p>
+<p>但<strong>面积比等于相似比的平方</strong>。这张表可以背，但更好的理解是：
+<strong>长度是一维的，面积是二维的。</strong> 一维的东西乘 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span></span></span></span>，二维的东西乘 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>×</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">k\times k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7778em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span></span></span></span>。</p>
+<p><strong>反例四：相似三角形不一定「摆得一样」。</strong></p>
+<p>两个相似的三角形可能一个正着、一个转了几十度，甚至一个被翻了面。
+判断相似要看角和边的对应关系，不能看图画得齐不齐。</p>
+<blockquote>
+<p>相似的核心不是「看起来一样」，而是**「对应元素成比例」**。</p>
+</blockquote>
+<h2>4 与前一个学段的螺旋关系</h2>
+<p><strong>依赖链</strong>：初中「三角形的性质与全等」→ 本单元「相似三角形」→ 初中「锐角三角比」→ 高中「解三角形」。</p>
+<pre><code>小学高  按角分、按边分                三角形分成几类
+   ↓ 什么条件下两个三角形完全相同
+初中    全等三角形（SSS、SAS、ASA）    大小和形状都要一样
+   ↓ 放宽：形状一样，大小可以不同
+初中    相似三角形，相似比 k       ← 本页  对应边成比例
+   ↓ 固定一个角，研究边的比
+初中    锐角三角比 sin、cos、tan        边比只与角有关
+   ↓ 推广到任意三角形
+高中    解三角形（正弦、余弦定理）       边与角的定量关系
+</code></pre>
+<p>第 4 步是这条链最漂亮的一处：<strong>三角比之所以能定义，正是因为「相似的直角三角形边比相同」。</strong>
+没有相似，就没有 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mn>30</mn><mi mathvariant="normal">°</mi></mrow><annotation encoding="application/x-tex">\sin 30°</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mop">sin</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">30°</span></span></span></span> 这个固定的数。</p>
+<h2>5 教材里怎么放</h2>
+<p>人教版九年级下册第二十七章「相似」。</p>
+<p>教材的顺序是：图形的相似 → 相似三角形的判定 → 相似三角形的性质 →
+相似三角形应用举例 → 位似。</p>
+<p><strong>判定放在性质之前</strong>，因为先要会识别，才能谈性质。</p>
+<p>教材特别重视「应用举例」：测树高、测河宽，都是用相似把「够不着的长度」变成「量得到的长度」。
+这是初中几何第一次明确地「在现实世界中使用」。</p>
+<p>教材在这一章末尾还有「位似」，它是相似的加强版：不仅形状相同，
+对应点的连线还都交于一点。这为后面「用坐标表示相似」做了准备。</p>
+<h2>6 自测</h2>
+<ul>
+<li>两个相似三角形的相似比是 3，它们的周长比和面积比分别是多少？</li>
+<li>一张 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>:</mo><mn>500</mn></mrow><annotation encoding="application/x-tex">1:500</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">500</span></span></span></span> 的图纸上，一个图形面积是 4 平方厘米，实际面积是多少平方米？</li>
+<li>两个三角形有两个角分别相等，它们相似吗？为什么？</li>
+<li>相似三角形的高之比等于相似比，为什么面积之比是相似比的平方？</li>
+<li>你觉得为什么古代人能用一根木棍测出金字塔的高度？</li>
+</ul>
+</div>  <section class="mt-8"> <h2 class="text-[13px] font-semibold tracking-[0.06em]">对应教材</h2> <ul class="mt-3 space-y-1.5 text-[12px] text-[var(--color-ink-soft)]"> <li> 人教版 · 九年级下册 · §27 相似 </li> </ul> <p class="mt-2 text-[11px] text-[var(--color-ink-faint)]">只记录指向，不托管教材原文。</p> </section> </div> <aside class="lg:border-l lg:border-[var(--color-rule)] lg:pl-6"> <section> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">螺旋</h2> <p class="mt-1 text-[11px] text-[var(--color-ink-faint)]">同一概念的其他学段</p> <ol class="mt-3 space-y-1">  <li class="flex items-center gap-2 rounded bg-[var(--color-ink)] px-2 py-1.5 text-[11.5px] text-white"> <span class="tnum w-3 text-white/40">5</span> <span>相似三角形</span> </li>  <li class="px-2 py-1.5 text-[11px] text-[var(--color-ink-faint)]">
+这个概念只在此学段出现
+</li> </ol> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">前置</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/triangle@middle/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 三角形的性质与全等 </a> </li> </ul> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">解锁</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/trig-ratio@middle/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 正弦余弦正切 </a> </li><li> <a href="/unit/circle@middle/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 圆的性质与切线 </a> </li><li> <a href="/unit/spatial-vector@high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 用向量处理立体几何 </a> </li> </ul> </section> </aside> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>

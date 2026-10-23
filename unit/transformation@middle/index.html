@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>平移、旋转与轴对称 — Math Atlas</title><meta name="description" content="图形变换 · 初中 · 理解"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <nav class="pt-8 text-[11.5px] text-[var(--color-ink-faint)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <span class="mx-1.5">/</span> <a href="/branch/geometry/" class="hover:text-[var(--color-ink)]">图形变换</a> <span class="mx-1.5">/</span> <span>初中</span> </nav> <article class="grid gap-10 pt-4 pb-10 lg:grid-cols-[minmax(0,1fr)_228px]"> <div class="min-w-0"> <header> <div class="flex flex-wrap items-center gap-2 text-[11px]"> <span class="rounded px-1.5 py-0.5" style="background:#dcfce7;color:#166534"> 完整 </span> <span class="text-[var(--color-ink-faint)]">初中 · 理解</span> </div> <h1 class="serif mt-3 text-[30px] leading-tight font-semibold tracking-tight">平移、旋转与轴对称</h1> <p class="mt-2 text-[12.5px] text-[var(--color-ink-soft)]">
+所属概念：<a href="/branch/geometry/" class="underline decoration-[var(--color-rule)] underline-offset-2 hover:decoration-current">图形变换</a> <span class="text-[var(--color-ink-faint)]"> · 对称 / 旋转</span> </p> </header> <div class="prose-atlas mt-8"><h2>1 三种动作，一套语言</h2>
+<p>小学里这三种变换都是「动手玩」：推一推、转一转、折一折。</p>
+<p>初中要把它们变成严格的数学对象：给每种变换定一个规矩——
+<strong>图形上每一个点，按什么规则变到新的位置。</strong></p>
+<table>
+<thead>
+<tr>
+<th>变换</th>
+<th>规则</th>
+<th>需要说清的参数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>平移</td>
+<td>每个点沿同一方向移动同样距离</td>
+<td>方向 + 距离</td>
+</tr>
+<tr>
+<td>旋转</td>
+<td>每个点绕同一个中心转同样的角</td>
+<td>中心 + 角度 + 方向</td>
+</tr>
+<tr>
+<td>轴对称</td>
+<td>每个点沿垂线翻到直线另一侧，距离相等</td>
+<td>对称轴</td>
+</tr>
+</tbody></table>
+<p>「每个点都按同一条规则变」是单元地基。某一部分的点不听规则，图形就变形了，那不算变换。</p>
+<h2>2 变换之后，什么变了，什么没变</h2>
+<table>
+<thead>
+<tr>
+<th>量</th>
+<th>平移</th>
+<th>旋转</th>
+<th>轴对称</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>形状、大小、角</td>
+<td>不变</td>
+<td>不变</td>
+<td>不变</td>
+</tr>
+<tr>
+<td>朝向</td>
+<td>不变</td>
+<td>不变</td>
+<td><strong>反转</strong></td>
+</tr>
+<tr>
+<td>对应点连线</td>
+<td>平行且相等</td>
+<td>交于中心</td>
+<td>被对称轴垂直平分</td>
+</tr>
+</tbody></table>
+<p><strong>只有轴对称会翻转朝向。</strong> 把一只左手套翻折一次，得到的仍是左手套，
+但它的「旋向」变了——怎么平移、旋转，都变不成右手套。</p>
+<h2>3 与直觉的冲突：变换的顺序会改变结果</h2>
+<p><strong>反例一：先平移再旋转，与先旋转再平移，结果不同。</strong></p>
+<p>拿一个不在原点的小图形，向右平移 3 格，再绕原点旋转 90°。
+换成先旋转再平移，图形会落在完全不同的位置。<strong>平移改变旋转中心到图形的距离，旋转改变平移的方向。</strong></p>
+<p><strong>反例二：两次轴对称，可能等于一次平移。</strong></p>
+<p>两条平行的对称轴，翻折两次等价于一次平移；两条相交的轴，等价于一次旋转
+（转角是轴夹角的 2 倍）。<strong>「翻折」竟能拼出「平移」和「旋转」。</strong></p>
+<p><strong>反例三：变换不是「图形在动」，而是「每个点换了个位置」。</strong></p>
+<p>严格地说，是每个点按同一规则找到新位置。「整体搬过去」只是它的外观。
+这个视角的切换，在高中会变成「映射」。</p>
+<blockquote>
+<p>变换研究的不是「怎么动」，而是**「动完之后，哪些关系还成立」**。
+这个问题在高中有了专门的名字：不变量。</p>
+</blockquote>
+<h2>4 与前后学段的螺旋关系</h2>
+<p><strong>依赖链</strong>：小学低「平移与旋转的直观」→ 初中「平面直角坐标系」→ 本单元「平移、旋转与轴对称」→ 高中「变换与不变量」。</p>
+<pre><code>小学低  推一推、转一转、折一折          动是看得见的动作
+   ↓ 把图形放到方格纸上，用坐标定位
+初中    平面直角坐标系                    每个点有一对数
+   ↓ 给三种变换定下「每个点怎么变」的规则
+初中    平移、旋转与轴对称          ← 本页  变换 = 点上的一一对应
+   ↓ 找出变换中保持不变的东西
+高中    变换与不变量                      距离、角度、形状
+   ↓ 把变换写成矩阵
+大学    线性变换与矩阵                    变换成为可以相乘的对象
+</code></pre>
+<p>第三个箭头是本条链的转折：<strong>小学问「变成了什么」，高中问「什么没变」。</strong></p>
+<h2>5 教材里怎么放</h2>
+<p>人教版初中分散在两个年级：</p>
+<ul>
+<li><strong>八年级上册第十三章「轴对称」</strong>：轴对称、画轴对称图形、等腰三角形</li>
+<li><strong>九年级上册第二十三章「旋转」</strong>：旋转、中心对称、关于原点对称的坐标</li>
+</ul>
+<p>教材没有把三种变换合并成一章。轴对称最早讲，因为它最容易用折纸验证，
+并且马上能用来研究等腰三角形；旋转更难，要同时把握「中心」和「角」两个参数。</p>
+<p><strong>平移在七年级下册「相交线与平行线」里就出现过</strong>，被当作平行线的应用。
+到了九年级，三种变换才在学生脑中合并成一类东西。</p>
+<h2>6 自测</h2>
+<ul>
+<li>一个点先向右平移 2 格，再绕原点旋转 90°，和先旋转再平移的结果相同吗？</li>
+<li>两次轴对称（两条轴平行）等价于什么变换？两条轴相交呢？</li>
+<li>为什么轴对称会改变图形的朝向，而平移和旋转不会？</li>
+<li>三角形 ABC 绕某点旋转 60° 得到 A&#39;B&#39;C&#39;，对应点连线有什么共同点？</li>
+<li>你觉得教材为什么把轴对称和旋转分开两年讲？</li>
+</ul>
+</div>  <section class="mt-8"> <h2 class="text-[13px] font-semibold tracking-[0.06em]">对应教材</h2> <ul class="mt-3 space-y-1.5 text-[12px] text-[var(--color-ink-soft)]"> <li> 人教版 · 八年级上册 · §13 轴对称 </li> </ul> <p class="mt-2 text-[11px] text-[var(--color-ink-faint)]">只记录指向，不托管教材原文。</p> </section> </div> <aside class="lg:border-l lg:border-[var(--color-rule)] lg:pl-6"> <section> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">螺旋</h2> <p class="mt-1 text-[11px] text-[var(--color-ink-faint)]">同一概念的其他学段</p> <ol class="mt-3 space-y-1"> <li> <a href="/unit/transformation@primary-low/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 2 </span> <span>平移与旋转的直观</span> </a> </li> <li class="flex items-center gap-2 rounded bg-[var(--color-ink)] px-2 py-1.5 text-[11.5px] text-white"> <span class="tnum w-3 text-white/40">5</span> <span>平移、旋转与轴对称</span> </li> <li> <a href="/unit/transformation@high/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 6 </span> <span>变换与不变量</span> </a> </li>  </ol> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">前置</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/coordinate@middle/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 平面直角坐标系 </a> </li> </ul> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">解锁</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/symmetry@middle/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 中心对称与旋转 </a> </li><li> <a href="/unit/transformation@high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 变换与不变量 </a> </li> </ul> </section> </aside> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>

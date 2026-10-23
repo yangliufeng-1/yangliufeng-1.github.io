@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>定积分的直观意义 — Math Atlas</title><meta name="description" content="积分 · 高中 · 理解"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <nav class="pt-8 text-[11.5px] text-[var(--color-ink-faint)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <span class="mx-1.5">/</span> <a href="/branch/calculus/" class="hover:text-[var(--color-ink)]">积分</a> <span class="mx-1.5">/</span> <span>高中</span> </nav> <article class="grid gap-10 pt-4 pb-10 lg:grid-cols-[minmax(0,1fr)_228px]"> <div class="min-w-0"> <header> <div class="flex flex-wrap items-center gap-2 text-[11px]"> <span class="rounded px-1.5 py-0.5" style="background:#dcfce7;color:#166534"> 完整 </span> <span class="text-[var(--color-ink-faint)]">高中 · 理解</span> </div> <h1 class="serif mt-3 text-[30px] leading-tight font-semibold tracking-tight">定积分的直观意义</h1> <p class="mt-2 text-[12.5px] text-[var(--color-ink-soft)]">
+所属概念：<a href="/branch/calculus/" class="underline decoration-[var(--color-rule)] underline-offset-2 hover:decoration-current">积分</a> <span class="text-[var(--color-ink-faint)]"> · 曲边梯形 / 面积</span> </p> </header> <div class="prose-atlas mt-8"><h2>1 从「求面积」开始</h2>
+<p>小学学长方形面积 = 长 × 宽。初中会算三角形、圆的面积。
+但<strong>曲线下方的面积</strong>怎么算？没有一条公式能套。</p>
+<p>定积分就是解决这个问题的：<strong>用无穷多个细长矩形去逼近。</strong></p>
+<h2>2 逼近的过程</h2>
+<p>把 <code>[a, b]</code> 切成 n 段，每段宽 <code>Δx</code>，高度取该段上函数值：</p>
+<pre><code>S ≈ f(x₁)Δx + f(x₂)Δx + ... + f(xₙ)Δx
+</code></pre>
+<p>n 越大，误差越小。当 n → ∞（且 Δx → 0），这个和的极限就是曲边梯形的面积：</p>
+<pre><code>∫ᵃᵇ f(x) dx = lim  Σ f(xᵢ)Δx
+</code></pre>
+<p>符号 ∫ 是一个拉长的 S（Sum），<code>dx</code> 提醒你这是「宽度趋于 0 的细条」。</p>
+<h2>3 一个反直觉的性质：有向面积</h2>
+<p>定积分算的不是「面积」，是<strong>有向面积</strong>：x 轴上方的部分记正，下方记负。</p>
+<pre><code>∫₀² x dx = 2        （正）
+∫₋₁¹ x dx = 0       （左右抵消）
+</code></pre>
+<p>这解释了为什么奇函数在对称区间上的积分总是 0——正负面积完全相等。</p>
+<p><strong>如果只把积分当面积，这个性质会显得像 bug；把它当「累积量」，它就是合理的。</strong>
+物理上，速度积分得到位移（可正可负），而不是路程。</p>
+<h2>4 与导数的关系：微积分基本定理</h2>
+<p>牛顿-莱布尼茨公式：</p>
+<pre><code>∫ᵃᵇ f(x) dx = F(b) − F(a)     其中 F&#39; = f
+</code></pre>
+<p>它是说：<strong>累积的变化率就是原函数本身。</strong></p>
+<p>一个直观的读法：如果 <code>F(x)</code> 表示「从 a 到 x 累积了多少」，那么再往前挪一点点 dx，
+新增的累积量正好是 <code>f(x)·dx</code>。所以 <code>F&#39;(x) = f(x)</code>。</p>
+<p>这个定理把「求面积」这件难事，变成了「找一个原函数」这件相对简单的事。</p>
+<h2>5 螺旋：高中只要求「算」，大学要求「为什么能算」</h2>
+<pre><code>导数（高中）知道 f&#39; 是什么
+   ↓ 反过来问：谁能求导得到 f？
+定积分（高中，直观）用原函数算面积        ← 本页
+   ↓ 严格化：黎曼和、可积性
+定积分（大学）哪些函数可积？为什么？
+</code></pre>
+<p>高中的关键限制：<strong>只处理连续函数</strong>。大学要面对有间断点的函数，
+要区分「黎曼可积」与「不可积」，还要证明基本定理成立的条件。</p>
+<h2>6 对应教材</h2>
+<p>人教版 A 版选择性必修第二册 §5.6。教材以「曲边梯形面积」和「变速运动的路程」双入口引入，
+随后直接给出牛顿-莱布尼茨公式。<strong>教材没有讲黎曼和的严格定义</strong>，这是刻意的取舍，
+把严格化留给大学。</p>
+<h2>7 自测</h2>
+<ul>
+<li>用矩形逼近估算 <code>∫₀¹ x² dx</code>，取 n = 4，与精确值 <code>1/3</code> 比较。</li>
+<li><code>∫₋₂² x³ dx</code> 等于多少？不用计算，用奇偶性说明。</li>
+<li>如果 <code>F(x) = ∫₀ˣ t² dt</code>，那么 <code>F&#39;(x)</code> 是什么？</li>
+<li>为什么 <code>∫₀¹ 1/x dx</code> 不是有限的？用「细条面积」的直觉解释。</li>
+</ul>
+</div>  <section class="mt-8"> <h2 class="text-[13px] font-semibold tracking-[0.06em]">对应教材</h2> <ul class="mt-3 space-y-1.5 text-[12px] text-[var(--color-ink-soft)]"> <li> 人教版 A 版 · 选择性必修第二册 · §5.6 定积分 </li> </ul> <p class="mt-2 text-[11px] text-[var(--color-ink-faint)]">只记录指向，不托管教材原文。</p> </section> </div> <aside class="lg:border-l lg:border-[var(--color-rule)] lg:pl-6"> <section> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">螺旋</h2> <p class="mt-1 text-[11px] text-[var(--color-ink-faint)]">同一概念的其他学段</p> <ol class="mt-3 space-y-1">  <li class="flex items-center gap-2 rounded bg-[var(--color-ink)] px-2 py-1.5 text-[11.5px] text-white"> <span class="tnum w-3 text-white/40">6</span> <span>定积分的直观意义</span> </li> <li> <a href="/unit/integral@university/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 7 </span> <span>定积分与不定积分</span> </a> </li>  </ol> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">前置</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/derivative@high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 导数及其应用 </a> </li><li> <a href="/unit/differential@high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 微分与线性近似 </a> </li> </ul> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">解锁</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/series@university/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 数项级数与收敛 </a> </li> </ul> </section> </aside> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>

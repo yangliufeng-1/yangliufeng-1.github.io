@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>变化率的再认识 — Math Atlas</title><meta name="description" content="变化率 · 高中 · 理解"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <nav class="pt-8 text-[11.5px] text-[var(--color-ink-faint)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <span class="mx-1.5">/</span> <a href="/branch/calculus/" class="hover:text-[var(--color-ink)]">变化率</a> <span class="mx-1.5">/</span> <span>高中</span> </nav> <article class="grid gap-10 pt-4 pb-10 lg:grid-cols-[minmax(0,1fr)_228px]"> <div class="min-w-0"> <header> <div class="flex flex-wrap items-center gap-2 text-[11px]"> <span class="rounded px-1.5 py-0.5" style="background:#dcfce7;color:#166534"> 完整 </span> <span class="text-[var(--color-ink-faint)]">高中 · 理解</span> </div> <h1 class="serif mt-3 text-[30px] leading-tight font-semibold tracking-tight">变化率的再认识</h1> <p class="mt-2 text-[12.5px] text-[var(--color-ink-soft)]">
+所属概念：<a href="/branch/calculus/" class="underline decoration-[var(--color-rule)] underline-offset-2 hover:decoration-current">变化率</a> <span class="text-[var(--color-ink-faint)]"> · 平均变化率</span> </p> </header> <div class="prose-atlas mt-8"><h2>1 这个概念你早就会了，只是没被这样叫过</h2>
+<p>小学的应用题里有这样一道：</p>
+<blockquote>
+<p>小明 3 小时走了 12 千米，他每小时走多少千米？</p>
+</blockquote>
+<p>答案是 4 千米/小时。你当时叫它「速度」。</p>
+<p>高中把这类问题统一命名：</p>
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>平均变化率</mtext><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>y</mi></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>x</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><msub><mi>y</mi><mn>2</mn></msub><mo>−</mo><msub><mi>y</mi><mn>1</mn></msub></mrow><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub></mrow></mfrac></mrow><annotation encoding="application/x-tex">\text{平均变化率} = \frac{\Delta y}{\Delta x} = \frac{y_2 - y_1}{x_2 - x_1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord text"><span class="mord cjk_fallback">平均变化率</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.0463em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">Δ</span><span class="mord mathnormal">x</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">Δ</span><span class="mord mathnormal" style="margin-right:0.0359em;">y</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.0963em;vertical-align:-0.836em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.2603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.836em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span>
+<p><strong>速度、密度、功率、浓度变化、人口增长率、边际成本</strong>——
+这些词在生活里互不相干，在数学里是同一个东西：
+<strong>一个量相对于另一个量变化的快慢。</strong></p>
+<p>这不是文字游戏。一旦认出它们是同一个东西，
+你在物理课上学到的「速度图像斜率」，就能直接搬到经济学里读「边际收益曲线」。</p>
+<h2>2 与直觉的冲突：平均变化率会骗人</h2>
+<p>一个经典的反例。下表是某人自驾 300 千米的记录：</p>
+<table>
+<thead>
+<tr>
+<th>时刻（h）</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>里程（km）</td>
+<td>0</td>
+<td>80</td>
+<td>100</td>
+<td>250</td>
+<td>300</td>
+</tr>
+</tbody></table>
+<p>整段行程的平均速度是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>300</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo>=</mo><mn>75</mn></mrow><annotation encoding="application/x-tex">300 / 4 = 75</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">300/4</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">75</span></span></span></span> km/h。但看第 2 到第 3 小时：
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>250</mn><mo>−</mo><mn>100</mn><mo stretchy="false">)</mo><mi mathvariant="normal">/</mi><mn>1</mn><mo>=</mo><mn>150</mn></mrow><annotation encoding="application/x-tex">(250-100)/1 = 150</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">250</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">100</span><span class="mclose">)</span><span class="mord">/1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">150</span></span></span></span> km/h。第 1 到第 2 小时只有 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn></mrow><annotation encoding="application/x-tex">20</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">20</span></span></span></span> km/h。</p>
+<p><strong>平均变化率 = 75，却没有一个瞬间真的在跑 75。</strong></p>
+<p>这就是本单元最要紧的一课：</p>
+<blockquote>
+<p>平均变化率描述的是「整段区间」的效果，
+它对区间内部发生的事一无所知。</p>
+</blockquote>
+<p>用一句更狠的话说：<strong>平均变化率会抹掉历史</strong>。
+两个人从北京到天津，都用了 2 小时，平均速度一样——
+一个全程匀速，一个堵了 90 分钟然后飙车。平均变化率分不出他们。</p>
+<h2>3 那把「区间」缩小会怎样</h2>
+<p>如果想知道第 2 小时那个瞬间到底多快，直觉上应该把区间缩短：</p>
+<table>
+<thead>
+<tr>
+<th>区间（h）</th>
+<th>平均速度（km/h）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>[2, 3]</td>
+<td>150</td>
+</tr>
+<tr>
+<td>[2, 2.5]</td>
+<td>180</td>
+</tr>
+<tr>
+<td>[2, 2.1]</td>
+<td>194</td>
+</tr>
+<tr>
+<td>[2, 2.01]</td>
+<td>199.4</td>
+</tr>
+</tbody></table>
+<p>区间越窄，数字越往一个值上贴——这个值才是「第 2 小时那一刻的速度」。</p>
+<p><strong>这件事在高中只能说到这里。</strong> 因为「区间缩到 0」会遇到 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mi mathvariant="normal">/</mi><mn>0</mn></mrow><annotation encoding="application/x-tex">0/0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0/0</span></span></span></span>，
+这不是能靠算术解决的，需要极限。</p>
+<p>所以在图谱里，本单元的下一步不是一个更难的公式，而是一个新工具：
+<code>limit@high</code>（极限）。<strong>极限不是凭空出现的一章，它是为了回答「瞬间变化率是多少」而被造出来的。</strong></p>
+<h2>4 与前后学段的螺旋关系</h2>
+<p><strong>依赖链</strong>：小学「速度/单价」→ 初中「正比例与斜率」→ 本单元「平均变化率」→ 高中「极限与导数」→ 大学「多元与梯度」。</p>
+<pre><code>小学高  单价、速度、工作效率        变化率还没名字，只是「每份是多少」
+   ↓ 搬到坐标系上
+初中    正比例函数 y=kx，k 就是斜率  变化率变成图像上「倾斜的程度」
+   ↓ 从直线走向曲线
+高中    平均变化率 Δy/Δx             ← 本页  任意两点之间，不管中间怎么走
+   ↓ 让两点无限靠近
+高中    导数 = 瞬时变化率            区间塌缩成一个点
+   ↓ 从一个方向走向多个方向
+大学    偏导数、梯度、方向导数      变化率取决于「沿哪个方向走」
+</code></pre>
+<p>这是本项目里第二长的螺旋（5 段）。它长，是因为「变化有多快」这个问题
+本身没法一次问完：先问一段，再问一点，最后问一个方向。</p>
+<h2>5 教材里怎么放</h2>
+<p>人教版高中数学（选择性必修二）把「平均变化率」放在导数一章的开头，
+用<strong>高台跳水</strong>引入：运动员相对水面的高度 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">h(t)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">h</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span> 随时间变化，
+先算 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>t</mi><mo>≤</mo><mn>2.65</mn></mrow><annotation encoding="application/x-tex">0 \le t \le 2.65</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7804em;vertical-align:-0.136em;"></span><span class="mord">0</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">2.65</span></span></span></span> 的平均速度，再不断缩短区间。</p>
+<p>教材这个安排的用意很明确：<strong>先让学生自己感到「平均变化率不够用」</strong>，
+再交出极限这个工具。如果一上来就讲极限的定义，
+学生会觉得这是数学家没事找事。</p>
+<blockquote>
+<p>这也是本项目把 <code>rate-of-change@high</code> 与 <code>limit@high</code> 分成两个 Unit 的原因：
+前者是「问题的提出」，后者是「工具的诞生」。混在一起讲，问题就被工具吃掉了。</p>
+</blockquote>
+<h2>6 自测</h2>
+<ul>
+<li>一辆车 4 小时走 300 km。平均速度是 75 km/h。它有没有可能全程没超过 75 km/h？</li>
+<li>上表中第 1 到第 2 小时的平均速度只有 20 km/h，能说明司机在这段时间里
+「一直在慢慢开」吗？举一种符合数据但不符合这句话的情形。</li>
+<li>为什么「把区间缩到 0」不能直接用 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mi mathvariant="normal">/</mi><mn>0</mn></mrow><annotation encoding="application/x-tex">0/0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0/0</span></span></span></span> 算出来？</li>
+<li>「边际成本」是总成本相对于产量的变化率。如果边际成本在上升，
+平均成本一定在上升吗？（提示：这正是「平均值被历史拖住」的另一种样子）</li>
+</ul>
+</div>   </div> <aside class="lg:border-l lg:border-[var(--color-rule)] lg:pl-6"> <section> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">螺旋</h2> <p class="mt-1 text-[11px] text-[var(--color-ink-faint)]">同一概念的其他学段</p> <ol class="mt-3 space-y-1">  <li class="flex items-center gap-2 rounded bg-[var(--color-ink)] px-2 py-1.5 text-[11.5px] text-white"> <span class="tnum w-3 text-white/40">6</span> <span>变化率的再认识</span> </li>  <li class="px-2 py-1.5 text-[11px] text-[var(--color-ink-faint)]">
+这个概念只在此学段出现
+</li> </ol> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">前置</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/function@high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 函数概念与基本初等函数 </a> </li> </ul> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">解锁</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/limit@high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 极限的直观理解 </a> </li><li> <a href="/unit/derivative@high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 导数及其应用 </a> </li> </ul> </section> </aside> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>频率与概率 — Math Atlas</title><meta name="description" content="概率 · 高中 · 理解"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <nav class="pt-8 text-[11.5px] text-[var(--color-ink-faint)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <span class="mx-1.5">/</span> <a href="/branch/statistics-probability/" class="hover:text-[var(--color-ink)]">概率</a> <span class="mx-1.5">/</span> <span>高中</span> </nav> <article class="grid gap-10 pt-4 pb-10 lg:grid-cols-[minmax(0,1fr)_228px]"> <div class="min-w-0"> <header> <div class="flex flex-wrap items-center gap-2 text-[11px]"> <span class="rounded px-1.5 py-0.5" style="background:#dcfce7;color:#166534"> 完整 </span> <span class="text-[var(--color-ink-faint)]">高中 · 理解</span> </div> <h1 class="serif mt-3 text-[30px] leading-tight font-semibold tracking-tight">频率与概率</h1> <p class="mt-2 text-[12.5px] text-[var(--color-ink-soft)]">
+所属概念：<a href="/branch/statistics-probability/" class="underline decoration-[var(--color-rule)] underline-offset-2 hover:decoration-current">概率</a> <span class="text-[var(--color-ink-faint)]"> · 频率 / 大数</span> </p> </header> <div class="prose-atlas mt-8"><h2>1 把「频率稳定在概率附近」变成定义</h2>
+<p>初中的说法是：试验次数很大时，频率稳定在概率附近。高年级追问一步：<strong>这个「稳定值」到底是什么？它凭什么存在？</strong></p>
+<p>现代概率论的回答是公理化的：给每个事件指派一个 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1</span><span class="mclose">]</span></span></span></span> 之间的数 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(A)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mclose">)</span></span></span></span>，满足三条规则——非负性、规范性（必然事件为 1）、<strong>可加性</strong>（互斥事件的概率可以相加）。满足这三条，它就有资格叫概率。</p>
+<p>频率的稳定值只是概率的<strong>一种解释</strong>（统计解释）：我们相信大量重复下频率逼近概率，但频率本身是波动的、每次不同的；概率是那个想象中的不变目标。<strong>频率是经验的，概率是理论的。</strong></p>
+<h2>2 频率逼近概率：慢、但顽固</h2>
+<p>抛硬币，正面频率的典型轨迹：前 10 次可能 0.7，前 100 次可能 0.55，前 10000 次约 0.503……<strong>它逼近，但慢，且不是直线式逼近</strong>——中途会有长时间的偏离。</p>
+<p>由此得到几个实用判断：</p>
+<ul>
+<li><strong>小样本的频率几乎没有说服力</strong>：10 次里 7 次正面，完全正常</li>
+<li><strong>频率不会因为「已经偏了」而「回来补」</strong>：前 10 次 7 正 3 反，不代表后 10 次会 3 正 7 反；逼近是靠稀释，不是靠偿还</li>
+<li><strong>独立重复是前提</strong>：每次试验不受前面影响，频率才有理由稳定</li>
+</ul>
+<p>第三条正是小学「赌徒谬误」的最终解药：硬币没有账本，<strong>逼近靠大数稀释偏差，不靠补偿</strong>。</p>
+<h2>3 与直觉的冲突：「跑长了总会平衡」的补偿幻觉</h2>
+<p>错误直觉的具体形态：<strong>频率最终会等于概率，所以前段多出的偏差，后段要补回来</strong>。用真实数字拆穿它：</p>
+<blockquote>
+<p>抛 100 次硬币，假设前 100 次出现 60 次正面（频率 0.6，偏差 10 次）。再抛 10000 次，出现了约 5000 次正面。总频率：$\frac{60+5000}{10100}\approx 0.501$。</p>
+</blockquote>
+<p>看起来「平衡了」——但注意，后 10000 次的正面比例约是 0.500，<strong>硬币根本没做任何补偿</strong>；它只是正常发挥，前 100 次的偏差被巨大的分母稀释掉了。</p>
+<p>错误直觉把「频率稳定到概率」理解成「频率会调节自身」。但大数定律的机制恰恰相反：<strong>稳定不是靠后段修正前段，而是靠前段的相对影响越来越小</strong>。60 次多出来的 10 次正面，在 100 次里占 10%，在 10100 次里只占 0.1%——偏差没变，是它的「话语权」变小了。</p>
+<p>这个区别不是咬文嚼字。相信「补偿」的人会得出错误预测：连开 5 次正面后押反面（赌徒谬误）；理解「稀释」的人知道：<strong>接下来每一次仍然五五开，长期的平衡是「稀释」的结果，不是「还债」的结果</strong>。</p>
+<h2>4 与后一个学段的螺旋关系</h2>
+<p><strong>依赖链</strong>：初中「概率初步」→ 初中「频数分布直方图」→ 本单元「频率与概率」→ 高中「离散型随机变量及其分布」→ 大学「统计推断」。</p>
+<pre><code>初中    概率初步                        公式概率＋频率估计，两种入口并存
+   ↓ 大量数据有了「分布」概念
+初中    频数分布直方图                  分布的形状成为研究对象
+   ↓ 追问「稳定值」到底是什么
+高中    频率与概率                      ← 本页  概率的公理化雏形，稀释而非补偿
+   ↓ 概率从事件推广到随机变量
+高中    离散型随机变量及其分布           概率分配给一个个取值
+   ↓ 大数定律、中心极限定理登场
+大学    统计推断                        频率学派推断的地基：重复抽样的语言
+</code></pre>
+<p>高中这一步是从「会算概率」到「理解概率是什么」的分水岭。大学的置信区间说「95% 的区间包含真值」，用的正是本单元建立的「重复—频率」语言。</p>
+<h2>5 教材里怎么放</h2>
+<p>人教版高中必修（概率与统计内容）在初中概率初步之上重提频率与概率的关系，并引入有限样本空间、随机事件运算。教材多配有计算机模拟或大量真实抛掷数据表，让学生看到频率轨迹的波动形态。</p>
+<p><strong>教材重提而不重算</strong>的用意：这一章的增量是观念（概率的定义与性质），不是计算技巧——计算的大头留给古典概型与随机变量。</p>
+<h2>6 自测</h2>
+<ul>
+<li>某射手中靶频率 0.9（1000 次射击）。他下一次射击中靶的概率是 0.9 吗？说明理由。</li>
+<li>前 50 次抛硬币 30 次正面。后 50 次正面的期望次数是多少？总 100 次的频率大约多少？</li>
+<li>「频率最终会等于概率」和「频率会稳定在概率附近」差别在哪？</li>
+<li>为什么两次试验之间必须独立，频率才可能逼近概率？</li>
+<li>你觉得「明天下雨概率 70%」最适合的解读是频率式的还是别样的？</li>
+</ul>
+</div>   </div> <aside class="lg:border-l lg:border-[var(--color-rule)] lg:pl-6"> <section> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">螺旋</h2> <p class="mt-1 text-[11px] text-[var(--color-ink-faint)]">同一概念的其他学段</p> <ol class="mt-3 space-y-1"> <li> <a href="/unit/probability@primary-high/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 4 </span> <span>可能性大小</span> </a> </li><li> <a href="/unit/probability@middle/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 5 </span> <span>概率初步</span> </a> </li> <li class="flex items-center gap-2 rounded bg-[var(--color-ink)] px-2 py-1.5 text-[11.5px] text-white"> <span class="tnum w-3 text-white/40">6</span> <span>频率与概率</span> </li>   </ol> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">前置</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/probability@middle/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 概率初步 </a> </li> </ul> </section>  </aside> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>

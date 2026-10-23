@@ -1,0 +1,97 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>定积分与不定积分 — Math Atlas</title><meta name="description" content="积分 · 大学 · 分析"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <nav class="pt-8 text-[11.5px] text-[var(--color-ink-faint)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <span class="mx-1.5">/</span> <a href="/branch/calculus/" class="hover:text-[var(--color-ink)]">积分</a> <span class="mx-1.5">/</span> <span>大学</span> </nav> <article class="grid gap-10 pt-4 pb-10 lg:grid-cols-[minmax(0,1fr)_228px]"> <div class="min-w-0"> <header> <div class="flex flex-wrap items-center gap-2 text-[11px]"> <span class="rounded px-1.5 py-0.5" style="background:#dcfce7;color:#166534"> 完整 </span> <span class="text-[var(--color-ink-faint)]">大学 · 分析</span> </div> <h1 class="serif mt-3 text-[30px] leading-tight font-semibold tracking-tight">定积分与不定积分</h1> <p class="mt-2 text-[12.5px] text-[var(--color-ink-soft)]">
+所属概念：<a href="/branch/calculus/" class="underline decoration-[var(--color-rule)] underline-offset-2 hover:decoration-current">积分</a> <span class="text-[var(--color-ink-faint)]"> · 黎曼和 / 微积分基本定理</span> </p> </header> <div class="prose-atlas mt-8"><h2>1 高中跳过的那个问题</h2>
+<p>高中你算 <code>∫₀¹ x² dx = 1/3</code>，靠的是「找一个原函数，代两个端点」。</p>
+<p>但有两个问题被跳过：</p>
+<ol>
+<li><strong>任何函数都能找到原函数吗？</strong> 不能。<code>e^(−x²)</code> 的原函数就写不成初等函数。</li>
+<li><strong>「矩形逼近的极限」一定存在吗？</strong> 不一定。函数振荡得太厉害时，黎曼和没有极限。</li>
+</ol>
+<p>大学的第一件事，是把「计算」和「存在性」分开。</p>
+<h2>2 黎曼可积：什么样的函数能积分</h2>
+<p>定积分存在（黎曼可积）的判定条件，常见的有两条充分条件：</p>
+<table>
+<thead>
+<tr>
+<th>函数类型</th>
+<th>是否可积</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>闭区间上连续</td>
+<td>✅ 可积</td>
+<td>最基本的情形，高中只处理这一类</td>
+</tr>
+<tr>
+<td>有有限个第一类间断点</td>
+<td>✅ 可积</td>
+<td>分段函数、跳跃点</td>
+</tr>
+<tr>
+<td>狄利克雷函数（有理数为 1，无理数为 0）</td>
+<td>❌ 不可积</td>
+<td>任何分割下上和与下和的差都不趋于 0</td>
+</tr>
+</tbody></table>
+<p>判定工具是<strong>达布上和与下和</strong>：如果上和的极限与下和的极限相等，积分存在。
+这不是新公式，是把「矩形逼近」做成可判定的形式。</p>
+<h2>3 不定积分 ≠ 定积分</h2>
+<p>这一组概念高中常混着讲，大学必须拆开：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>定积分</th>
+<th>不定积分</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>是什么</td>
+<td>一个<strong>数</strong>（有向面积）</td>
+<td>一族<strong>函数</strong>（全体原函数）</td>
+</tr>
+<tr>
+<td>符号</td>
+<td><code>∫ᵃᵇ f(x) dx</code></td>
+<td><code>∫f(x) dx = F(x) + C</code></td>
+</tr>
+<tr>
+<td>依赖什么</td>
+<td>依赖区间 <code>[a,b]</code></td>
+<td>不依赖区间</td>
+</tr>
+</tbody></table>
+<p><code>+C</code> 不是笔误，也不是形式要求——它是「所有原函数构成一个平移族」这一事实的完整表达。
+丢掉 C 就等于说「每个函数只有一个原函数」，这是错的。</p>
+<h2>4 微积分基本定理：两个版本</h2>
+<p><strong>第一基本定理</strong>（变上限积分求导）：</p>
+<pre><code>F(x) = ∫ᵃˣ f(t) dt  ⟹  F&#39;(x) = f(x)     （f 连续时）
+</code></pre>
+<p>它说明<strong>连续函数一定有原函数</strong>——这个结论高中从未提及，但它才是「积分与微分互逆」的严格基础。</p>
+<p><strong>第二基本定理</strong>（牛顿-莱布尼茨）：</p>
+<pre><code>∫ᵃᵇ f(x) dx = F(b) − F(a)
+</code></pre>
+<p>它把「求积分」转化为「求原函数」，这才是高中真正在用的那个。</p>
+<h2>5 螺旋的最后一环：从「会算」到「知道什么时候算不出来」</h2>
+<pre><code>∫ 是求面积（小学，规则图形）
+   ↓ 曲边怎么办
+定积分 = 矩形逼近的极限（高中，直观）        ← integral@high
+   ↓ 存在性 + 严格定义
+黎曼可积 / 变上限积分 / 基本定理证明（本页）
+</code></pre>
+<p>这里有个值得记住的教训：<strong><code>e^(−x²)</code> 的积分算不出来，但它从 0 到 ∞ 的定积分是 <code>√π/2</code>。</strong>
+「有答案」和「有初等原函数」是两件完全不同的事。</p>
+<h2>6 对应教材</h2>
+<p>同济版《高等数学》上册第五章。教材先给黎曼和定义，再讲可积条件，
+然后进入基本定理与换元、分部积分。<strong>「可积条件」在计算之前</strong>，这个顺序不能颠倒。</p>
+<h2>7 自测</h2>
+<ul>
+<li><code>∫ x² dx</code> 和 <code>∫₀¹ x² dx</code> 分别是什么类型的结果？一个是数还是一族函数？</li>
+<li>为什么 <code>∫₀¹ 1/x dx</code> 发散，而 <code>∫₁² 1/x dx</code> 收敛？</li>
+<li>用第一基本定理说明：<code>d/dx ∫₀ˣ sin(t²) dt</code> 等于什么？这个原函数能用初等函数写出吗？</li>
+<li>一个函数有有限个跳跃间断点，它可积吗？说明理由。</li>
+</ul>
+</div>  <section class="mt-8"> <h2 class="text-[13px] font-semibold tracking-[0.06em]">对应教材</h2> <ul class="mt-3 space-y-1.5 text-[12px] text-[var(--color-ink-soft)]"> <li> 同济版 · 高等数学上册 · 第五章 定积分 </li> </ul> <p class="mt-2 text-[11px] text-[var(--color-ink-faint)]">只记录指向，不托管教材原文。</p> </section> </div> <aside class="lg:border-l lg:border-[var(--color-rule)] lg:pl-6"> <section> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">螺旋</h2> <p class="mt-1 text-[11px] text-[var(--color-ink-faint)]">同一概念的其他学段</p> <ol class="mt-3 space-y-1"> <li> <a href="/unit/integral@high/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 6 </span> <span>定积分的直观意义</span> </a> </li> <li class="flex items-center gap-2 rounded bg-[var(--color-ink)] px-2 py-1.5 text-[11.5px] text-white"> <span class="tnum w-3 text-white/40">7</span> <span>定积分与不定积分</span> </li>   </ol> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">前置</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/derivative@university/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 一元函数微分学 </a> </li> </ul> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">解锁</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/multivariable-calculus@university/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 偏导数与重积分 </a> </li> </ul> </section> </aside> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>用数对表示位置 — Math Atlas</title><meta name="description" content="平面直角坐标系 · 小学高 · 理解"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <nav class="pt-8 text-[11.5px] text-[var(--color-ink-faint)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <span class="mx-1.5">/</span> <a href="/branch/geometry/" class="hover:text-[var(--color-ink)]">平面直角坐标系</a> <span class="mx-1.5">/</span> <span>小学高</span> </nav> <article class="grid gap-10 pt-4 pb-10 lg:grid-cols-[minmax(0,1fr)_228px]"> <div class="min-w-0"> <header> <div class="flex flex-wrap items-center gap-2 text-[11px]"> <span class="rounded px-1.5 py-0.5" style="background:#dcfce7;color:#166534"> 完整 </span> <span class="text-[var(--color-ink-faint)]">小学高 · 理解</span> </div> <h1 class="serif mt-3 text-[30px] leading-tight font-semibold tracking-tight">用数对表示位置</h1> <p class="mt-2 text-[12.5px] text-[var(--color-ink-soft)]">
+所属概念：<a href="/branch/geometry/" class="underline decoration-[var(--color-rule)] underline-offset-2 hover:decoration-current">平面直角坐标系</a> <span class="text-[var(--color-ink-faint)]"> · 数对 / 位置</span> </p> </header> <div class="prose-atlas mt-8"><h2>1 一张座位表，能不能用两个数说清</h2>
+<p>老师问「小明坐在哪」，回答「第五排」不够，回答「左边数第三个」也不够。
+两个都说清楚，位置就唯一确定了。</p>
+<p>五年级上册的「位置」单元，把这个日常经验变成一个数学记号：$(3, 5)$。</p>
+<p>它看起来简单得不值得一个单元，但它是整个解析几何的起点。</p>
+<h2>2 数对的规矩：先列后行</h2>
+<p>数对的写法有严格约定：</p>
+<table>
+<thead>
+<tr>
+<th>记法</th>
+<th>含义</th>
+<th>常见错误</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>3</mn><mo separator="true">,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(3, 5)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">3</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">5</span><span class="mclose">)</span></span></span></span></td>
+<td>第 3 列、第 5 行</td>
+<td>写成 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>5</mn><mo separator="true">,</mo><mn>3</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(5, 3)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">5</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">3</span><span class="mclose">)</span></span></span></span></td>
+</tr>
+<tr>
+<td>起点</td>
+<td>从 0 或 1 开始数，要看约定</td>
+<td>数错起点</td>
+</tr>
+<tr>
+<td>顺序</td>
+<td><strong>不能交换</strong></td>
+<td>以为 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>3</mn><mo separator="true">,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(3,5)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">3</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">5</span><span class="mclose">)</span></span></span></span> 与 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>5</mn><mo separator="true">,</mo><mn>3</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(5,3)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">5</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">3</span><span class="mclose">)</span></span></span></span> 一样</td>
+</tr>
+</tbody></table>
+<p>最后一条是数对与「一个数」最根本的区别：<strong><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>3</mn><mo separator="true">,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(3,5)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">3</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">5</span><span class="mclose">)</span></span></span></span> 和 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>5</mn><mo separator="true">,</mo><mn>3</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(5,3)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">5</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">3</span><span class="mclose">)</span></span></span></span> 是两个不同的位置。</strong></p>
+<p>这里的第一个分量管「左右」，第二个分量管「上下」。两个方向必须固定一个先后，
+否则大家各说各的，位置就说不清了。</p>
+<p>在地图上，数对还带着方向和符号：向东为正，向北为正。这一点要到初一才正式化，
+变成带正负号的坐标。</p>
+<h2>3 与直觉的冲突：两个数不是「两倍」</h2>
+<p><strong>反例一：<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>3</mn><mo separator="true">,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(3,5)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">3</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">5</span><span class="mclose">)</span></span></span></span> 与 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>5</mn><mo separator="true">,</mo><mn>3</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(5,3)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">5</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">3</span><span class="mclose">)</span></span></span></span> 看着像同一组数，位置却完全不同。</strong></p>
+<p>孩子刚学数对时，常把顺序写反，因为他觉得「都在 5 号附近」。
+但一个在第 3 列第 5 行，一个在第 5 列第 3 行，隔着好几个座位。</p>
+<p><strong>反例二：数对「接近」不等于位置接近。</strong></p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>5</mn><mo separator="true">,</mo><mn>3</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(5,3)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">5</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">3</span><span class="mclose">)</span></span></span></span> 和 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>5</mn><mo separator="true">,</mo><mn>30</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(5,30)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">5</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">30</span><span class="mclose">)</span></span></span></span> 的第一个分量一样，实际距离却很远。
+两个数各自管一个方向，不能混起来比大小。</p>
+<p><strong>反例三：同一个位置，可以有两个数对。</strong></p>
+<p>如果一张地图同时标了「从左上角数」和「从左下角数」两套坐标，
+同一个点的数对就不一样。<strong>数对本身不是位置，数对加坐标系才是位置。</strong></p>
+<blockquote>
+<p>这是本项目想强调的一点：后面所有「坐标」都带着一个隐形的约定——原点在哪、哪个方向为正。
+约定一变，数对就变，但位置没动。</p>
+</blockquote>
+<h2>4 与前后学段的螺旋关系</h2>
+<p><strong>依赖链</strong>：小学中「面积与面积单位」→ 本单元「用数对表示位置」→ 初中「平面直角坐标系」→ 初中「平移、旋转与轴对称」→ 高中「坐标系中的图形」。</p>
+<pre><code>小学中  方格纸，一格是一个小正方形        方格是「面的单位」
+   ↓ 把方格的两个方向分别数出来
+小学高  数对 (列, 行)             ← 本页  位置 = 一对有序数
+   ↓ 加上负数，把方格扩成整个平面
+初中    平面直角坐标系                    位置 = 坐标，有四象限
+   ↓ 图形可以在坐标系里动
+初中    平移、旋转与轴对称                变换变成坐标的加减
+   ↓ 用坐标算距离和斜率
+高中    坐标系中的图形                    几何问题变成方程问题
+</code></pre>
+<p>第二个箭头是整条链的关键：<strong>数对只描述「第几格」，坐标描述「平面上的任意一点」。</strong>
+加了负数，平面才真正铺开。</p>
+<h2>5 教材里怎么放</h2>
+<p>人教版五年级上册第二单元「位置」。</p>
+<p>教材的路线是：用数对表示教室里的座位 → 用数对表示方格纸上的点 →
+根据数对在方格纸上描点。</p>
+<p>教材<strong>只讲第一象限</strong>，并把起点定在左下角。这个限制是有意的：
+五年级还没学负数，不能把坐标轴往负方向延伸。</p>
+<p>教材在这一单元还安排了「用数对描述图形顶点的位置」的练习，
+为的是让学生看见：<strong>一个图形可以用它几个顶点的数对确定下来。</strong>
+这句话在初中会变成一个强大的工具——用坐标研究图形。</p>
+<h2>6 自测</h2>
+<ul>
+<li>在方格纸上，$(2, 4)<span class="katex-error" title="ParseError: KaTeX parse error: Can&#x27;t use function &#x27;$&#x27; in math mode at position 3: 和 $̲(4, 2)" style="color:#cc0000"><span class="cjk_fallback">和 $(4, 2)</span></span> 分别是哪个点？它们相同吗？</li>
+<li>一个人在 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>3</mn><mo separator="true">,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(3, 5)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">3</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">5</span><span class="mclose">)</span></span></span></span>，向右移 2 格，数对变成什么？</li>
+<li>为什么说「数对不能单独确定位置，还要知道起点和方向」？</li>
+<li>如果把起点从左下角改到左上角，同一个点的数对会怎么变？</li>
+<li>你觉得为什么教材要先教「表示位置」，而不是直接教「两条坐标轴」？</li>
+</ul>
+</div>   </div> <aside class="lg:border-l lg:border-[var(--color-rule)] lg:pl-6"> <section> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">螺旋</h2> <p class="mt-1 text-[11px] text-[var(--color-ink-faint)]">同一概念的其他学段</p> <ol class="mt-3 space-y-1">  <li class="flex items-center gap-2 rounded bg-[var(--color-ink)] px-2 py-1.5 text-[11.5px] text-white"> <span class="tnum w-3 text-white/40">4</span> <span>用数对表示位置</span> </li> <li> <a href="/unit/coordinate@middle/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 5 </span> <span>平面直角坐标系</span> </a> </li><li> <a href="/unit/coordinate@high/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 6 </span> <span>坐标系中的图形</span> </a> </li>  </ol> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">前置</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/ratio-percent@primary-high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 比与百分数 </a> </li><li> <a href="/unit/solid-geometry@primary-high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 长方体与圆柱 </a> </li> </ul> </section>  </aside> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>排列与组合 — Math Atlas</title><meta name="description" content="计数原理 · 高中 · 应用"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <nav class="pt-8 text-[11.5px] text-[var(--color-ink-faint)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <span class="mx-1.5">/</span> <a href="/branch/number-algebra/" class="hover:text-[var(--color-ink)]">计数原理</a> <span class="mx-1.5">/</span> <span>高中</span> </nav> <article class="grid gap-10 pt-4 pb-10 lg:grid-cols-[minmax(0,1fr)_228px]"> <div class="min-w-0"> <header> <div class="flex flex-wrap items-center gap-2 text-[11px]"> <span class="rounded px-1.5 py-0.5" style="background:#dcfce7;color:#166534"> 完整 </span> <span class="text-[var(--color-ink-faint)]">高中 · 应用</span> </div> <h1 class="serif mt-3 text-[30px] leading-tight font-semibold tracking-tight">排列与组合</h1> <p class="mt-2 text-[12.5px] text-[var(--color-ink-soft)]">
+所属概念：<a href="/branch/number-algebra/" class="underline decoration-[var(--color-rule)] underline-offset-2 hover:decoration-current">计数原理</a> <span class="text-[var(--color-ink-faint)]"> · 排列 / 组合</span> </p> </header> <div class="prose-atlas mt-8"><h2>1 3 个人排队，有几种站法</h2>
+<p>答案 6。三个人站一排：甲乙丙、甲丙乙、乙甲丙……</p>
+<p>如果问「3 个人里选 2 个当代表」，答案只有 3 种。甲乙、甲丙、乙丙。</p>
+<p><strong>同样是从 3 个人里挑 2 个，一个答案是 6，一个是 3。</strong></p>
+<p>差别只有一条：<strong>顺序算不算数。</strong></p>
+<h2>2 排列与组合：差的只是一个「顺序」</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>排列 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>A</mi><mi>n</mi><mi>m</mi></msubsup></mrow><annotation encoding="application/x-tex">A_n^m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.9303em;vertical-align:-0.247em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-2.453em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">m</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"><span></span></span></span></span></span></span></span></span></span></th>
+<th>组合 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>C</mi><mi>n</mi><mi>m</mi></msubsup></mrow><annotation encoding="application/x-tex">C_n^m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.9303em;vertical-align:-0.247em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0715em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-2.453em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">m</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"><span></span></span></span></span></span></span></span></span></span></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>关心什么</td>
+<td>选谁 + 排在第几位</td>
+<td>只关心选谁</td>
+</tr>
+<tr>
+<td>公式</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>n</mi><mo stretchy="false">!</mo></mrow><mrow><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mi>m</mi><mo stretchy="false">)</mo><mo stretchy="false">!</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{n!}{(n-m)!}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.4001em;vertical-align:-0.52em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8801em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathnormal mtight">n</span><span class="mbin mtight">−</span><span class="mord mathnormal mtight">m</span><span class="mclose mtight">)!</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span><span class="mclose mtight">!</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.52em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>n</mi><mo stretchy="false">!</mo></mrow><mrow><mi>m</mi><mo stretchy="false">!</mo><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mi>m</mi><mo stretchy="false">)</mo><mo stretchy="false">!</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{n!}{m!(n-m)!}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.4001em;vertical-align:-0.52em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8801em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">m</span><span class="mclose mtight">!</span><span class="mopen mtight">(</span><span class="mord mathnormal mtight">n</span><span class="mbin mtight">−</span><span class="mord mathnormal mtight">m</span><span class="mclose mtight">)!</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span><span class="mclose mtight">!</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.52em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></td>
+</tr>
+<tr>
+<td>从 3 选 2</td>
+<td>6</td>
+<td>3</td>
+</tr>
+</tbody></table>
+<p>两个公式的关系一眼可见：$\frac{A_n^m}{C_n^m} = m!$。</p>
+<p>意思是：先选出 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">m</span></span></span></span> 个人（组合），再把这些人排成一排（$m!$ 种排法），就得到全部排列。</p>
+<p>这个关系不是巧合，它就是「先选后排」的直接翻译：每一种组合，都对应 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo stretchy="false">!</mo></mrow><annotation encoding="application/x-tex">m!</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal">m</span><span class="mclose">!</span></span></span></span> 种不同的排列，所以排列数正好是组合数的 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo stretchy="false">!</mo></mrow><annotation encoding="application/x-tex">m!</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal">m</span><span class="mclose">!</span></span></span></span> 倍。记住这一层，$C_n^m$ 的公式就不必硬背。</p>
+<h2>3 「先分类还是先分步？」</h2>
+<p>高中计数题只有两条原理：</p>
+<ul>
+<li><strong>加法原理</strong>：完成一件事有 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span></span></span></span> 类办法，各类互斥，总数相加。</li>
+<li><strong>乘法原理</strong>：完成一件事要 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span></span></span></span> 个步骤，逐步进行，总数相乘。</li>
+</ul>
+<p>学生的错误很少出在公式上，几乎都出在<strong>判错了该加还是该乘</strong>。</p>
+<p>一个典型的坑：</p>
+<blockquote>
+<p>从甲地到乙地，有 3 班火车、2 班汽车。问有几种走法？</p>
+</blockquote>
+<p>答案 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">3+2=5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">5</span></span></span></span>。</p>
+<blockquote>
+<p>从甲地经丙地到乙地，甲到丙 3 条路，丙到乙 2 条路。问有几种走法？</p>
+</blockquote>
+<p>答案 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">3 \times 2 = 6</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">6</span></span></span></span>。</p>
+<p>两句话只差「经过丙地」，运算从加变成乘。<strong>前一种情况是「或者」，后一种是「然后」。</strong></p>
+<p>判错了这一步，公式再好也没用。<strong>做题时先问一句「这件事是分成几类各自完成，还是要分几步依次完成」，比套公式管用得多。</strong></p>
+<h2>4 与前后学段的螺旋关系</h2>
+<p><strong>依赖链</strong>：小学低「分类与整理」→ 初中「分类讨论」→ 本单元「排列与组合」→ 大学「概率与统计」。</p>
+<pre><code>小学低  分类与整理、简单的搭配与排列
+   ↓ 用列举法数，但已经开始区分「选」和「排」
+初中    分类讨论、树状图、列表法
+   ↓ 列举升级为公式，需要乘法原理
+高中    加法原理与乘法原理、排列、组合              ← 本页
+   ↓ 组合数进入概率，计算「有多少种可能」
+高中    古典概型、二项式定理
+   ↓ 大量重复时，看的是分布而不是具体数目
+大学    概率论、组合数学、生成函数
+</code></pre>
+<h2>5 教材里怎么放</h2>
+<p>人教版把排列与组合放在<strong>高中数学选择性必修第三册「计数原理」</strong>。</p>
+<p>编排顺序是：分类加法计数原理 → 分步乘法计数原理 → 排列 → 组合 → 二项式定理。</p>
+<p><strong>两个原理在公式之前</strong>，这个顺序很讲究：公式是由原理推出来的，教材希望学生在遇到复杂问题时，退回原理去数，而不是套公式。</p>
+<p>教材还特意用了「<strong>涂色问题</strong>」「<strong>数字组成</strong>」这类必须自己判断加或乘的题。</p>
+<blockquote>
+<p>教材没有引入「$A_n^m$」和「$C_n^m$」以外的记号，
+也没有讲「隔板法」「容斥原理」等技巧，这些留到竞赛或大学。</p>
+</blockquote>
+<h2>6 自测</h2>
+<ul>
+<li>从 5 个人里选 3 个人排队照相，有多少种排法？如果只是选出 3 个人去开会呢？</li>
+<li>一个三位数，各位数字互不相同，能组成多少个？</li>
+<li>「或者」与「然后」分别对应什么原理？各举一例。</li>
+<li>为什么组合数公式里要除以 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo stretchy="false">!</mo></mrow><annotation encoding="application/x-tex">m!</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal">m</span><span class="mclose">!</span></span></span></span>？用「先选后排」的思路解释。</li>
+</ul>
+</div>   </div> <aside class="lg:border-l lg:border-[var(--color-rule)] lg:pl-6"> <section> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">螺旋</h2> <p class="mt-1 text-[11px] text-[var(--color-ink-faint)]">同一概念的其他学段</p> <ol class="mt-3 space-y-1">  <li class="flex items-center gap-2 rounded bg-[var(--color-ink)] px-2 py-1.5 text-[11.5px] text-white"> <span class="tnum w-3 text-white/40">6</span> <span>排列与组合</span> </li>  <li class="px-2 py-1.5 text-[11px] text-[var(--color-ink-faint)]">
+这个概念只在此学段出现
+</li> </ol> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">前置</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/classification@middle/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 分类讨论 </a> </li> </ul> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">解锁</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/graph-theory@high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 图论中的最优化 </a> </li><li> <a href="/unit/matrix@university/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 矩阵与线性变换 </a> </li><li> <a href="/unit/probability-model@high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 古典概型与几何概型 </a> </li> </ul> </section> </aside> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>

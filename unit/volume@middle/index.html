@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>柱体锥体的体积 — Math Atlas</title><meta name="description" content="体积与容积 · 初中 · 应用"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <nav class="pt-8 text-[11.5px] text-[var(--color-ink-faint)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <span class="mx-1.5">/</span> <a href="/branch/geometry/" class="hover:text-[var(--color-ink)]">体积与容积</a> <span class="mx-1.5">/</span> <span>初中</span> </nav> <article class="grid gap-10 pt-4 pb-10 lg:grid-cols-[minmax(0,1fr)_228px]"> <div class="min-w-0"> <header> <div class="flex flex-wrap items-center gap-2 text-[11px]"> <span class="rounded px-1.5 py-0.5" style="background:#dcfce7;color:#166534"> 完整 </span> <span class="text-[var(--color-ink-faint)]">初中 · 应用</span> </div> <h1 class="serif mt-3 text-[30px] leading-tight font-semibold tracking-tight">柱体锥体的体积</h1> <p class="mt-2 text-[12.5px] text-[var(--color-ink-soft)]">
+所属概念：<a href="/branch/geometry/" class="underline decoration-[var(--color-rule)] underline-offset-2 hover:decoration-current">体积与容积</a> <span class="text-[var(--color-ink-faint)]"> · 棱柱 / 体积公式</span> </p> </header> <div class="prose-atlas mt-8"><h2>1 为什么所有柱体都能用「底面积 × 高」</h2>
+<p>小学学长方体的体积：$V = abc$。到了初中，圆柱、三棱柱、五棱柱也都要学体积。</p>
+<p>如果每一类都背一个公式，会很累。但它们其实共用同一个公式：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>V</mi><mtext>柱</mtext></msub><mo>=</mo><msub><mi>S</mi><mtext>底</mtext></msub><mo>×</mo><mi>h</mi></mrow><annotation encoding="application/x-tex">V_{\text{柱}} = S_{\text{底}} \times h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.2222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">柱</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">底</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span></span></span></span></span></p>
+<p>这背后的原理叫<strong>祖暅原理</strong>：两个等高的几何体，如果被任意平行于底面的平面截得的截面面积都相等，
+那么它们的体积相等。</p>
+<p>换句话说：<strong>体积不看你长什么样，只看「每一层有多大」。</strong></p>
+<h2>2 锥体为什么是柱体的三分之一</h2>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>V</mi><mtext>锥</mtext></msub><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><msub><mi>S</mi><mtext>底</mtext></msub><mi>h</mi></mrow><annotation encoding="application/x-tex">V_{\text{锥}} = \frac{1}{3} S_{\text{底}} h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.2222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">锥</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.0074em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">3</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">底</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathnormal">h</span></span></span></span></span></p>
+<p>这个 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{3}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.1901em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span> 不是凑出来的。可以有几种理解：</p>
+<table>
+<thead>
+<tr>
+<th>角度</th>
+<th>说法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>实验</td>
+<td>等底等高的圆锥容器装满水，倒进圆柱，正好三次</td>
+</tr>
+<tr>
+<td>切割</td>
+<td>三棱柱可以切成三个等体积的三棱锥</td>
+</tr>
+<tr>
+<td>积分</td>
+<td>高度在 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi></mrow><annotation encoding="application/x-tex">z</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.044em;">z</span></span></span></span> 处的截面面积按 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>z</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">z^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.044em;">z</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span> 缩小，积分后出 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{3}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.1901em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></td>
+</tr>
+</tbody></table>
+<p>三种理解都在说同一件事，深浅不同：实验验证，切割解释，积分证明。</p>
+<h2>3 与直觉的冲突：等底等高，锥是柱的三分之一</h2>
+<p><strong>反例一：形状差得远，体积可以相等。</strong></p>
+<p>一个正方体和一个底面积、高都相同的斜柱体，体积完全一样。
+<strong>「斜着长」不改变体积</strong>——只要每一层的截面面积没变。
+斜柱体看起来「占的地方更多」，可祖暅原理说得很干净：层数一样、每层面积一样，体积就一样。</p>
+<p><strong>反例二：锥体只有三分之一，而不是二分之一。</strong></p>
+<p>看到的直觉是「差不多是圆柱的一半」，因为圆锥的侧面看起来占了一半的位置。</p>
+<p>实际差得更远：三分之一。</p>
+<p><strong>反例三：底面积一样、高一样，柱和锥的体积比恒为 3 : 1。</strong></p>
+<p>不管是圆锥配圆柱、三棱锥配三棱柱、还是四棱锥配长方体，这个比永远是 3:1。
+<strong>形状不影响比例，只影响具体的数。</strong></p>
+<blockquote>
+<p>祖暅原理和「三分之一」，小学六年级的教材里已经出现过：
+圆锥的体积一节，就是拿水或沙子做实验，倒三次刚好装满圆柱。</p>
+</blockquote>
+<h2>4 与前后学段的螺旋关系</h2>
+<p><strong>依赖链</strong>：小学高「长方体与正方体的体积」→ 本单元「柱体锥体的体积」→ 高中「空间几何体与位置关系」→ 大学「旋转体与重积分」。</p>
+<pre><code>小学高  长方体 V = abc，正方体 V = a³
+   ↓ 把圆的面积乘上高
+小学高  圆柱的体积 = 底面积 × 高            柱体公式第一次推广
+   ↓ 把柱体切成薄片，切片面积一样
+初中    柱体锥体的体积，V锥 = ⅓V柱      ← 本页  祖暅原理
+   ↓ 进入空间中的位置关系
+高中    空间几何体与位置关系                体积计算需要先确定高
+   ↓ 用向量与积分处理任意几何体
+大学    旋转体体积、三重积分                不再依赖「三分之一」这种特例
+</code></pre>
+<h2>5 教材里怎么放</h2>
+<p>这段内容跨了小学与初中两个落点：</p>
+<ul>
+<li><strong>人教版六年级下册「圆柱与圆锥」</strong>：圆柱体积、圆锥体积、等底等高圆柱与圆锥的关系</li>
+<li><strong>初中（图形与几何部分）</strong>：由棱柱、棱锥推广到一般的柱体与锥体</li>
+</ul>
+<p>六年级教材处理圆锥体积时用了<strong>倒水实验</strong>：等底等高的圆柱和圆锥容器，
+圆锥装满水倒进圆柱，三次刚好倒满。这个实验给出的是「三分之一」的直觉，
+不是证明。</p>
+<p>教材明确把「为什么是三分之一」留给了后面。<strong>这是教学上的一次诚实取舍</strong>：
+六年级能接受实验结论，但没有工具去说明它为什么必然成立。</p>
+<h2>6 自测</h2>
+<ul>
+<li>一个圆柱的底面积是 20 平方厘米、高是 6 厘米，体积是多少？等底等高的圆锥呢？</li>
+<li>一个三棱柱和一个圆柱等底等高，它们的体积相等吗？为什么？</li>
+<li>为什么斜着的柱体，体积和直立的柱体相同？</li>
+<li>圆锥的体积为什么是圆柱的三分之一，而不是二分之一？用「每一层截面」的角度想一想。</li>
+<li>你觉得为什么教材用「倒水实验」而不是「证明」来讲三分之一？</li>
+</ul>
+</div>   </div> <aside class="lg:border-l lg:border-[var(--color-rule)] lg:pl-6"> <section> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">螺旋</h2> <p class="mt-1 text-[11px] text-[var(--color-ink-faint)]">同一概念的其他学段</p> <ol class="mt-3 space-y-1"> <li> <a href="/unit/volume@primary-high/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 4 </span> <span>长方体与正方体的体积</span> </a> </li> <li class="flex items-center gap-2 rounded bg-[var(--color-ink)] px-2 py-1.5 text-[11.5px] text-white"> <span class="tnum w-3 text-white/40">5</span> <span>柱体锥体的体积</span> </li>   </ol> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">前置</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/volume@primary-high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 长方体与正方体的体积 </a> </li><li> <a href="/unit/solid-geometry@high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 空间几何体与位置关系 </a> </li> </ul> </section>  </aside> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>

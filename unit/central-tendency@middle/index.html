@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>加权平均数与选择 — Math Atlas</title><meta name="description" content="集中趋势 · 初中 · 应用"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <nav class="pt-8 text-[11.5px] text-[var(--color-ink-faint)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <span class="mx-1.5">/</span> <a href="/branch/statistics-probability/" class="hover:text-[var(--color-ink)]">集中趋势</a> <span class="mx-1.5">/</span> <span>初中</span> </nav> <article class="grid gap-10 pt-4 pb-10 lg:grid-cols-[minmax(0,1fr)_228px]"> <div class="min-w-0"> <header> <div class="flex flex-wrap items-center gap-2 text-[11px]"> <span class="rounded px-1.5 py-0.5" style="background:#dcfce7;color:#166534"> 完整 </span> <span class="text-[var(--color-ink-faint)]">初中 · 应用</span> </div> <h1 class="serif mt-3 text-[30px] leading-tight font-semibold tracking-tight">加权平均数与选择</h1> <p class="mt-2 text-[12.5px] text-[var(--color-ink-soft)]">
+所属概念：<a href="/branch/statistics-probability/" class="underline decoration-[var(--color-rule)] underline-offset-2 hover:decoration-current">集中趋势</a> <span class="text-[var(--color-ink-faint)]"> · 加权 / 代表性</span> </p> </header> <div class="prose-atlas mt-8"><h2>1 统计量放在一起，才是决策工具</h2>
+<p>初中阶段的「集中趋势」课，不是再学一个新的平均，而是把三个统计量（平均数、中位数、众数）<strong>放回真实决策里</strong>，加上权重思想，回答一个统一的问题：</p>
+<blockquote>
+<p>面对一组数据、一个决策场景，<strong>派哪个数、带什么权重上场</strong>？</p>
+</blockquote>
+<ul>
+<li>评工资水平、看收入调查——<strong>中位数</strong>（防极端值绑架）</li>
+<li>定鞋厂产量、备货——<strong>众数</strong>（要最常见的）</li>
+<li>算总成绩、总产量——<strong>加权平均</strong>（各项分量不同）</li>
+<li>数据干净均匀——普通平均最省事，且信息用得最全</li>
+</ul>
+<h2>2 一次完整的选型</h2>
+<blockquote>
+<p>公司招翻译，甲应试者笔试 90、面试 80；乙笔试 80、面试 90。录用谁？</p>
+</blockquote>
+<p>答案取决于权重：笔试面试各半，两人同为 85，打平；笔试占 60%，甲 86 分、乙 84 分，录甲；面试占 60%，则乙胜出。<strong>数据没变，权重一变，决策反转</strong>——这个现象说明：决策里最要紧的数字常常不是数据，是权重。所以正规评比必须<strong>事先公布权重</strong>，否则权重的调整就是暗箱。</p>
+<p>再看一个「选统计量」的决策：</p>
+<blockquote>
+<p>报道「某小区居民平均年龄 35 岁」用于规划幼儿园和养老院。</p>
+</blockquote>
+<p>平均数 35 看着平衡，但如果年龄分布是「30 出头一片」加「80 岁以上一片」（双峰），中位数会掉在中间的空档里——<strong>两个都不该用，该看分布</strong>（直方图）。这提醒我们：统计量是分布的摘要，<strong>摘要可能丢掉最要紧的结构</strong>；统计量打架（平均和中位数差很远）本身就是分布偏斜的信号。</p>
+<h2>3 与直觉的冲突：「平均数最大」不等于「整体最好」</h2>
+<p>错误直觉：<strong>比较两组人，比平均数就够了</strong>。反例：</p>
+<blockquote>
+<p>两个班数学平均分都是 75。甲班直方图：分数集中在 70–80，最高 82 最低 68。乙班：一半人 95 以上，一半人不及格。</p>
+</blockquote>
+<p>平均分完全相同的两个班，是两种现实：甲班整齐，乙班分化。<strong>做决策时这种区别性命攸关</strong>——分层教学、补差拔尖，对两个班的方案应该完全不同；只看平均数，方案会开错。</p>
+<p>直觉为什么依赖平均数？因为「平均」给出一个可比、可排序的单数，<strong>单数好比较，也好操纵</strong>。但平均数只回答「总体水平」，不回答「内部结构」；它把波动全部抹平了。被抹掉的波动，下一个单元（极差与方差）会正式请回来。</p>
+<p>和权重合起来，本单元的决策观可以总结成三问：<strong>这组数据的结构是什么（选统计量）？哪个部分更重要（定权重）？权重是谁、什么时候定的（防操纵）？</strong></p>
+<h2>4 与后一个学段的螺旋关系</h2>
+<p><strong>依赖链</strong>：小学高「平均数、中位数、众数」→ 小学高「平均数与统计量」→ 本单元「加权平均数与选择」→ 初中「极差与方差」→ 高中「标准差与数据稳定性」。</p>
+<pre><code>小学高  平均数、中位数、众数            三个代表，初步知道有极端值要防
+   ↓ 理解平均数的性质与局限
+小学高  平均数与统计量                  平衡点、总和代言人，组与个体之分
+   ↓ 数据带上了「分量」，决策登场
+初中    加权平均数与选择                ← 本页  权重与选型：派哪个数、定什么权
+   ↓ 平均数抹平的东西必须补回来
+初中    极差与方差                      「波动多大」成为必答的第二问
+   ↓ 波动有了标准化的度量
+高中    标准差与数据稳定性              标准差与方差的比较应用
+</code></pre>
+<p>这一单元是初中统计的「枢纽」：往前收拢三个统计量，往后把舞台交给离散程度——<strong>从此比较两组数据，永远是「平均数＋波动」双指标</strong>。</p>
+<h2>5 教材里怎么放</h2>
+<p>人教版八年级下册「数据的分析」章把加权平均数、中位数、众数集中安排，并配「用样本平均数比较两块麦田」「根据方差选择甜玉米」等决策型例题。教材的编排透露一个立场：<strong>统计的终点不是算出数，是做出经得起追问的选择</strong>。</p>
+<h2>6 自测</h2>
+<ul>
+<li>数据 2、3、3、3、100：平均数、中位数、众数各是多少？为鞋店进货选哪个？</li>
+<li>甲组 7、8、9，乙组 3、8、13，两组平均数相同，你会用哪个数区分它们？</li>
+<li>为什么评比规则必须「赛前公布权重」？</li>
+<li>「平均数和中位数差得很远」透露了数据的什么信息？</li>
+<li>你觉得给「幸福城市」排名，权重该怎么定才服人？</li>
+</ul>
+</div>   </div> <aside class="lg:border-l lg:border-[var(--color-rule)] lg:pl-6"> <section> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">螺旋</h2> <p class="mt-1 text-[11px] text-[var(--color-ink-faint)]">同一概念的其他学段</p> <ol class="mt-3 space-y-1"> <li> <a href="/unit/central-tendency@primary-high/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 4 </span> <span>平均数、中位数、众数</span> </a> </li> <li class="flex items-center gap-2 rounded bg-[var(--color-ink)] px-2 py-1.5 text-[11.5px] text-white"> <span class="tnum w-3 text-white/40">5</span> <span>加权平均数与选择</span> </li>   </ol> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">前置</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/central-tendency@primary-high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 平均数、中位数、众数 </a> </li><li> <a href="/unit/probability@primary-high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 可能性大小 </a> </li> </ul> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">解锁</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/dispersion@middle/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 极差与方差 </a> </li> </ul> </section> </aside> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>频数分布直方图 — Math Atlas</title><meta name="description" content="数据的呈现 · 初中 · 应用"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <nav class="pt-8 text-[11.5px] text-[var(--color-ink-faint)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <span class="mx-1.5">/</span> <a href="/branch/statistics-probability/" class="hover:text-[var(--color-ink)]">数据的呈现</a> <span class="mx-1.5">/</span> <span>初中</span> </nav> <article class="grid gap-10 pt-4 pb-10 lg:grid-cols-[minmax(0,1fr)_228px]"> <div class="min-w-0"> <header> <div class="flex flex-wrap items-center gap-2 text-[11px]"> <span class="rounded px-1.5 py-0.5" style="background:#dcfce7;color:#166534"> 完整 </span> <span class="text-[var(--color-ink-faint)]">初中 · 应用</span> </div> <h1 class="serif mt-3 text-[30px] leading-tight font-semibold tracking-tight">频数分布直方图</h1> <p class="mt-2 text-[12.5px] text-[var(--color-ink-soft)]">
+所属概念：<a href="/branch/statistics-probability/" class="underline decoration-[var(--color-rule)] underline-offset-2 hover:decoration-current">数据的呈现</a> <span class="text-[var(--color-ink-faint)]"> · 频数 / 组距</span> </p> </header> <div class="prose-atlas mt-8"><h2>1 数据多到必须「装箱」</h2>
+<p>全班 50 人的身高从 138 到 176 cm，一个一个报，谁也记不住。条形图画 50 根条，密密麻麻，图反而看不懂了。</p>
+<p>办法是<strong>装箱</strong>：把身高切段——$[150,155)$、$[155,160)$……每段数出有多少人。每段的人数叫<strong>频数</strong>，段宽叫<strong>组距</strong>，装完箱画出的图叫<strong>频数分布直方图</strong>。</p>
+<p>条形图和直方图像是亲戚，其实分工已经变了：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>条形统计图</th>
+<th>频数分布直方图</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>横轴</td>
+<td>类别（猫、狗、鸟）</td>
+<td>连续的数值区间</td>
+</tr>
+<tr>
+<td>条的顺序</td>
+<td>可以任意调换</td>
+<td><strong>不能调换</strong>，从小到大排定</td>
+</tr>
+<tr>
+<td>条间的空隙</td>
+<td>有</td>
+<td>通常没有（数值连续）</td>
+</tr>
+</tbody></table>
+<p>横轴从「类别」变成「数轴」——这是本单元在统计链条上最大的跳跃。</p>
+<h2>2 画直方图的三个决策</h2>
+<ul>
+<li><strong>组数</strong>：分几箱？太少（2 组），图只剩「高个矮个」，分布形状被抹平；太多（50 组），等于没分组，噪声全露出来。经验做法是组数在 6 到 12 之间，视数据量而定</li>
+<li><strong>组距</strong>：每箱多宽？通常等宽，方便比较频数</li>
+<li><strong>端点归属</strong>：155 cm 算 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>150</mn><mo separator="true">,</mo><mn>155</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">[150,155)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">150</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">155</span><span class="mclose">)</span></span></span></span> 还是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>155</mn><mo separator="true">,</mo><mn>160</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">[155,160)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">155</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">160</span><span class="mclose">)</span></span></span></span>？必须事先约定并全表一致（常用「含左不含右」）</li>
+</ul>
+<p>三个决策都会改变图的样子，但没有唯一正确答案——<strong>分组是读数据的角度，不是数据本身的属性</strong>。</p>
+<h2>3 与直觉的冲突：直方图的「形状」比「位置」多说了很多话</h2>
+<p>错误直觉：<strong>「分布图就是 fancy 版的条形图，看完知道最多人在哪就行了」</strong>。反例说明形状里藏着别的信息：</p>
+<blockquote>
+<p>两个班数学成绩的平均分都是 75 分。甲班直方图是「中间高两头低」的单峰：50 分和 100 分的都很少，人堆在 70–80。乙班是「两头高中间低」：一半人 95 以上，一半人 40 以下，中间 75 分的反而最少——平均分恰好还是 75。</p>
+</blockquote>
+<p>只看平均数（甚至只看「最多人在哪」），两个班毫无区别；直方图一画，乙班「两极分化」立刻暴露——<strong>这背后可能是两个完全不同的教学问题</strong>。</p>
+<p>直觉为什么只盯「哪里人多」？因为条形图训练出的读法是「找最高的条」。直方图要求的新读法是<strong>看整体的轮廓</strong>：对称还是偏斜？单峰还是双峰？尾巴拖向哪边？轮廓回答「数据是什么结构的」，而最高点只回答「典型值在哪」。</p>
+<p>还有一个具体的坑：直方图只能告诉你「落在 155–160 的人数」，<strong>不能告诉你这组里的人身高是多少</strong>——原始信息在装箱时被扔掉了。箱越宽，扔得越多。</p>
+<h2>4 与后一个学段的螺旋关系</h2>
+<p><strong>依赖链</strong>：小学高「扇形图与选择」→ 初中「抽样与全面调查」→ 本单元「频数分布直方图」→ 高中「简单随机抽样与分层抽样」→ 高中「正态分布曲线的性质」。</p>
+<pre><code>小学高  扇形图与选择                    占比思想，图的选择逻辑
+   ↓ 样本有了，还要看样本长什么样
+初中    抽样与全面调查                  从总体抽出有代表性的样本
+   ↓ 一堆数值样本需要装箱呈现
+初中    频数分布直方图                  ← 本页  横轴变成数轴，学会看分布轮廓
+   ↓ 抽样方案更精细，须考虑总体结构
+高中    简单随机抽样与分层抽样          按总体内部结构设计抽样
+   ↓ 连续数据的分布有了理论形状
+高中    正态分布曲线的性质              直方图的「理论版」：钟形曲线
+</code></pre>
+<p>直方图是从「画图」通向「分布」的桥：高中的正态曲线、大学的概率密度，都是直方图思想的连续极限——箱子无限变窄、变多，阶梯轮廓就光滑成了曲线。</p>
+<h2>5 教材里怎么放</h2>
+<p>人教版七年级下册「数据的收集、整理与描述」章安排频数分布直方图，与抽样调查同章。教材从「了解:」组距、频数、频数分布表到直方图完整走一遍，选材多为身高、体重等连续量。</p>
+<p><strong>与抽样同章的用意</strong>：抽样得到的一大堆数值样本，正是直方图的天然原料——收集和呈现两件事在这里形成了闭环。</p>
+<h2>6 自测</h2>
+<ul>
+<li>数据范围 20 到 90，取组距 10，该分几组？</li>
+<li>为什么直方图的条不能像条形图那样随意换位置？</li>
+<li>甲、乙两组平均分相同，直方图一「单峰」一「双峰」，各说明什么？</li>
+<li>组距从 5 改成 20，直方图的形状会怎么变？可能掩盖什么？</li>
+<li>你觉得「考试成绩直方图」给老师的信息，比「平均分」多在哪？</li>
+</ul>
+</div>   </div> <aside class="lg:border-l lg:border-[var(--color-rule)] lg:pl-6"> <section> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">螺旋</h2> <p class="mt-1 text-[11px] text-[var(--color-ink-faint)]">同一概念的其他学段</p> <ol class="mt-3 space-y-1"> <li> <a href="/unit/data-display@primary-mid/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 3 </span> <span>条形图与折线图</span> </a> </li><li> <a href="/unit/data-display@primary-high/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 4 </span> <span>扇形图与选择</span> </a> </li> <li class="flex items-center gap-2 rounded bg-[var(--color-ink)] px-2 py-1.5 text-[11.5px] text-white"> <span class="tnum w-3 text-white/40">5</span> <span>频数分布直方图</span> </li>   </ol> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">前置</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/data-display@primary-high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 扇形图与选择 </a> </li><li> <a href="/unit/data-collection@middle/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 抽样与全面调查 </a> </li> </ul> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">解锁</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/sampling@high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 简单随机抽样与分层抽样 </a> </li> </ul> </section> </aside> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>三角形的性质与全等 — Math Atlas</title><meta name="description" content="三角形 · 初中 · 应用"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <nav class="pt-8 text-[11.5px] text-[var(--color-ink-faint)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <span class="mx-1.5">/</span> <a href="/branch/geometry/" class="hover:text-[var(--color-ink)]">三角形</a> <span class="mx-1.5">/</span> <span>初中</span> </nav> <article class="grid gap-10 pt-4 pb-10 lg:grid-cols-[minmax(0,1fr)_228px]"> <div class="min-w-0"> <header> <div class="flex flex-wrap items-center gap-2 text-[11px]"> <span class="rounded px-1.5 py-0.5" style="background:#dcfce7;color:#166534"> 完整 </span> <span class="text-[var(--color-ink-faint)]">初中 · 应用</span> </div> <h1 class="serif mt-3 text-[30px] leading-tight font-semibold tracking-tight">三角形的性质与全等</h1> <p class="mt-2 text-[12.5px] text-[var(--color-ink-soft)]">
+所属概念：<a href="/branch/geometry/" class="underline decoration-[var(--color-rule)] underline-offset-2 hover:decoration-current">三角形</a> <span class="text-[var(--color-ink-faint)]"> · 全等 / 判定</span> </p> </header> <div class="prose-atlas mt-8"><h2>1 为什么偏偏是三角形</h2>
+<p>图形的世界里，三角形享有特殊地位：<strong>它是唯一被三条边唯一确定的简单多边形</strong>。</p>
+<p>四边形就不是：四根木条钉成四边形，轻轻一推就变形——平行四边形、梯形、
+任意四边形，同样的四条边可以摆出无穷多种形状。而三根木条钉成三角形，
+<strong>怎么推都不动</strong>。这不是巧合，是 SSS 判定的物理体现：</p>
+<blockquote>
+<p>三边确定，形状唯一。</p>
+</blockquote>
+<p>这个性质让三角形成了所有工程的默认骨架：自行车架、桥梁桁架、屋顶人字架、
+艾菲尔铁塔——到处都是三角形，因为<strong>稳定</strong>不是靠材料硬，是靠形状不变形。</p>
+<h2>2 内角和 180°：一条「隐藏」的公理</h2>
+<p>三角形内角和是 180°——每个学生都会。但值得问一句：<strong>这为什么是真的？</strong></p>
+<p>把它剪下来拼一拼：三个角恰好拼成一条直线。这个操作暗示了证明思路——
+过 A 点作 BC 的平行线，用内错角相等把三个角搬到一起：</p>
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">∠</mi><mi>A</mi><mo>+</mo><mi mathvariant="normal">∠</mi><mi>B</mi><mo>+</mo><mi mathvariant="normal">∠</mi><mi>C</mi><mo>=</mo><mn>180</mn><mi mathvariant="normal">°</mi></mrow><annotation encoding="application/x-tex">\angle A + \angle B + \angle C = 180°</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7756em;vertical-align:-0.0833em;"></span><span class="mord">∠</span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7756em;vertical-align:-0.0833em;"></span><span class="mord">∠</span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6922em;"></span><span class="mord">∠</span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord">180°</span></span></span></span></span>
+<p>深究下去会撞见一件惊人的事：<strong>内角和 180° 并不是三角形自己的性质，
+而是「平角是 180°」加「平行线存在」的推论</strong>。而在没有平行公理的几何里
+（球面上的三角形，内角和大于 180°！），这条「人人皆知」的事实不再成立。
+初中的三角形内角和，其实是欧几里得几何的签名。</p>
+<h2>3 与直觉的冲突：全等的四个判定，为什么不包括「AAA」和「SSA」</h2>
+<p>判定两个三角形全等，教材给了四个工具：SSS、SAS、ASA、AAS。
+但学生自然会问：为什么角角角（AAA）不行？边边角（SSA）也不行？</p>
+<ul>
+<li><strong>AAA 只能保证相似</strong>：三个角相同，只锁定了形状，不锁定大小。
+大小两个等边三角形就是现成的反例。</li>
+<li><strong>SSA 是著名的陷阱</strong>：两边及其中一边的对角，<strong>可能画出两个不同的三角形</strong>。
+作图试一次就明白：固定 AB 和 AC 的长，让 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∠</mi><mi>B</mi></mrow><annotation encoding="application/x-tex">\angle B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6922em;"></span><span class="mord">∠</span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span></span></span></span> 固定，边 AC 绕着摆，
+可能与射线 BA 交于两点——两个三角形，边角条件完全相同，却不全等。</li>
+</ul>
+<p>「SSA 不行」在高中解三角形时会以「<strong>两解问题</strong>」的面目再次出现——
+到时候不是「做错了」，而是一道正经的考题。初中埋下的怀疑，
+高中会得到正式的解答。</p>
+<h2>4 三条重要的线</h2>
+<p>三角形内部有三组共点线，各自指向一个「中心」：</p>
+<table>
+<thead>
+<tr>
+<th>线</th>
+<th>交点</th>
+<th>性质</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>三条中线</td>
+<td><strong>重心</strong></td>
+<td>分每条中线为 2:1</td>
+</tr>
+<tr>
+<td>三条垂直平分线</td>
+<td><strong>外心</strong></td>
+<td>到三顶点等距（外接圆圆心）</td>
+</tr>
+<tr>
+<td>三条角平分线</td>
+<td><strong>内心</strong></td>
+<td>到三边等距（内切圆圆心）</td>
+</tr>
+<tr>
+<td>三条高</td>
+<td><strong>垂心</strong></td>
+<td>钝角三角形时在形外</td>
+</tr>
+</tbody></table>
+<p>四个心不一定重合（等边三角形除外）。这组「心」是初中几何证明题的主力素材，
+但更重要的是它背后的手法：<strong>证明三线共点</strong>——先证两线交于一点，
+再证第三条线过这个交点。这是第一次面对「多条线必交于一点」这类命题，
+处理它的套路会在解析几何、射影几何里反复出现。</p>
+<h2>5 与前后学段的螺旋关系</h2>
+<p><strong>依赖链</strong>：小学高「三角形的分类」→ 本单元「性质与全等」→ 初中「相似三角形」→ 高中「解三角形」。</p>
+<pre><code>小学高  三角形的分类（锐角、直角、等腰）
+   ↓ 从「认形状」到「证性质」
+初中    内角和、全等判定、三线共点         ← 本页
+   ↓ 只保形状不保大小
+初中    相似三角形（AAA 在这里合法了）
+   ↓ 三角函数进场
+高中    正弦定理、余弦定理解三角形
+</code></pre>
+<p>注意 AAA 的命运转折：初中它是「不能全等」的反例素材，高中它是「相似」的合法判据——
+<strong>同一个条件，问的问题不同，价值完全不同</strong>。</p>
+<h2>6 教材里怎么放</h2>
+<p>人教版八年级上册 §11「三角形」（内角和、三线）与 §12「全等三角形」
+（四个判定、角平分线性质）。教材的证明训练从这里正式开始：
+<strong>§12 是全初中第一个要求完整书写证明过程的章节</strong>。</p>
+<p>「SSA 的陷阱」教材以思考题形式给出，不作判定讲——
+这是少数几处教材<strong>故意留一个否定的例子</strong>，值得专门停留。</p>
+<h2>7 自测</h2>
+<ul>
+<li>用「稳定性」解释为什么晾衣架会做成三角形折叠结构，而伸缩门用四边形。</li>
+<li>等边三角形的三个角都是 60°。两个等边三角形一定相似吗？一定全等吗？</li>
+<li>画一个 SSA 的反例：固定 <span class="katex-error" title="ParseError: KaTeX parse error: Can&#x27;t use function &#x27;$&#x27; in math mode at position 15: \angle B = 30°$̲、$AB = 5$、$AC =…" style="color:#cc0000">\angle B = 30°$、$AB = 5$、$AC = 3</span>，试着画出两个不同的三角形。</li>
+<li>直角三角形的三条高中，有几条恰好与边重合？</li>
+<li>「内角和 180°」在球面上还成立吗？在地球上画一个足够大的三角形试试（提示：北极点 + 赤道上两点）。</li>
+</ul>
+</div> <section class="mt-6"> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();</script><script>(()=>{var A=Object.defineProperty;var g=(i,o,a)=>o in i?A(i,o,{enumerable:!0,configurable:!0,writable:!0,value:a}):i[o]=a;var d=(i,o,a)=>g(i,typeof o!="symbol"?o+"":o,a);{let i={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>1/0*t},o=t=>{let[l,e]=t;return l in i?i[l](e):void 0},a=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([l,e])=>[l,o(e)]));class y extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let c=this.querySelectorAll("astro-slot"),n={},h=this.querySelectorAll("template[data-astro-template]");for(let r of h){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of c){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("name")||"default"]=r.innerHTML)}let p;try{p=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(s+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}let u;await this.hydrator(this)(this.Component,p,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),c.disconnect(),this.childrenConnectedCallback()},c=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});c.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),c=this.getAttribute("client");if(Astro[c]===void 0){window.addEventListener(`astro:${c}`,()=>this.start(),{once:!0});return}try{await Astro[c](async()=>{let n=this.getAttribute("renderer-url"),[h,{default:p}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),u=this.getAttribute("component-export")||"default";if(!u.includes("."))this.Component=h[u];else{this.Component=h;for(let f of u.split("."))this.Component=this.Component[f]}return this.hydrator=p,this.hydrate},e,this)}catch(n){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,n)}}attributeChangedCallback(){this.hydrate()}}d(y,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",y)}})();</script><astro-island uid="EJY3x" prefix="r1" component-url="/_astro/GraphDemo.BwRBbAFj.js" component-export="default" renderer-url="/_astro/client.Cbh9-_KQ.js" props="{&quot;id&quot;:[0,&quot;triangle-construction&quot;],&quot;preset&quot;:[0,&quot;sss&quot;],&quot;params&quot;:[0,{}],&quot;fallbackNote&quot;:[0,&quot;组件 triangle-construction 尚未实现&quot;]}" ssr client="load" opts="{&quot;name&quot;:&quot;GraphDemo&quot;,&quot;value&quot;:true}" await-children><div class="my-7 overflow-hidden rounded-lg border border-[var(--color-rule)] bg-[var(--color-paper-card)]"><div class="flex items-center justify-between border-b border-[var(--color-rule)] px-3.5 py-2"><span class="text-[11px] font-medium tracking-[0.04em] text-[var(--color-ink-soft)]">交互演示</span><code class="text-[10.5px] text-[var(--color-ink-faint)]">triangle-construction<!-- --> · sss</code></div><div class="p-3.5"><!--$?--><template id="r1B:0"></template><p class="py-6 text-center text-[12px] text-[var(--color-ink-faint)]">正在加载交互组件…</p><!--/$--></div></div><script>requestAnimationFrame(function(){$RT=performance.now()});</script><div hidden id="r1S:0"><div class="space-y-2"><div class="relative"><div class="w-full overflow-hidden rounded-md bg-white" style="height:300px"></div><div class="absolute inset-0 flex items-center justify-center text-[11px]" style="color:var(--color-ink-faint)">正在加载几何引擎…</div></div><div class="grid grid-cols-2 gap-x-4 gap-y-1.5"><label class="flex items-center gap-2"><span class="shrink-0 text-[11px]" style="color:var(--color-ink-faint)">边 AB</span><input type="range" min="2" max="10" step="0.1" class="h-1 flex-1 accent-[#16a34a]" value="6"/><span class="w-8 text-right text-[11px] tabular-nums" style="color:#334155">6.0</span></label><label class="flex items-center gap-2"><span class="shrink-0 text-[11px]" style="color:var(--color-ink-faint)">边 AC</span><input type="range" min="2" max="10" step="0.1" class="h-1 flex-1 accent-[#16a34a]" value="5"/><span class="w-8 text-right text-[11px] tabular-nums" style="color:#334155">5.0</span></label><label class="flex items-center gap-2"><span class="shrink-0 text-[11px]" style="color:var(--color-ink-faint)">边 BC</span><input type="range" min="2" max="10" step="0.1" class="h-1 flex-1 accent-[#16a34a]" value="4"/><span class="w-8 text-right text-[11px] tabular-nums" style="color:#334155">4.0</span></label></div><p class="text-[11.5px] leading-relaxed" style="color:var(--color-ink-faint)">拖动滑块改变边长，橙色虚线的辅助圆/射线会跟着重画。把 AB 拉得超过两边之和，看看三角形会发生什么。</p></div></div><script>$RB=[];$RV=function(a){$RT=performance.now();for(var b=0;b<a.length;b+=2){var c=a[b],e=a[b+1];null!==e.parentNode&&e.parentNode.removeChild(e);var f=c.parentNode;if(f){var g=c.previousSibling,h=0;do{if(c&&8===c.nodeType){var d=c.data;if("/$"===d||"/&"===d)if(0===h)break;else h--;else"$"!==d&&"$?"!==d&&"$~"!==d&&"$!"!==d&&"&"!==d||h++}d=c.nextSibling;f.removeChild(c);c=d}while(c);for(;e.firstChild;)f.insertBefore(e.firstChild,c);g.data="$";g._reactRetry&&requestAnimationFrame(g._reactRetry)}}a.length=0};
+$RC=function(a,b){if(b=document.getElementById(b))(a=document.getElementById(a))?(a.previousSibling.data="$~",$RB.push(a,b),2===$RB.length&&("number"!==typeof $RT?requestAnimationFrame($RV.bind(null,$RB)):(a=performance.now(),setTimeout($RV.bind(null,$RB),2300>a&&2E3<a?2300-a:$RT+300-a)))):b.parentNode.removeChild(b)};$RC("r1B:0","r1S:0")</script><!--astro:end--></astro-island> <p class="text-[11px] leading-relaxed text-[var(--color-ink-faint)]">
+演示组件按 preset 参数复用：同一组件在不同学段以不同参数出现，这正是「螺旋」在软件上的表达。
+</p> </section> <section class="mt-8"> <h2 class="text-[13px] font-semibold tracking-[0.06em]">对应教材</h2> <ul class="mt-3 space-y-1.5 text-[12px] text-[var(--color-ink-soft)]"> <li> 人教版 · 八年级上册 · §11 三角形 · §12 全等三角形 </li> </ul> <p class="mt-2 text-[11px] text-[var(--color-ink-faint)]">只记录指向，不托管教材原文。</p> </section> </div> <aside class="lg:border-l lg:border-[var(--color-rule)] lg:pl-6"> <section> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">螺旋</h2> <p class="mt-1 text-[11px] text-[var(--color-ink-faint)]">同一概念的其他学段</p> <ol class="mt-3 space-y-1"> <li> <a href="/unit/triangle@primary-high/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 4 </span> <span>三角形的分类</span> </a> </li> <li class="flex items-center gap-2 rounded bg-[var(--color-ink)] px-2 py-1.5 text-[11.5px] text-white"> <span class="tnum w-3 text-white/40">5</span> <span>三角形的性质与全等</span> </li> <li> <a href="/unit/triangle@high/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 6 </span> <span>解三角形</span> </a> </li>  </ol> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">前置</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/angle@primary-high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 多边形的内角和 </a> </li> </ul> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">解锁</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/congruence@middle/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 相似三角形 </a> </li><li> <a href="/unit/proof@middle/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 命题与证明 </a> </li><li> <a href="/unit/solid-geometry@high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 空间几何体与位置关系 </a> </li><li> <a href="/unit/pythagorean@middle/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 直角三角形三边关系 </a> </li><li> <a href="/unit/triangle@high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 解三角形 </a> </li> </ul> </section> </aside> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>

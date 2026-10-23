@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>长方体与正方体的体积 — Math Atlas</title><meta name="description" content="体积与容积 · 小学高 · 应用"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <nav class="pt-8 text-[11.5px] text-[var(--color-ink-faint)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <span class="mx-1.5">/</span> <a href="/branch/geometry/" class="hover:text-[var(--color-ink)]">体积与容积</a> <span class="mx-1.5">/</span> <span>小学高</span> </nav> <article class="grid gap-10 pt-4 pb-10 lg:grid-cols-[minmax(0,1fr)_228px]"> <div class="min-w-0"> <header> <div class="flex flex-wrap items-center gap-2 text-[11px]"> <span class="rounded px-1.5 py-0.5" style="background:#dcfce7;color:#166534"> 完整 </span> <span class="text-[var(--color-ink-faint)]">小学高 · 应用</span> </div> <h1 class="serif mt-3 text-[30px] leading-tight font-semibold tracking-tight">长方体与正方体的体积</h1> <p class="mt-2 text-[12.5px] text-[var(--color-ink-soft)]">
+所属概念：<a href="/branch/geometry/" class="underline decoration-[var(--color-rule)] underline-offset-2 hover:decoration-current">体积与容积</a> <span class="text-[var(--color-ink-faint)]"> · 体积 / 容积</span> </p> </header> <div class="prose-atlas mt-8"><h2>1 面积之后，为什么还要一个「体积」</h2>
+<p>量长度，是数格子（1 厘米一段）。量面积，是铺格子（1 平方厘米一片）。</p>
+<p>那么，一个盒子能装多少东西？</p>
+<p>这个问题用「面」回答不了。盒子是立体的，它有厚度。得再造一个单位：
+<strong>棱长 1 厘米的正方体，体积是 1 立方厘米。</strong></p>
+<p>五年级下册的这一步，和二年级量长度、三年级量面积，是同一个动作：
+<strong>给一个新的维度造一个新单位，然后数有几个。</strong></p>
+<h2>2 从「数」到「乘」</h2>
+<p>一个长 5 厘米、宽 4 厘米、高 3 厘米的长方体，里面能装几个 1 立方厘米的小方块？</p>
+<pre><code>一层铺满：5 × 4 = 20 个
+一共几层：3 层
+总数：20 × 3 = 60 个
+</code></pre>
+<p>于是体积 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>5</mn><mo>×</mo><mn>4</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>60</mn></mrow><annotation encoding="application/x-tex">= 5\times 4\times 3 = 60</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.3669em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">5</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">4</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">60</span></span></span></span> 立方厘米。</p>
+<p>公式 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mi>a</mi><mi>b</mi><mi>c</mi></mrow><annotation encoding="application/x-tex">V = abc</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.2222em;">V</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal">ab</span><span class="mord mathnormal">c</span></span></span></span> 的意思说白了就是「<strong>一层几个 × 几层</strong>」，
+而「一层几个」又是「一行几个 × 几行」。三次乘法，对应三个方向。
+正方体是特殊情形：$V = a^3$。</p>
+<h2>3 与直觉的冲突：棱长翻倍，体积不止翻倍</h2>
+<p><strong>反例一：每条棱变成 2 倍，体积变 8 倍。</strong></p>
+<p>棱长 3 厘米的正方体放大成棱长 6 厘米：体积从 27 变成 216，正好 8 倍。
+三个方向各乘 2，乘一次就多一维：$2\times 2\times 2 = 8$。</p>
+<p>孩子常猜「2 倍」或「4 倍」，这是把体积当成面积在算。</p>
+<p><strong>反例二：体积只认三个方向的乘积。</strong></p>
+<p>一个细长盒子和一个矮胖盒子，外观上一个「显大」一个「显小」，体积却可能相仿。
+<strong>体积不依赖形状，只依赖三个方向的乘积。</strong></p>
+<p><strong>反例三：容积 ≠ 体积。</strong></p>
+<p>一个玻璃鱼缸，从外面量是 40 × 20 × 25 厘米，
+可它装的水远少于 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>40</mn><mo>×</mo><mn>20</mn><mo>×</mo><mn>25</mn><mo>=</mo><mn>20000</mn></mrow><annotation encoding="application/x-tex">40\times 20\times 25 = 20000</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">40</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">20</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">25</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">20000</span></span></span></span> 立方厘米。</p>
+<p>为什么？因为玻璃有厚度，从<strong>里面</strong>量，尺寸会小一点。
+<strong>体积说的是「外框占多大空间」，容积说的是「里面能装多少」。</strong></p>
+<p>教材的区分是：体积用立方厘米、立方米；容积用升、毫升。
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> 升 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">= 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.3669em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> 立方分米，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> 毫升 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">= 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.3669em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> 立方厘米。</p>
+<blockquote>
+<p>平时我们说「这个箱子多大」，有时指外面，有时指里面。数学必须先把它们分开。</p>
+</blockquote>
+<h2>4 与前后学段的螺旋关系</h2>
+<p><strong>依赖链</strong>：小学高「圆与组合图形」→ 本单元「长方体与正方体的体积」→ 小学高「长方体与圆柱」→ 初中「柱体锥体的体积」。</p>
+<pre><code>小学中  1 平方厘米，铺满一层               二维的「格」
+   ↓ 把一层一层叠起来
+小学高  1 立方厘米，数几个小方块      ← 本页  三维的「块」
+   ↓ 把圆的面积乘上高
+小学高  圆柱的体积 = 底面积 × 高            任何「柱」都这样
+   ↓ 圆锥是它的三分之一
+初中    柱体锥体的体积                      统一成 S × h
+   ↓ 体积进入积分
+大学    旋转体体积、二重三重积分             不再依赖公式
+</code></pre>
+<p>第二个箭头是这条链的枢纽：一旦知道「底面积 × 高」，就能处理圆柱、三棱柱、五棱柱——
+<strong>柱体的体积公式不挑底面形状。</strong></p>
+<h2>5 教材里怎么放</h2>
+<p>人教版五年级下册第三单元「长方体和正方体」。</p>
+<p>教材的路线是：认识长方体和正方体（面、棱、顶点）→ 表面积 → 体积与体积单位 →
+长方体和正方体的体积 → 容积。</p>
+<p><strong>表面积放在体积之前</strong>，因为这个顺序对应「二维 → 三维」的自然过渡：
+先学会算六个面，再学会算里面装多少。</p>
+<p>教材推导体积时用的是「摆小正方体」的实验：用棱长 1 厘米的方木块摆满长方体，
+数一数一共多少个。这个动手过程不可省，因为「体积 = 长×宽×高」没有数方块的经历，
+就只是一个要背的式子。</p>
+<p>教材还专设了「容积」一节，用意是让学生看到：<strong>有些体积不能套公式，要用排水法。</strong></p>
+<h2>6 自测</h2>
+<ul>
+<li>一个长方体长 8 厘米、宽 5 厘米、高 4 厘米，体积是多少？表面积是多少？</li>
+<li>棱长 2 厘米的正方体，棱长变成 4 厘米，体积是原来的几倍？</li>
+<li>为什么「容积」和「体积」不一样？举一个玻璃容器的例子。</li>
+<li>一个量杯里放了 200 毫升水，放进一块石头后变成 260 毫升，石头的体积是多少？</li>
+<li>你觉得为什么「底面积 × 高」能算所有柱体的体积？斜着的柱体还算得对吗？</li>
+</ul>
+</div>   </div> <aside class="lg:border-l lg:border-[var(--color-rule)] lg:pl-6"> <section> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">螺旋</h2> <p class="mt-1 text-[11px] text-[var(--color-ink-faint)]">同一概念的其他学段</p> <ol class="mt-3 space-y-1">  <li class="flex items-center gap-2 rounded bg-[var(--color-ink)] px-2 py-1.5 text-[11.5px] text-white"> <span class="tnum w-3 text-white/40">4</span> <span>长方体与正方体的体积</span> </li> <li> <a href="/unit/volume@middle/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 5 </span> <span>柱体锥体的体积</span> </a> </li>  </ol> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">前置</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/perimeter-area@primary-high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 圆与组合图形 </a> </li><li> <a href="/unit/triangle@primary-high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 三角形的分类 </a> </li> </ul> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">解锁</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/volume@middle/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 柱体锥体的体积 </a> </li><li> <a href="/unit/solid-geometry@primary-high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 长方体与圆柱 </a> </li><li> <a href="/unit/circle@primary-high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 圆的周长与半径 </a> </li> </ul> </section> </aside> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>扇形图与选择 — Math Atlas</title><meta name="description" content="数据的呈现 · 小学高 · 应用"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <nav class="pt-8 text-[11.5px] text-[var(--color-ink-faint)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <span class="mx-1.5">/</span> <a href="/branch/statistics-probability/" class="hover:text-[var(--color-ink)]">数据的呈现</a> <span class="mx-1.5">/</span> <span>小学高</span> </nav> <article class="grid gap-10 pt-4 pb-10 lg:grid-cols-[minmax(0,1fr)_228px]"> <div class="min-w-0"> <header> <div class="flex flex-wrap items-center gap-2 text-[11px]"> <span class="rounded px-1.5 py-0.5" style="background:#dcfce7;color:#166534"> 完整 </span> <span class="text-[var(--color-ink-faint)]">小学高 · 应用</span> </div> <h1 class="serif mt-3 text-[30px] leading-tight font-semibold tracking-tight">扇形图与选择</h1> <p class="mt-2 text-[12.5px] text-[var(--color-ink-soft)]">
+所属概念：<a href="/branch/statistics-probability/" class="underline decoration-[var(--color-rule)] underline-offset-2 hover:decoration-current">数据的呈现</a> <span class="text-[var(--color-ink-faint)]"> · 扇形图 / 占比</span> </p> </header> <div class="prose-atlas mt-8"><h2>1 百分比登上舞台</h2>
+<p>前几年的统计图都在回答「多少」，扇形统计图回答的是另一个问题：<strong>每一部分占总体的几分之几</strong>。</p>
+<p>一个圆代表整体，切成几块扇形，块的大小就是占比。它的独特之处：条形图里你看到的是「A 有 40 人」，扇形图里你看到的是「A 占 40%」——<strong>数字被换算成了与总体的关系</strong>。</p>
+<h2>2 扇形图怎么读、怎么算</h2>
+<p>三件事：</p>
+<ul>
+<li><strong>所有扇形之和是 100%</strong>——这是扇形图的隐藏等式，缺角的图要么有「其他」，要么有假</li>
+<li><strong>占比×总数＝该部分的量</strong>：全班 50 人，喜欢科幻的占 30%，就是 15 人。扇形图本身不标人数，要乘出来</li>
+<li><strong>圆心角是占比的化身</strong>：占 25% 的扇形，圆心角是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>360</mn><mi mathvariant="normal">°</mi><mo>×</mo><mn>25</mn><mi mathvariant="normal">%</mi><mo>=</mo><mn>90</mn><mi mathvariant="normal">°</mi></mrow><annotation encoding="application/x-tex">360°\times25\%=90°</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7778em;vertical-align:-0.0833em;"></span><span class="mord">360°</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">25%</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord">90°</span></span></span></span>。画扇形图，本质是把百分比换算成角度</li>
+</ul>
+<h2>3 与直觉的冲突：图选错了，事实就说错了</h2>
+<p>本单元的真正主角不是扇形图，是<strong>选图</strong>。看一个经典翻车：</p>
+<blockquote>
+<p>报告说：「本季度销售额 120 万元，比上季度 100 万元增长 20%。」配了一张扇形图：本季度扇形占了画面一大半，上季度一小块。</p>
+</blockquote>
+<p>扇形图在这里是<strong>错误工具</strong>：两个季度的销售额是两个<strong>独立的总量</strong>，不存在「合起来是一个整体」。把它们画成一个圆的两块，等于凭空暗示「本季占大头」——占比关系根本不存在。这该用两张并列的条形（或一条折线）。</p>
+<p>更深一层的坑在扇形图内部：</p>
+<blockquote>
+<p>扇形图只显示占比，<strong>不显示总量</strong>。某店「线上销售占 80%」听着风光，如果总额只有 1000 元，那 80% 不过 800 元；对手「线上占 30%」但总额 10 万。两张扇形图并排，眼睛比的是扇形大小，<strong>比的却是两个不同大小的圆</strong>。</p>
+</blockquote>
+<p>直觉为什么会错？因为扇形图把「占比」画成了面积，而人对面积的感知很粗糙——两块 30% 的扇形，放在大圆和小圆里看起来一样大。<strong>占比相同，规模可以差十万八千里</strong>。读任何扇形图，第一句话先问：这个圆代表多少？圆多大？没有总量，只有占比，信息就少了一半。</p>
+<h2>4 与后一个学段的螺旋关系</h2>
+<p><strong>依赖链</strong>：小学中「条形图与折线图」→ 小学高「折线图与趋势」→ 本单元「扇形图与选择」→ 小学高「平均数、中位数、众数」→ 初中「频数分布直方图」。</p>
+<pre><code>小学中  条形图与折线图                  会用条形答「多少」、折线答「怎么变」
+   ↓ 出现「部分与整体」的新问题
+小学高  扇形图与选择                    ← 本页  占比视角，且开始系统学「选图」
+   ↓ 概括数据不止靠图，还要靠数
+小学高  平均数、中位数、众数            统计量家族，与图互为补充
+   ↓ 数据多到要分组才看得清
+初中    频数分布直方图                  直方图登场：条形图的「连续版」
+</code></pre>
+<p>「选图」是本单元留在统计素养里的永久印记：到初中，学生要为「身高分布」选直方图、为「构成比」选扇形图、为「趋势」选折线图——选择逻辑在本单元已经成型。</p>
+<h2>5 教材里怎么放</h2>
+<p>人教版六年级上册安排扇形统计图（「百分数」单元之后，正好用上百分比）。教材通常把三种图放在一起做「选择」练习：同一份数据，分别用三种图呈现，让学生讨论哪种最合适——<strong>先学会不合适，才真正学会合适</strong>。</p>
+<h2>6 自测</h2>
+<ul>
+<li>全班 40 人，坐车、步行、骑车上学的人数比是 5:3:2，三种方式的扇形圆心角各是多少？</li>
+<li>一张扇形图缺了 10% 的角，最合理的解释是什么？</li>
+<li>为什么「两个季度的销售额对比」不适合用一张扇形图？</li>
+<li>两张扇形图显示 A、B 两校「体育社团占比」都是 25%，你能比较两校体育社团人数吗？缺什么？</li>
+<li>你觉得什么数据必须用扇形图、别的图替代不了？</li>
+</ul>
+</div>   </div> <aside class="lg:border-l lg:border-[var(--color-rule)] lg:pl-6"> <section> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">螺旋</h2> <p class="mt-1 text-[11px] text-[var(--color-ink-faint)]">同一概念的其他学段</p> <ol class="mt-3 space-y-1"> <li> <a href="/unit/data-display@primary-mid/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 3 </span> <span>条形图与折线图</span> </a> </li> <li class="flex items-center gap-2 rounded bg-[var(--color-ink)] px-2 py-1.5 text-[11.5px] text-white"> <span class="tnum w-3 text-white/40">4</span> <span>扇形图与选择</span> </li> <li> <a href="/unit/data-display@middle/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 5 </span> <span>频数分布直方图</span> </a> </li>  </ol> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">前置</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/data-display@primary-mid/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 条形图与折线图 </a> </li><li> <a href="/unit/average@primary-high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 平均数与统计量 </a> </li> </ul> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">解锁</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/data-display@middle/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 频数分布直方图 </a> </li><li> <a href="/unit/central-tendency@primary-high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 平均数、中位数、众数 </a> </li> </ul> </section> </aside> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>

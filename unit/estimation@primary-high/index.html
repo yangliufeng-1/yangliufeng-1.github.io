@@ -1,0 +1,61 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>四舍五入与有效数字 — Math Atlas</title><meta name="description" content="估算 · 小学高 · 应用"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <nav class="pt-8 text-[11.5px] text-[var(--color-ink-faint)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <span class="mx-1.5">/</span> <a href="/branch/number-algebra/" class="hover:text-[var(--color-ink)]">估算</a> <span class="mx-1.5">/</span> <span>小学高</span> </nav> <article class="grid gap-10 pt-4 pb-10 lg:grid-cols-[minmax(0,1fr)_228px]"> <div class="min-w-0"> <header> <div class="flex flex-wrap items-center gap-2 text-[11px]"> <span class="rounded px-1.5 py-0.5" style="background:#dcfce7;color:#166534"> 完整 </span> <span class="text-[var(--color-ink-faint)]">小学高 · 应用</span> </div> <h1 class="serif mt-3 text-[30px] leading-tight font-semibold tracking-tight">四舍五入与有效数字</h1> <p class="mt-2 text-[12.5px] text-[var(--color-ink-soft)]">
+所属概念：<a href="/branch/number-algebra/" class="underline decoration-[var(--color-rule)] underline-offset-2 hover:decoration-current">估算</a> <span class="text-[var(--color-ink-faint)]"> · 四舍五入 / 有效数字</span> </p> </header> <div class="prose-atlas mt-8"><h2>1 「约等于」有一个精确的规则</h2>
+<p>三年级学过估：大约 400。四年级上册有一单元叫「大数的认识」，其中一节专门讲「求近似数」。</p>
+<p>题目是：$1234567$ 省略万位后面的尾数。</p>
+<p>答案是 123 万。这个过程叫四舍五入。</p>
+<p>到了四、五年级，四舍五入变成一条完全可以照做的规则：<strong>看后一位，小于 5 舍，大于等于 5 进。</strong></p>
+<p>规则简单到可以背。但真正的问题是：<strong>为什么要这样舍？「约等于 123 万」这句话到底说了什么？</strong></p>
+<h2>2 四舍五入在做什么</h2>
+<p>把 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1234567</mn></mrow><annotation encoding="application/x-tex">1234567</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1234567</span></span></span></span> 舍到万位，得到 1230000。原来的数比它大 4567。</p>
+<p>把 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1239999</mn></mrow><annotation encoding="application/x-tex">1239999</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1239999</span></span></span></span> 舍到万位，得到 1240000。原来的数比它小 1。</p>
+<p>两条规则合起来看，它们保证的是同一件事：<strong>近似值和真实值的差，不超过所在那一位的半个单位。</strong></p>
+<p>万位的半个单位是 5000。所以任何舍到万位的结果，误差都不超过 5000。</p>
+<p>这就是四舍五入的全部意义——<strong>它不是一个随手的规定，而是一个误差最小化的策略。</strong></p>
+<blockquote>
+<p>如果要舍到某一位，让误差尽可能小，那么分界线只能是那一单位的中点。
+5 之所以成为分界，是因为它就是半个 10。</p>
+</blockquote>
+<h2>3 「四舍五入是让数变准」</h2>
+<p>这是最普遍的误解，而且很难自我纠正，因为它听起来天经地义。</p>
+<p>反例非常直接：<strong>两个人身高分别量得 1.45 米和 1.54 米。都保留一位小数，都变成 1.5 米。</strong></p>
+<p>两个身高不同的人，四舍五入后一样了。</p>
+<p>这不是意外，是必然：<strong>近似必然丢失信息，四舍五入只是选择了一个「误差不大的丢法」。</strong></p>
+<p>更进一步，四舍五入还会系统性地<strong>让结果偏大</strong>。看 1 到 9 这九个数，1、2、3、4 舍去，5、6、7、8、9 进位——进的多一个。</p>
+<p>如果一个数反复做四舍五入（比如每一步计算都保留两位），误差会累积，最后结果可能明显偏大。</p>
+<p><strong>这就是为什么科学计算里要保留更多位数，只在最后一步才舍。</strong></p>
+<h2>4 与前后学段的螺旋关系</h2>
+<p><strong>依赖链</strong>：小学低「大约是多少」→ 本单元「四舍五入与有效数字」→ 初中「近似数与科学记数法」。</p>
+<pre><code>小学低  取整、用参照物估出「大约多少」
+   ↓ 给出统一规则：看后一位，五入四舍
+小学高  四舍五入、省略尾数、求近似数        ← 本页
+   ↓ 大数和小数都要舍，需要一个通用的说法
+小学高  有效数字、精确到哪一位
+   ↓ 近似数参与计算，误差会传递
+初中    科学记数法、近似数的精确度
+   ↓ 用误差范围描述测量结果
+高中    误差分析、有效数字的运算规则
+   ↓ 用区间和绝对值写「误差不超过多少」
+大学    数值分析：舍入误差、稳定性
+</code></pre>
+<p>这条链在初中之后才真正有意思：<strong>误差不再是一个数，而是一个范围。</strong></p>
+<h2>5 教材里怎么放</h2>
+<p>人教版把「求近似数」放在**四年级上册「大数的认识」**里，用「省略万位后面的尾数」引入。</p>
+<p>教材的处理很克制：只讲「省略尾数」，不讲「有效数字」。</p>
+<p>「有效数字」是到<strong>七年级</strong>学科学记数法时才正式出现的概念。</p>
+<p>这个先后有别：四年级的任务是<strong>把大数变短</strong>（1234567 → 123 万），七年级的任务是<strong>说清一个近似数精确到什么程度</strong>（<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1.2</mn><mo>×</mo><msup><mn>10</mn><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">1.2 \times 10^3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1.2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8141em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span> 精确到百位）。</p>
+<p>后者更难，因为它要求同时理解数位和误差。</p>
+<blockquote>
+<p>教材在四年级用「四舍五入」这个口诀，是因为它需要一个能立刻执行的规则。
+但口诀的危险在于：<strong>学生会背规则，却不知道规则在保护什么。</strong></p>
+</blockquote>
+<h2>6 自测</h2>
+<ul>
+<li>把 2.746 保留两位小数、保留一位小数，分别得多少？</li>
+<li>两个身高 1.45 米和 1.54 米的人，都保留一位小数后是否一样高？这说明近似数丢失了什么？</li>
+<li>1234567 省略万位后面的尾数，误差最大可能是多少？</li>
+<li>你觉得「四舍五入」公平吗？如果 0 到 9 每个数字出现的机会一样多，舍入后的结果会偏大还是偏小？</li>
+</ul>
+</div>   </div> <aside class="lg:border-l lg:border-[var(--color-rule)] lg:pl-6"> <section> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">螺旋</h2> <p class="mt-1 text-[11px] text-[var(--color-ink-faint)]">同一概念的其他学段</p> <ol class="mt-3 space-y-1"> <li> <a href="/unit/estimation@primary-low/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 2 </span> <span>大约是多少</span> </a> </li> <li class="flex items-center gap-2 rounded bg-[var(--color-ink)] px-2 py-1.5 text-[11.5px] text-white"> <span class="tnum w-3 text-white/40">4</span> <span>四舍五入与有效数字</span> </li>   </ol> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">前置</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/estimation@primary-low/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 大约是多少 </a> </li> </ul> </section>  </aside> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>

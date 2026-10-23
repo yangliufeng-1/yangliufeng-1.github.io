@@ -1,0 +1,111 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>分形的维数 — Math Atlas</title><meta name="description" content="分形与自相似 · 高中 · 分析"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <nav class="pt-8 text-[11.5px] text-[var(--color-ink-faint)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <span class="mx-1.5">/</span> <a href="/branch/geometry/" class="hover:text-[var(--color-ink)]">分形与自相似</a> <span class="mx-1.5">/</span> <span>高中</span> </nav> <article class="grid gap-10 pt-4 pb-10 lg:grid-cols-[minmax(0,1fr)_228px]"> <div class="min-w-0"> <header> <div class="flex flex-wrap items-center gap-2 text-[11px]"> <span class="rounded px-1.5 py-0.5" style="background:#dcfce7;color:#166534"> 完整 </span> <span class="text-[var(--color-ink-faint)]">高中 · 分析</span> </div> <h1 class="serif mt-3 text-[30px] leading-tight font-semibold tracking-tight">分形的维数</h1> <p class="mt-2 text-[12.5px] text-[var(--color-ink-soft)]">
+所属概念：<a href="/branch/geometry/" class="underline decoration-[var(--color-rule)] underline-offset-2 hover:decoration-current">分形与自相似</a> <span class="text-[var(--color-ink-faint)]"> · 维数 / 自相似</span> </p> </header> <div class="prose-atlas mt-8"><h2>1 一条长度有限的线，围出了无限长的边界</h2>
+<p>科赫雪花：从等边三角形出发，把每条边三等分，中间那一段换成向外凸的两个等长线段。
+重复这个动作，无限次。</p>
+<p>结果是：</p>
+<ul>
+<li>它围住的<strong>面积是有限的</strong>（可以算出，等于原三角形的 8/5 倍）</li>
+<li>它的<strong>周长是无限长的</strong>（每次操作，周长乘以 4/3，无限次后趋于无穷）</li>
+</ul>
+<p>一条有限的曲线，围出了有限的面积，边界却是无限长。这不是悖论，
+这是几何第一次明确地告诉人：<strong>「长度」不是一个想当然的概念。</strong></p>
+<h2>2 维数不再是整数</h2>
+<p>更让人不安的还在后面。</p>
+<p>把一个图形放大 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span></span></span></span> 倍，它的「大小」会变成原来的多少倍？</p>
+<table>
+<thead>
+<tr>
+<th>图形</th>
+<th>放大 2 倍后</th>
+<th>倍数</th>
+<th>维数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>线段</td>
+<td>长度 ×2</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mn>1</mn></msup></mrow><annotation encoding="application/x-tex">2^1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8141em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></td>
+<td>1</td>
+</tr>
+<tr>
+<td>正方形</td>
+<td>面积 ×4</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">2^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8141em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></td>
+<td>2</td>
+</tr>
+<tr>
+<td>立方体</td>
+<td>体积 ×8</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">2^3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8141em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span></td>
+<td>3</td>
+</tr>
+<tr>
+<td>科赫曲线</td>
+<td>长度 ×4</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mo stretchy="false" lspace="0em" rspace="0em">?</mo></msup></mrow><annotation encoding="application/x-tex">2^{?}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8491em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8491em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mclose mtight">?</span></span></span></span></span></span></span></span></span></span></span></span></td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≈</mo><mn>1.26</mn></mrow><annotation encoding="application/x-tex">\approx 1.26</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4831em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1.26</span></span></span></span></td>
+</tr>
+</tbody></table>
+<p>倍数分别是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo separator="true">,</mo><mn>4</mn><mo separator="true">,</mo><mn>8</mn></mrow><annotation encoding="application/x-tex">2, 4, 8</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">4</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">8</span></span></span></span>，指数是 $1, 2, 3$——这正是维数。
+可科赫曲线放大 2 倍，长度变成 4 倍，于是维数是：</p>
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>D</mi><mo>=</mo><mfrac><mrow><mi>log</mi><mo>⁡</mo><mn>4</mn></mrow><mrow><mi>log</mi><mo>⁡</mo><mn>2</mn></mrow></mfrac><mo>≈</mo><mn>1.26</mn></mrow><annotation encoding="application/x-tex">D = \frac{\log 4}{\log 2} \approx 1.26</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.2519em;vertical-align:-0.8804em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3714em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mop">lo<span style="margin-right:0.0139em;">g</span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">2</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mop">lo<span style="margin-right:0.0139em;">g</span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">4</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8804em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1.26</span></span></span></span></span>
+<p><strong>1.26 维。</strong> 它不是线（1 维），也填不满面（2 维），而是介于两者之间。</p>
+<h2>3 与直觉的冲突：维数不是「空间的属性」，是「图形的属性」</h2>
+<p>我们习惯说「这是二维平面上的图形」。分形打破了这句话。</p>
+<p>科赫曲线确实画在平面上，但它占据的「量」介于线面之间。用直径很小的圆去覆盖它，
+需要的圆的数量增长速度，恰好对应 1.26 维。</p>
+<p>这件事的震撼之处在于：</p>
+<blockquote>
+<p>维数不是容器的尺寸，而是<strong>图形填充空间的方式</strong>。</p>
+</blockquote>
+<p>一条直线永远填不满平面，所以它是 1 维；一条皮亚诺曲线（Peano curve）
+能<strong>铺满整个正方形</strong>，所以它的维数是 2——即使它是一条「线」。
+维数与「画出来的笔画数」无关，与「它有多快地被填满」有关。</p>
+<h2>4 大自然里到处是分形</h2>
+<ul>
+<li>海岸线：测量尺度越小，测出的长度越长（曼德博的原始问题）</li>
+<li>雪花、云、闪电：自相似结构跨越多个尺度</li>
+<li>血管、肺泡、树根：在有限体积里获得极大的表面积</li>
+<li>蕨类植物的叶子：每一片小叶都是整片叶子的缩小版</li>
+</ul>
+<p>这些形状之所以被演化选中，正是因为<strong>分形能在有限的材料里创造极大的界面</strong>——
+肺需要在有限胸腔里获得巨大的气体交换面积，这正是分形擅长的事。</p>
+<h2>5 与前后学段的螺旋关系</h2>
+<p><strong>依赖链</strong>：幼儿园「长与短」→ 小学「周长面积」→ 初中「图形变换」→ 高中「变换与不变量」→ 本单元「分形的维数」。</p>
+<pre><code>幼儿园  比一比谁更长                   长度是直观的
+   ↓ 长度可测量
+小学    周长、面积                      度量公式化
+   ↓ 图形的运动
+初中    平移、旋转、相似                变换改变位置，不改形状
+   ↓ 变换中的不变量
+高中    变换与不变量                    「相似」被理解为尺度变换
+   ↓ 无限次变换的极限
+高中    分形与自相似                    ← 本页  维数可以是分数
+</code></pre>
+<p>这条链的终点之所以是分形，是因为<strong>分形是「变换做无限次」的产物</strong>。
+中学所有变换都在做一次或有限次，一旦允许无限次，几何就进入了另一个世界。</p>
+<h2>6 教材里怎么放</h2>
+<p>人教版高中数学在「数列」一章有经典的「谢尔宾斯基三角形」例题：
+每次操作，面积按 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mi mathvariant="normal">/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">3/4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">3/4</span></span></span></span> 递减，周长按 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mi mathvariant="normal">/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">3/2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">3/2</span></span></span></span> 递增。
+教材借此讲等比数列的极限。</p>
+<p><strong>但教材只讲到了「面积趋于零、周长趋于无穷」，没有讲维数。</strong>
+维数的计算需要取对数，而极限与对数的组合，超出了必修范围。</p>
+<p>所以「分形维数」在中学是一个<strong>知识边缘上的话题</strong>：
+它用到的每个工具你都会（对数、等比数列、极限），
+但把它们组合起来的这个结论，中学没时间讲。</p>
+<blockquote>
+<p>这正是本项目想传达的事：螺旋的每一段都在往一个方向积累，
+有些结论要到某个位置才「刚好够用」。早一步就不懂，晚一步就错过。</p>
+</blockquote>
+<h2>7 自测</h2>
+<ul>
+<li>科赫雪花为什么面积有限而周长无限？用等比数列的求和公式说清楚。</li>
+<li>一个正方形放大 3 倍，面积变成几倍？据此它的维数是多少？</li>
+<li>如果一条曲线放大 2 倍后长度变成 8 倍，它的维数是多少？这合理吗？</li>
+<li>为什么「海岸线的长度」这个问题没有唯一答案？</li>
+<li>你觉得肺的结构为什么是分形的？如果换成光滑的球面，会损失什么？</li>
+</ul>
+</div>   </div> <aside class="lg:border-l lg:border-[var(--color-rule)] lg:pl-6"> <section> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">螺旋</h2> <p class="mt-1 text-[11px] text-[var(--color-ink-faint)]">同一概念的其他学段</p> <ol class="mt-3 space-y-1"> <li> <a href="/unit/fractal@primary-high/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 4 </span> <span>不断重复的图形</span> </a> </li> <li class="flex items-center gap-2 rounded bg-[var(--color-ink)] px-2 py-1.5 text-[11.5px] text-white"> <span class="tnum w-3 text-white/40">6</span> <span>分形的维数</span> </li>   </ol> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">前置</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/fractal@primary-high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 不断重复的图形 </a> </li><li> <a href="/unit/transformation@high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 变换与不变量 </a> </li> </ul> </section>  </aside> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>

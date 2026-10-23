@@ -1,0 +1,48 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>点和线的连接 — Math Atlas</title><meta name="description" content="图与网络 · 初中 · 理解"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <nav class="pt-8 text-[11.5px] text-[var(--color-ink-faint)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <span class="mx-1.5">/</span> <a href="/branch/math-thinking/" class="hover:text-[var(--color-ink)]">图与网络</a> <span class="mx-1.5">/</span> <span>初中</span> </nav> <article class="grid gap-10 pt-4 pb-10 lg:grid-cols-[minmax(0,1fr)_228px]"> <div class="min-w-0"> <header> <div class="flex flex-wrap items-center gap-2 text-[11px]"> <span class="rounded px-1.5 py-0.5" style="background:#dcfce7;color:#166534"> 完整 </span> <span class="text-[var(--color-ink-faint)]">初中 · 理解</span> </div> <h1 class="serif mt-3 text-[30px] leading-tight font-semibold tracking-tight">点和线的连接</h1> <p class="mt-2 text-[12.5px] text-[var(--color-ink-soft)]">
+所属概念：<a href="/branch/math-thinking/" class="underline decoration-[var(--color-rule)] underline-offset-2 hover:decoration-current">图与网络</a> <span class="text-[var(--color-ink-faint)]"> · 顶点 / 边</span> </p> </header> <div class="prose-atlas mt-8"><h2>1 把世界画成点和线</h2>
+<p>七桥问题的故事是数学史最好的开场白之一：哥尼斯堡有七座桥，问能否不重复地走遍每座桥再回到起点。所有人去实地走、画地图试路线，全部失败。欧拉的做法是划时代的：</p>
+<blockquote>
+<p>把四块陆地缩成四个<strong>点</strong>，把七座桥画成七条<strong>线</strong>。问题变成：能否一笔画出这个图形？</p>
+</blockquote>
+<p>陆地的形状、桥的长短、河的宽窄——全被扔掉了，只留下「谁和谁相连」。</p>
+<h2>2 顶点的「度」：一个数判断可行与否</h2>
+<p>一笔画问题有漂亮的判别法。每个顶点连出的边数叫它的<strong>度</strong>。欧拉发现：</p>
+<ul>
+<li>一笔画成且回到起点 ⟺ 每个顶点的度都是偶数；</li>
+<li>一笔画成但不必回起点 ⟺ 恰有两个顶点是奇度，且从其一出发到其另一结束。</li>
+</ul>
+<p>哥尼斯堡的四个顶点度数是 $3, 3, 5, 3$——四个奇度顶点，<strong>无解</strong>。实地走一万遍也发现不了的答案，数一数度数立刻出来。</p>
+<p>这里还埋着一个更实用的礼物：<strong>奇度顶点的个数一定是偶数个</strong>（因为度数总和 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo></mrow><annotation encoding="application/x-tex">=</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.3669em;"></span><span class="mrel">=</span></span></span></span> 边数的两倍，必为偶数）。为什么？每条边给两个顶点各贡献 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> 度。「握手必是两人的事」，所以握过手的总次数是偶数——这个「握手定理」是图论里第一个不变量。</p>
+<h2>3 与直觉的冲突：边的「长度」没有了</h2>
+<p>直觉在图上第一个失灵处：<strong>画成什么样不算数</strong>。同一个图，画成正方形加对角线，或画成一个歪歪扭扭的乱线团，只要顶点相连关系相同，就是同一个图。直觉盯着「图长得像不像」，图论只认「连得对不对」——这叫图同构的思想。</p>
+<p>更深的失灵在七桥问题本身。直觉失败的根源是：<strong>大家在「路」上找答案，而答案在「结构」里</strong>。实地走桥，你处理的是距离、方向、体力；欧拉的图里这些概念全部不存在，剩下的只有连接关系。而可行性恰恰只由连接关系决定——四个奇度顶点，这个事实不在地图上，在结构里。</p>
+<p>直觉为什么会错？因为它默认「答案藏在问题的原始场景里」，而七桥问题证明了反方向的可能：<strong>把场景扔掉，答案才显形</strong>。此后，「这个问题能不能抽象成图」成了数学的标准动作：人际关系、电路、网络——全是图。</p>
+<blockquote>
+<p>图论的第一课与其说是新知识，不如说是新习惯：遇到问题先问一句——这里面什么是「点」，什么是「线」？</p>
+</blockquote>
+<h2>4 与后一个学段的螺旋关系</h2>
+<p><strong>依赖链</strong>：初中「流程与循环」→ 初中「点和线的连接」→ 高中「图论中的最优化」→ 大学「图论与算法」。</p>
+<pre><code>初中    流程与循环                   步骤的顺序与重复成为对象
+   ↓ 关注点从「步骤」转向「关系」
+初中    点和线的连接                 ← 本页  顶点、边、度数
+   ↓ 在连接结构上找最优
+高中    图论中的最优化               最短路、最小生成树
+   ↓ 图成为计算机科学的基础语言
+大学    图论与算法                   复杂度、网络流
+</code></pre>
+<p>这一级增加的是一个<strong>全新的对象类型</strong>：此前数学研究的是数、式、形，图研究的却是「关系」本身。把关系变成可以用数学处理的对象，是初中数学视野最大的一次扩展。</p>
+<h2>5 教材里怎么放</h2>
+<p>人教版初中数学中，「一笔画」类问题主要出现在综合与实践活动或数学文化阅读材料中，不作正式考点；相关的直观准备包括七年级「几何图形初步」中对点线关系的认识。七桥问题的历史在多数教材版本中以阅读材料形式出现。</p>
+<p>编排的用意：图论在中学不设正式章节，因为它需要一整套新语言，收益却要到高中和大学才兑现。中学阶段给它一个「惊喜体验」的位置——让学生见过一次「抽象立刻换来答案」的现场，种子就算种下了。</p>
+<h2>6 自测</h2>
+<ul>
+<li>判断下图能否一笔画：正方形加两条对角线（度数各是多少）？</li>
+<li>「奇度顶点个数是偶数」用握手定理解释一遍。</li>
+<li>哥尼斯堡七桥问题无解的准确理由是什么？加一座桥能解决吗？加在哪？</li>
+<li>两个画法完全不同的图形，凭什么说是同一个图？</li>
+<li>你的生活里，什么东西最像「点—线」结构？试着说出它的顶点和边。</li>
+</ul>
+</div>   </div> <aside class="lg:border-l lg:border-[var(--color-rule)] lg:pl-6"> <section> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">螺旋</h2> <p class="mt-1 text-[11px] text-[var(--color-ink-faint)]">同一概念的其他学段</p> <ol class="mt-3 space-y-1">  <li class="flex items-center gap-2 rounded bg-[var(--color-ink)] px-2 py-1.5 text-[11.5px] text-white"> <span class="tnum w-3 text-white/40">5</span> <span>点和线的连接</span> </li> <li> <a href="/unit/graph-theory@high/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 6 </span> <span>图论中的最优化</span> </a> </li>  </ol> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">前置</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/algorithmic-thinking@middle/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 流程与循环 </a> </li> </ul> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">解锁</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/graph-theory@high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 图论中的最优化 </a> </li> </ul> </section> </aside> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>

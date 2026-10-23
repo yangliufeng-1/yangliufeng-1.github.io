@@ -1,0 +1,81 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>圆与组合图形 — Math Atlas</title><meta name="description" content="周长与面积 · 小学高 · 应用"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <nav class="pt-8 text-[11.5px] text-[var(--color-ink-faint)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <span class="mx-1.5">/</span> <a href="/branch/geometry/" class="hover:text-[var(--color-ink)]">周长与面积</a> <span class="mx-1.5">/</span> <span>小学高</span> </nav> <article class="grid gap-10 pt-4 pb-10 lg:grid-cols-[minmax(0,1fr)_228px]"> <div class="min-w-0"> <header> <div class="flex flex-wrap items-center gap-2 text-[11px]"> <span class="rounded px-1.5 py-0.5" style="background:#dcfce7;color:#166534"> 完整 </span> <span class="text-[var(--color-ink-faint)]">小学高 · 应用</span> </div> <h1 class="serif mt-3 text-[30px] leading-tight font-semibold tracking-tight">圆与组合图形</h1> <p class="mt-2 text-[12.5px] text-[var(--color-ink-soft)]">
+所属概念：<a href="/branch/geometry/" class="underline decoration-[var(--color-rule)] underline-offset-2 hover:decoration-current">周长与面积</a> <span class="text-[var(--color-ink-faint)]"> · 圆的面积 / 组合</span> </p> </header> <div class="prose-atlas mt-8"><h2>1 一张「阴影部分」的图，逼出了新工具</h2>
+<p>一个正方形里挖掉四分之一圆，剩下的部分面积是多少？</p>
+<p>这类题在六年级的卷子上叫「求阴影部分面积」。它难，不是因为计算复杂，
+而是因为<strong>阴影那个形状没有名字，也没有公式</strong>。</p>
+<p>解决办法只有一个：把它看成别的图形的加减。</p>
+<h2>2 组合图形的两条路</h2>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>做法</th>
+<th>典型场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>加法</strong></td>
+<td>把图形拆成几个会算的部分，分别求再相加</td>
+<td>一个房子形状 = 正方形 + 三角形</td>
+</tr>
+<tr>
+<td><strong>减法</strong></td>
+<td>先算整个大方块，再减掉空的部分</td>
+<td>正方形挖去一个圆</td>
+</tr>
+<tr>
+<td><strong>割补</strong></td>
+<td>剪下来，挪到别处，拼成会算的形状</td>
+<td>弓形、叶片形</td>
+</tr>
+</tbody></table>
+<p>第三种最巧，也最需要想象力。它依赖一个默认的前提：
+<strong>一个图形被剪开、平移、拼接之后，总面积不变。</strong> 这条前提小学从不证明，但一直用。</p>
+<p>教材用圆来推面积公式时，用的正是割补：把圆平均分成很多小扇形，
+一正一反拼起来，得到一个近似的长方形，长是半个圆周 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><mi>r</mi></mrow><annotation encoding="application/x-tex">\pi r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span></span></span></span>，宽是半径 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span></span></span></span>，
+所以 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mi>π</mi><mi>r</mi><mo>×</mo><mi>r</mi><mo>=</mo><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">S = \pi r \times r = \pi r^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8141em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span>。</p>
+<p>分的份数越多，拼出来的越接近长方形。这里已经偷偷用上了极限的思想。</p>
+<h2>3 与直觉的冲突：拼起来的边，和原来不一样了</h2>
+<p><strong>反例一：半径翻倍，面积翻 4 倍。</strong></p>
+<p>一个半径 2 厘米的圆和半径 4 厘米的圆，看着只是「大一圈」，
+面积却是 4 倍。孩子常以为翻倍就是翻倍。用拼成的长方形看：长翻 2 倍，宽也翻 2 倍，
+乘起来就是 4 倍——和长方形「两条边都变」的道理一样。</p>
+<p><strong>反例二：周长和面积在圆上的关系是反的。</strong></p>
+<p>周长相等时，越接近圆，面积越大。所以用同样长的绳子围图形，<strong>围成圆时面积最大</strong>。</p>
+<p>这条结论小学只能体会，初中才能证明。</p>
+<p><strong>反例三：割补之后，面积不变，周长却变了。</strong></p>
+<p>把平行四边形剪一刀平移，拼成长方形：面积一样，周长却变小了（斜边换成了更短的直角边）。
+<strong>同一个拼接动作，面积是「不变量」，周长不是。</strong></p>
+<blockquote>
+<p>组合图形的门槛不在计算，在于<strong>把图拆对</strong>。拆对了，剩下一律是加减法。</p>
+</blockquote>
+<h2>4 与前后学段的螺旋关系</h2>
+<p><strong>依赖链</strong>：小学中「长方形周长面积」→ 本单元「圆与组合图形」→ 小学高「圆的周长与面积」→ 初中「圆的性质与切线」。</p>
+<pre><code>小学中  长方形面积 = 长 × 宽              规则图形，一个公式一个答案
+   ↓ 把圆切开，拼成近似长方形
+小学高  圆的面积 πr²                      曲边图形也能算
+   ↓ 多个图形拼在一起、挖掉一块
+小学高  圆与组合图形                   ← 本页  会算的图形拼出不会算的
+   ↓ 圆进入推理
+初中    圆的性质与切线                    垂径定理、切线、扇形
+   ↓ 圆进入坐标系
+高中    圆的方程与位置关系                圆变成一条等式
+</code></pre>
+<p>第三段是本条链的核心：<strong>组合图形从来不是新知识，它是旧知识的组织方式。</strong></p>
+<h2>5 教材里怎么放</h2>
+<p>人教版六年级上册第五单元「圆」。教材的顺序是：圆的认识 → 圆的周长 → 圆的面积 →
+扇形 → 解决问题（组合图形）。</p>
+<p>把组合图形放在最后，是因为它要求前面的工具全会用。<strong>它是这一单元的综合演练，不是新章节。</strong></p>
+<p>教材在推导圆面积时展示了「等分—拼组」的过程，份数从 8 份到 16 份再到 32 份。
+这个递进是有意的：让学生自己看到「分得越细，越像长方形」。</p>
+<h2>6 自测</h2>
+<ul>
+<li>边长 10 厘米的正方形里画一个最大的圆，圆的面积是多少？四角剩下的面积是多少？</li>
+<li>一个半径 3 厘米的圆，半径变成 6 厘米，面积变成原来的几倍？</li>
+<li>用 20 厘米长的绳子围成正方形、长方形、圆，哪个面积最大？</li>
+<li>为什么把圆剪开拼成长方形之后，面积可以认为「没变」？哪一步是近似的？</li>
+</ul>
+</div>   </div> <aside class="lg:border-l lg:border-[var(--color-rule)] lg:pl-6"> <section> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">螺旋</h2> <p class="mt-1 text-[11px] text-[var(--color-ink-faint)]">同一概念的其他学段</p> <ol class="mt-3 space-y-1"> <li> <a href="/unit/perimeter-area@primary-mid/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 3 </span> <span>长方形与正方形的周长面积</span> </a> </li> <li class="flex items-center gap-2 rounded bg-[var(--color-ink)] px-2 py-1.5 text-[11.5px] text-white"> <span class="tnum w-3 text-white/40">4</span> <span>圆与组合图形</span> </li>   </ol> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">前置</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/perimeter-area@primary-mid/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 长方形与正方形的周长面积 </a> </li> </ul> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">解锁</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/volume@primary-high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 长方体与正方体的体积 </a> </li><li> <a href="/unit/circle@primary-high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 圆的周长与半径 </a> </li> </ul> </section> </aside> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>

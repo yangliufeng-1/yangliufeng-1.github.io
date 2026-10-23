@@ -1,0 +1,95 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>多边形的内角和 — Math Atlas</title><meta name="description" content="角 · 小学高 · 应用"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <nav class="pt-8 text-[11.5px] text-[var(--color-ink-faint)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <span class="mx-1.5">/</span> <a href="/branch/geometry/" class="hover:text-[var(--color-ink)]">角</a> <span class="mx-1.5">/</span> <span>小学高</span> </nav> <article class="grid gap-10 pt-4 pb-10 lg:grid-cols-[minmax(0,1fr)_228px]"> <div class="min-w-0"> <header> <div class="flex flex-wrap items-center gap-2 text-[11px]"> <span class="rounded px-1.5 py-0.5" style="background:#dcfce7;color:#166534"> 完整 </span> <span class="text-[var(--color-ink-faint)]">小学高 · 应用</span> </div> <h1 class="serif mt-3 text-[30px] leading-tight font-semibold tracking-tight">多边形的内角和</h1> <p class="mt-2 text-[12.5px] text-[var(--color-ink-soft)]">
+所属概念：<a href="/branch/geometry/" class="underline decoration-[var(--color-rule)] underline-offset-2 hover:decoration-current">角</a> <span class="text-[var(--color-ink-faint)]"> · 内角和</span> </p> </header> <div class="prose-atlas mt-8"><h2>1 一个三角形一个三角形地去量，量不完</h2>
+<p>量一个三角形的三个角，加起来大约 180°。再量一个，还是大约 180°。</p>
+<p>可是三角形有无数种，一个个量下去永远量不完。要回答「所有三角形都一样吗」，
+必须换一个办法：<strong>不量，而是把角搬到一起看。</strong></p>
+<p>五年级这一单元做的事，就是这个。</p>
+<h2>2 两种把角「凑到一块」的方法</h2>
+<p><strong>撕角法</strong>：把三角形三个角撕下来，顶点对顶点拼在一起。
+三个角正好拼成一条直线，也就是一个平角 180°。</p>
+<p><strong>折角法</strong>：把三个顶点分别折向对边上的同一点，三个角也能拼成一个平角。</p>
+<p>两种方法都在做同一件事：<strong>把分开的三个角，搬到同一个顶点上。</strong>
+角度是可以「搬」的——这是角的度量最有用的一条性质。</p>
+<p>有了三角形，多边形就好办了：</p>
+<table>
+<thead>
+<tr>
+<th>多边形</th>
+<th>从一个顶点出发能连的对角线</th>
+<th>分成几个三角形</th>
+<th>内角和</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>三角形</td>
+<td>0</td>
+<td>1</td>
+<td>180°</td>
+</tr>
+<tr>
+<td>四边形</td>
+<td>1</td>
+<td>2</td>
+<td>360°</td>
+</tr>
+<tr>
+<td>五边形</td>
+<td>2</td>
+<td>3</td>
+<td>540°</td>
+</tr>
+<tr>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span> 边形</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>−</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">n-3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">3</span></span></span></span></td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n-2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span></td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mo>×</mo><mn>180</mn><mi mathvariant="normal">°</mi></mrow><annotation encoding="application/x-tex">(n-2)\times 180°</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord">180°</span></span></span></span></td>
+</tr>
+</tbody></table>
+<h2>3 与直觉的冲突：内角和由边数决定，与形状无关</h2>
+<p>看到三角形 180°、四边形 360°，孩子会自然推出：五边形 540°，六边形 720°。
+结果全对，但理由常常是错的。有人把它记成「多一条边多 180°」，
+这等于说「180° 是边给的」——真正的来源是<strong>三角形</strong>：<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span> 边形能切成 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n-2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span> 个三角形。</p>
+<p><strong>最关键的反直觉结论：内角和与形状完全无关。</strong></p>
+<p>一个瘦长怪异的五边形，内角和同样精确等于 540°。图形越「不规则」，
+这个结论越显得离谱——可它一点没打折。
+另一个反例考验「每个角都小于 180°」的印象：<strong>凹多边形</strong>。
+箭头形的凹四边形照样能切成两个三角形，内角和 360°，
+只是它的<strong>某个内角大于 180°</strong>，冲破了小学阶段「角都在 0° 到 180° 之间」的习惯。</p>
+<blockquote>
+<p>一个看起来很复杂的对象，被一个极简单的量完全决定了。</p>
+</blockquote>
+<h2>4 与前后学段的螺旋关系</h2>
+<p><strong>依赖链</strong>：小学中「角的度量」→ 本单元「多边形内角和」→ 小学高「三角形的分类」→ 初中「三角形的性质与全等」。</p>
+<pre><code>小学中  量角器，1° 是一个单位              角可以相加
+   ↓ 把角撕下来拼在一起
+小学高  三角形内角和 180°，多边形 (n−2)×180  ← 本页  角服从一个公式
+   ↓ 用角的多少给三角形分类
+小学高  三角形的分类                       一个角是直角、钝角、还是都不是
+   ↓ 换一个方向：不拼角，而是推理
+初中    内角和定理的证明（平行线）          过顶点作平行线，用内错角
+   ↓ 外角、多边形外角和 360°
+初中    三角形的性质与全等                 角的关系成为判定工具
+   ↓ 角进入函数
+高中    任意角、弧度制、解三角形             角可以超过 180°，可以是负的
+</code></pre>
+<p>第三段是整条链的转折：小学的「拼角」是动手验证，
+初中的「作平行线」是逻辑证明。同一个结论，换了一套支撑。</p>
+<h2>5 教材里怎么放</h2>
+<p>人教版四年级下册第五单元「三角形」，其中「三角形的内角和」是独立的一节。</p>
+<p>教材的处理是「先操作、后结论」：让学生量、撕、拼，自己发现三个角能拼成平角。</p>
+<p>教材在四下只讲三角形，<strong>不推到多边形</strong>。推到四边形、五边形放在这一单元的练习里，
+而一般的 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span> 边形公式要到初中「多边形及其内角和」才正式给出。</p>
+<p>这个分层符合认知：四年级只需要相信「三角形是个零件」；
+初中才需要用这个零件拼更大的东西，并把规律写成公式。</p>
+<h2>6 自测</h2>
+<ul>
+<li>一个六边形的内角和是多少？用「切成几个三角形」来说明。</li>
+<li>正六边形的每个内角是多少度？正十二边形呢？</li>
+<li>一个凹四边形的内角和是多少？它和凸四边形有什么不同？</li>
+<li>「每多一条边，内角和就多 180°」这句话为什么是对的？如果只说这一句，会漏掉什么？</li>
+<li>你觉得为什么所有多边形都能切成三角形？这个事实依赖什么条件？</li>
+</ul>
+</div>  <section class="mt-8"> <h2 class="text-[13px] font-semibold tracking-[0.06em]">对应教材</h2> <ul class="mt-3 space-y-1.5 text-[12px] text-[var(--color-ink-soft)]"> <li> 人教版 · 四年级下册 · §5 三角形 </li> </ul> <p class="mt-2 text-[11px] text-[var(--color-ink-faint)]">只记录指向，不托管教材原文。</p> </section> </div> <aside class="lg:border-l lg:border-[var(--color-rule)] lg:pl-6"> <section> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">螺旋</h2> <p class="mt-1 text-[11px] text-[var(--color-ink-faint)]">同一概念的其他学段</p> <ol class="mt-3 space-y-1"> <li> <a href="/unit/angle@primary-low/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 2 </span> <span>认识直角</span> </a> </li><li> <a href="/unit/angle@primary-mid/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 3 </span> <span>角的度量</span> </a> </li> <li class="flex items-center gap-2 rounded bg-[var(--color-ink)] px-2 py-1.5 text-[11.5px] text-white"> <span class="tnum w-3 text-white/40">4</span> <span>多边形的内角和</span> </li>   </ol> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">前置</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/angle@primary-mid/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 角的度量 </a> </li> </ul> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">解锁</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/triangle@middle/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 三角形的性质与全等 </a> </li><li> <a href="/unit/triangle@primary-high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 三角形的分类 </a> </li> </ul> </section> </aside> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>

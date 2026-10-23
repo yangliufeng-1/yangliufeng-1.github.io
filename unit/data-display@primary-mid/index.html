@@ -1,0 +1,45 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>条形图与折线图 — Math Atlas</title><meta name="description" content="数据的呈现 · 小学中 · 理解"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"><link rel="stylesheet" href="/_astro/about.mjEiO7-s.css"></head> <body> <header class="border-b border-[var(--color-rule)]"> <div class="mx-auto flex max-w-[1180px] items-baseline justify-between px-6 py-5"> <a href="/" class="flex items-baseline gap-2.5"> <span class="serif text-[17px] font-semibold tracking-tight">Math Atlas</span> <span class="text-[11.5px] text-[var(--color-ink-faint)]">数学知识图谱</span> </a> <nav class="flex items-center gap-5 text-[12.5px] text-[var(--color-ink-soft)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <a href="/about/" class="hover:text-[var(--color-ink)]">关于</a> <span class="tnum hidden text-[var(--color-ink-faint)] sm:inline"> 168 单元 / 168 篇长文
+</span> </nav> </div> </header> <main class="mx-auto max-w-[1180px] px-6">  <nav class="pt-8 text-[11.5px] text-[var(--color-ink-faint)]"> <a href="/" class="hover:text-[var(--color-ink)]">总览</a> <span class="mx-1.5">/</span> <a href="/branch/statistics-probability/" class="hover:text-[var(--color-ink)]">数据的呈现</a> <span class="mx-1.5">/</span> <span>小学中</span> </nav> <article class="grid gap-10 pt-4 pb-10 lg:grid-cols-[minmax(0,1fr)_228px]"> <div class="min-w-0"> <header> <div class="flex flex-wrap items-center gap-2 text-[11px]"> <span class="rounded px-1.5 py-0.5" style="background:#dcfce7;color:#166534"> 完整 </span> <span class="text-[var(--color-ink-faint)]">小学中 · 理解</span> </div> <h1 class="serif mt-3 text-[30px] leading-tight font-semibold tracking-tight">条形图与折线图</h1> <p class="mt-2 text-[12.5px] text-[var(--color-ink-soft)]">
+所属概念：<a href="/branch/statistics-probability/" class="underline decoration-[var(--color-rule)] underline-offset-2 hover:decoration-current">数据的呈现</a> <span class="text-[var(--color-ink-faint)]"> · 条形图 / 折线图</span> </p> </header> <div class="prose-atlas mt-8"><h2>1 同一份数据，两张图，回答两种问题</h2>
+<p>某地一周气温：周一 18 度、周二 21 度、周三 25 度、周四 24 度、周五 26 度、周六 22 度、周日 19 度。</p>
+<p>用条形图画：七根条，哪天最高一目了然——它回答**「哪个多」**。</p>
+<p>用折线图画：七个点连成线，先升后降的走势一眼可见——它回答**「怎么变」**。</p>
+<p>数据完全相同，图不同，能回答的问题就不同。这个单元教的不是两种画法，是<strong>图与问题的匹配</strong>。</p>
+<h2>2 折线图新在哪里</h2>
+<p>条形图的每根条互相独立：周三 25 度，和周二、周四没有关系。折线图却把点连了起来，连线这个动作本身就是一个声明：</p>
+<blockquote>
+<p>相邻两个数据点属于<strong>同一个连续序列</strong>，它们之间有顺序、有过渡。</p>
+</blockquote>
+<p>所以折线图的用武之地是<strong>时间序列</strong>：气温、身高、股价、 人口。而「六个同学各自喜欢的运动」就不能连折线——张三喜欢篮球和李四喜欢足球之间，连一条线毫无意义。</p>
+<p><strong>条与线的分界线是：数据点之间有没有「接着变」的关系。</strong> 记住这条，两种图就不会用混。</p>
+<h2>3 与直觉的冲突：连线画出了不存在的东西</h2>
+<p>折线图有个隐藏的误读，孩子几乎必中：</p>
+<blockquote>
+<p>折线图上，周二在 21 度、周三在 25 度，两点之间是一条上升的斜线。问：周二中午十点大概几度？孩子会顺着斜线找：大约 22 度、23 度。</p>
+</blockquote>
+<p>这个回答看起来合理，其实<strong>斜线是画图人画的，不是气温走的</strong>。我们只知道两个整点的读数，中间这段升温是快是慢、有没有回落过，数据里根本没有。斜线只是「 连接两个已知点」的约定俗成，不是事实。</p>
+<p>直觉为什么会上当？因为折线图把「两个已知点」呈现成了一条连续路径，<strong>视觉的连续被当成了事实的连续</strong>。这和高中「用散点图判断相关」时遇到的陷阱同源：趋势线描得越光滑，人越容易忘记那只是模型。使用折线图的正解是：读出已知的点，对点与点之间保持谨慎——「图上那条线的斜率」可以看趋势，不能当测量。</p>
+<h2>4 与后一个学段的螺旋关系</h2>
+<p><strong>依赖链</strong>：小学中「条形统计图」→ 本单元「条形图与折线图」→ 小学高「折线图与趋势」→ 小学高「扇形图与选择」。</p>
+<pre><code>小学中  条形统计图                      会画会读一种图，回答「哪个多」
+   ↓ 出现了条形图答不了的「怎么变」
+小学中  条形图与折线图                  ← 本页  两种图并立，学会按问题选图
+   ↓ 从「读走势」到「猜下一步」
+小学高  折线图与趋势                    用折线做预测，体会预测的边界
+   ↓ 图的种类多了，选择成了新问题
+小学高  扇形图与选择                    三种图加百分比视角，系统学「选图」
+</code></pre>
+<p>本单元埋下的最重要伏笔是「连线意味着什么」：高中统计里画回归线、大学里做插值，都要重新回答同一个问题——<strong>线是数据还是假设</strong>。</p>
+<h2>5 教材里怎么放</h2>
+<p>人教版四年级上册学条形统计图，四年级下册「平均数与条形统计图」巩固，折线图集中在五年级下册的「折线统计图」单元，教材用的例子多是气温、身高这类天然带时间的数据。这样安排的用意：先让条形图站稳，再让「想看变化」的需求自然引出折线，<strong>图是应问题而生的</strong>。</p>
+<h2>6 自测</h2>
+<ul>
+<li>「五位同学的体重」该用条形图还是折线图？为什么？</li>
+<li>「小明一到六年级的身高」呢？</li>
+<li>折线图上两点之间的斜线，代表什么、不代表什么？</li>
+<li>把纵轴刻度从「每格 2 度」改成「每格 10 度」，同一条折线看起来会有什么不同？</li>
+<li>你觉得什么情况下，用条形图画时间数据反而更合适？</li>
+</ul>
+</div>   </div> <aside class="lg:border-l lg:border-[var(--color-rule)] lg:pl-6"> <section> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">螺旋</h2> <p class="mt-1 text-[11px] text-[var(--color-ink-faint)]">同一概念的其他学段</p> <ol class="mt-3 space-y-1">  <li class="flex items-center gap-2 rounded bg-[var(--color-ink)] px-2 py-1.5 text-[11.5px] text-white"> <span class="tnum w-3 text-white/40">3</span> <span>条形图与折线图</span> </li> <li> <a href="/unit/data-display@primary-high/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 4 </span> <span>扇形图与选择</span> </a> </li><li> <a href="/unit/data-display@middle/" class="flex items-center gap-2 rounded px-2 py-1.5 text-[11.5px] text-[var(--color-ink-soft)] hover:bg-[var(--color-paper-card)]"> <span class="tnum w-3 text-[var(--color-ink-faint)]"> 5 </span> <span>频数分布直方图</span> </a> </li>  </ol> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">前置</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/data-collection@primary-mid/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 调查与记录 </a> </li> </ul> </section> <section class="mt-6"> <h2 class="text-[11.5px] font-semibold tracking-[0.06em] text-[var(--color-ink-soft)]">解锁</h2> <ul class="mt-2 space-y-1 text-[11.5px]"> <li> <a href="/unit/data-display@primary-high/" class="text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline"> 扇形图与选择 </a> </li> </ul> </section> </aside> </article>  </main> <footer class="mt-20 border-t border-[var(--color-rule)]"> <div class="mx-auto max-w-[1180px] px-6 py-8 text-[11.5px] leading-relaxed text-[var(--color-ink-faint)]"> <p>
+本项目只呈现知识结构，不托管任何教材原文。教材仅以「版本 · 册次 · 章节」的引用形式出现。
+</p> <p class="mt-1">数据以 <code class="tnum">graph.seed.json</code> 为单一事实源，构建期校验。</p> </div> </footer> </body></html>
